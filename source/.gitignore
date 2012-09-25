@@ -1,0 +1,29 @@
+#OS junk files
+[Tt]humbs.db
+*.DS_Store
+
+# build folders
+bin
+obj
+TestResults
+
+obj/
+[Bb]in
+[Dd]ebug*/
+[Rr]elease*/
+
+#performance monitoring
+PerformanceLogs
+*.sap
+
+# resharper folder
+_Resharper.*
+
+# VS solution files
+*.suo
+*.user
+
+errors.sdf
+
+reset_webconfig.bat
+Set_webconfig_to_local.bat
