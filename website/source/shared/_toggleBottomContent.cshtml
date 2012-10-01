@@ -1,0 +1,19 @@
+﻿<script type="text/html" id="bottomContent-template">
+    <div data-bind="attr: { class: bottomContentClass}">
+        <div class="highlights">
+            <img class="themecolor" data-bind="attr: {src: bottomContentImage, alt: title}"/>
+        </div>
+        <div class="highlights-txt">
+            <h2><span data-bind="text: day"></span>: <span data-bind="text: title"></span></h2>
+            <p data-bind="text: shortDesc"></p>
+        </div>
+    </div>
+</script>
+
+<div class="toggle-button"><span class="toggle-indicator">+</span></div>
+
+<div class="toggle-content close clearfix" data-bind="template: { name: 'bottomContent-template', foreach: tiles }"></div>
+
+   
+
+

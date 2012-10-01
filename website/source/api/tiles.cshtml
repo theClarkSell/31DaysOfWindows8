@@ -1,0 +1,7 @@
+﻿@{
+    var path = Server.MapPath("~/js/data/tiles.js");
+    var result = File.ReadAllText(path);
+    
+    Response.ContentType = "application/json"; 
+    Response.Write(result);  
+}

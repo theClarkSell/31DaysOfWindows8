@@ -20,19 +20,13 @@ a{
 
 body{
 	font:62.5%/1.5 "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
-	background:url(/images/background4.jpg) center top no-repeat;
-	background-attachment:fixed;
-	background-size:cover;
-	-moz-background-size:cover;
-	-webkit-background-size:cover;
-	-o-background-size:cover;
 }
 
 #bodypat{
-	background:url(/images/bg_pattern.png) repeat;
+	background-color: black;
 }
 #container{
-	max-width:960px;
+	#max-width:960px;
 	text-align:center;
 	margin:auto;
 	overflow:hidden;
@@ -50,11 +44,7 @@ body{
 	margin:0 auto;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5{
+h1, h2, h3, h4, h5{
 	font-weight:normal;
 	padding:5px 0;
 }
@@ -102,9 +92,9 @@ header{
 }
 #sitename{
 	font-size:7.2em;
-	color:#fff;
+    color:#fff;
 	line-height:100px;
-	margin-left:20px;
+	
 }
 nav{
 	font-size:1.4em;
@@ -120,20 +110,19 @@ nav{
 }
 /*----------------------------Mobile Version--------------------------------*/
 @media all and (max-width:780px) {
-	
-header{
-	padding-top:25px;
+    header{
+	    padding-top:25px;
+    }
+    #headerlink{
+	    float:none;
+	    display:block;
+    }
+    nav{
+	    margin:0 0 25px 0;
+	    float:none;
+    }
 }
-#headerlink{
-	float:none;
-	display:block;
-}
-nav{
-	margin:0 0 25px 0;
-	float:none;
-}
-	
-}
+
 /*----------------------------------------------------------------------------
 Navigation
 ----------------------------------------------------------------------------*/
@@ -226,14 +215,14 @@ nav > select > option{
 }
 /*----------------------------Mobile Version--------------------------------*/
 @media all and (max-width:780px) {
-ul#nav{
-	display:none;
+    ul#nav{
+	    display:none;
+    }
+    nav > select{
+	    display:block;
+    }	
 }
-nav > select{
-	display:block;
-}
-	
-}
+
 /*----------------------------------------------------------------------------
 Content - Universal
 ----------------------------------------------------------------------------*/
