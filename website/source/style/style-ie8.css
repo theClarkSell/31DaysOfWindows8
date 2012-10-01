@@ -1,0 +1,51 @@
+@charset "utf-8";
+/*-----------------------------------------------------------------------------
+Matrix Responsive HTML Template - IE8 CSS
+-------------------------------------------------------------------------------
+Version : 1.0.1
+Date : 23 / 08 / 2012
+Author : Billy Foo
+-----------------------------------------------------------------------------*/
+header
+,nav
+,section
+,article
+,aside
+,footer
+,hgroup 
+{ 
+	display: block;
+}
+.fade{
+	filter:alpha(opacity=100);
+}
+.lb-port-cont{
+	float:left;
+}
+#contact-location .location{
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#50000000,endColorstr=#50000000); 
+    zoom: 1;
+}
+#page-excerpt{
+	background:transparent;
+    filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#95000000,endColorstr=#95000000); 
+    zoom: 1;
+}
+#post-meta .tile-sidebar .meta2 > img,
+#post-meta .tile-sidebar .meta3 > img{
+	top:-100%;
+}
+#post-meta .tile-sidebar .count{
+	bottom:-100%;
+}
+#post-meta .tile-sidebar .meta1 .count{
+	bottom:5%;
+}
+#post-meta .tile-sidebar:hover .meta1 .count{
+	bottom:-100%;
+}
+#post-meta .tile-sidebar .fb-like,
+#post-meta .tile-sidebar .twitter-share-button{
+	top:20%;
+}

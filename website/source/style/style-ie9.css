@@ -1,0 +1,25 @@
+@charset "utf-8";
+/*-----------------------------------------------------------------------------
+Matrix Responsive HTML Template - IE9 CSS
+-------------------------------------------------------------------------------
+Version : 1.0.1
+Date : 23 / 08 / 2012
+Author : Billy Foo
+-----------------------------------------------------------------------------*/
+#post-meta .tile-sidebar .meta2 > img,
+#post-meta .tile-sidebar .meta3 > img{
+	top:-100%;
+}
+#post-meta .tile-sidebar .count{
+	bottom:-100%;
+}
+#post-meta .tile-sidebar .meta1 .count{
+	bottom:5%;
+}
+#post-meta .tile-sidebar:hover .meta1 .count{
+	bottom:-100%;
+}
+#post-meta .tile-sidebar .fb-like,
+#post-meta .tile-sidebar .twitter-share-button{
+	top:20%;
+}
