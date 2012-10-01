@@ -1,0 +1,78 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Machine>BLANKENOFFICE</Machine>
+    <WindowsUser>Jeff</WindowsUser>
+    <SolutionConfiguration>Debug|AnyCPU</SolutionConfiguration>
+    <PackageArchitecture>neutral</PackageArchitecture>
+    <RegisteredManifestChecksum>5274B164A1AF8AE1F39FD6388604FA8FAEA55F0AD05F4FBFE0105E1599FE26F0</RegisteredManifestChecksum>
+    <RegisteredPackageMoniker>3cb6dc87-aed5-4b13-8562-484451a4076a_1.0.0.0_neutral__ky5brtva589yy</RegisteredPackageMoniker>
+    <RegisteredUserModeAppID>3cb6dc87-aed5-4b13-8562-484451a4076a_ky5brtva589yy!App</RegisteredUserModeAppID>
+    <RegisteredPackageID>3cb6dc87-aed5-4b13-8562-484451a4076a</RegisteredPackageID>
+    <RegisteredPackagePublisher>CN=Jeff</RegisteredPackagePublisher>
+    <RegisteredVersion>1.0.0.0</RegisteredVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <AppXManifest Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\AppxManifest.xml">
+      <PackagePath>AppxManifest.xml</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-09-27T18:18:32.701</Modified>
+    </AppXManifest>
+  </ItemGroup>
+  <ItemGroup>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\Day2-OrientationAndSnap.exe">
+      <PackagePath>Day2-OrientationAndSnap.exe</PackagePath>
+      <Modified>2012-09-27T18:29:10.567</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\Day2-OrientationAndSnap.pdb">
+      <PackagePath>Day2-OrientationAndSnap.pdb</PackagePath>
+      <Modified>2012-09-27T18:29:10.543</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\Assets\Logo.png">
+      <PackagePath>Assets\Logo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T00:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\Assets\SmallLogo.png">
+      <PackagePath>Assets\SmallLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T00:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\Assets\SplashScreen.png">
+      <PackagePath>Assets\SplashScreen.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T00:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\Assets\StoreLogo.png">
+      <PackagePath>Assets\StoreLogo.png</PackagePath>
+      <ReRegisterAppIfChanged>true</ReRegisterAppIfChanged>
+      <Modified>2012-03-16T00:42:52.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\Common\ReadMe.txt">
+      <PackagePath>Common\ReadMe.txt</PackagePath>
+      <Modified>2012-09-27T18:18:00.268</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\App.xaml">
+      <PackagePath>App.xaml</PackagePath>
+      <Modified>2012-09-27T12:23:26.822</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\Common\StandardStyles.xaml">
+      <PackagePath>Common\StandardStyles.xaml</PackagePath>
+      <Modified>2012-06-26T20:19:20.000</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\MainPage.xaml">
+      <PackagePath>MainPage.xaml</PackagePath>
+      <Modified>2012-09-27T18:07:07.422</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\OrientationPage.xaml">
+      <PackagePath>OrientationPage.xaml</PackagePath>
+      <Modified>2012-09-27T18:29:06.395</Modified>
+    </AppxPackagedFile>
+    <AppxPackagedFile Include="C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\bin\Debug\resources.pri">
+      <PackagePath>resources.pri</PackagePath>
+      <Modified>2012-09-27T18:18:32.638</Modified>
+    </AppxPackagedFile>
+  </ItemGroup>
+  <ItemGroup>
+  </ItemGroup>
+</Project>

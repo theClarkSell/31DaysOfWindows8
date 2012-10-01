@@ -1,0 +1,1 @@
+C:\Users\Jeff\Documents\GitHub\31DaysOfWindows8\XAML Projects\Day2-OrientationAndSnap\Day2-OrientationAndSnap\Day2-OrientationAndSnap.csproj;neutral
