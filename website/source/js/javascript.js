@@ -104,9 +104,9 @@ $(document).ready(function(){
 	
 	//Twitter on tile
 		//Username
-		var user = 'envato';
+		var user = 'csell5';
 		//Number of tweets to be displayed
-		var tweetcount = 4;
+		var tweetcount = 25;
 		$.getJSON('http://twitter.com/statuses/user_timeline.json?screen_name=' + user + '&count=' + tweetcount + '&callback=?', function(data){
         // Result
         var tweet = "";

@@ -1,16 +1,12 @@
 @charset "utf-8";
-/*-----------------------------------------------------------------------------
-Matrix Responsive HTML Template - Core CSS
--------------------------------------------------------------------------------
-Version : 1.0.1
-Date : 23 / 08 / 2012
-Author : Billy Foo
------------------------------------------------------------------------------*/
-
 *{
 	margin:0;
 	padding:0;
 	border:0;
+}
+
+html {
+    background-color: black;
 }
 
 a{
@@ -19,14 +15,14 @@ a{
 }
 
 body{
-	font:62.5%/1.5 "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+	font:62.5%/1.5 "Segoe UI Light", Segoe UI, Tahoma Light, Arial Light, Helvetica, sans-serif;
 }
 
 #bodypat{
-	background-color: black;
+	
 }
 #container{
-	#max-width:960px;
+	max-width:960px;
 	text-align:center;
 	margin:auto;
 	overflow:hidden;
@@ -91,7 +87,7 @@ header{
 	width:60px;
 }
 #sitename{
-	font-size:7.2em;
+	font-size:6.2em;
     color:#fff;
 	line-height:100px;
 	
