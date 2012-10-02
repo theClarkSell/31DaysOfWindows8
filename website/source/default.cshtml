@@ -17,7 +17,7 @@
     </a>
 </script>
 
-<div data-bind="template: { name: 'tile-template', foreach: tiles }"></div>
+<div data-bind="template: { name: 'tile-template', foreach: xxx }"></div>
 
 <!-- Tile 1 -->
 <a data-bind="attr: {href: XXX}" href="#article-1" class="lightbox" rel="section">
@@ -79,6 +79,8 @@
 
 
 <!-- Tile 1 -->
+
+<!--
 <a href="#article-1" class="lightbox" rel="section">
     <div class="tile large live" data-stops="0,25%,50%,75%,100%" data-speed="3000" data-delay="0" data-direction="horizontal" data-stack="true">
         <div class="live-front">
@@ -116,7 +118,7 @@
     </article>
 </div>
 
-
+-->
 
 
 <!-- Tile 2 -->
@@ -158,9 +160,16 @@
 </div>
 
 <!-- Tile 3 -->
-<a href="#portfolio-1" class="lightbox" rel="section">
-    <div class="tile small">
-        <img class="live-img" src="images/placeholder/small_blank.png" alt="Project One" />
+<a href="#article-2" class="lightbox" rel="section">
+    <div class="tile medium live" data-stops="0,75%,100%" data-speed="750" data-delay="1500">
+        <div class="live-front">
+            <img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <div class="live-back">
+            <img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <span class="tile-date limetxt"><span class="date">06</span><span class="month">July</span></span>
+        <span class="tile-cat lime">Cartoon Design</span>
     </div>
 </a>
 <!-- Lightbox Article Preview -->
@@ -172,29 +181,6 @@
         <div class="lb-port-cont">
             <h1 class="lb-project"><a href="singleportfolio.html">Project One</a></h1>
             <span class="projectcat redtxt">Illustration</span>
-            <div class="lb-desc">
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
-                <p><a class="exp-button" href="singleportfolio.html">View More &#8594;</a></p>
-            </div>
-        </div>
-    </article>
-</div>
-
-<!-- Tile 4 -->
-<a href="#portfolio-2" class="lightbox" rel="section">
-    <div class="tile small">
-        <img class="live-img" src="images/placeholder/small_blank.png" alt="Project Two" />
-    </div>
-</a>
-<!-- Lightbox Article Preview -->
-<div class="tile-pre">
-    <article id="portfolio-2" class="lb-portfolio">
-        <div class="portfolio-img">
-            <img class="tile-pre-img" src="images/placeholder/portfolio_pre_blank.png" alt="Project Two" />
-        </div>
-        <div class="lb-port-cont">
-            <h1 class="lb-project"><a href="singleportfolio.html">Project Two</a></h1>
-            <span class="projectcat tealtxt">Graphic Design</span>
             <div class="lb-desc">
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam sagittis sollicitudin aliquet. Nullam ut sapien eros, aliquet gravida turpis. Cras nec risus magna. Morbi laoreet molestie odio sed ultrices. Maecenas eget elit orci. Etiam rhoncus urna vitae neque accumsan et vehicula dolor varius. Praesent tellus velit.</p>
                 <p><a class="exp-button" href="singleportfolio.html">View More &#8594;</a></p>
