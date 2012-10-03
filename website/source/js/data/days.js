@@ -19,65 +19,76 @@
             
             {
                 "tileSize": "mediumTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/days/0/html1.png",
                 "webSite": "http://csell.net"
             },
             
             {
                 "tileSize": "mediumTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/days/0/xaml1.png",
                 "webSite": "http://csell.net"
             },  
 
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/articleHTML.png",
                 "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/downloadHTML.png",
                 "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/articleXAML.png",
                 "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/downloadHTML.png",
                 "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/articleHTML.png",
                 "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/articleXAML.png",
                 "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/articleXAML.png",
                 "webSite": "http://csell.net"
             },
             {
                 "tileSize": "mediumTile-Template",
-                "company": "xxx",
+                "title": "title here",
                 "webSite": "http://csell.net"
             },  
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
+                "title": "title here",
+                "tileImage": "/images/articleHTML.png",
                 "webSite": "http://csell.net"
             }
         ]
     },
+    
     {
-        "day": "1",
+      "day": "1",
         "title": "Visual Studio 2012",
         "shortDesc": "Lorem ipsum dolor sit amet",
         "publishTime": "9/26/2012 10:00AM -6:00",
@@ -87,7 +98,7 @@
                 "title": "test",
                 "textFront": "xxx",
                 "tileSize": "largeTile-Template",
-                "image": "/images/days/1/1.png",
+                "image": "/images/days/0/0.png",
                 "live": "true",
                 "webSite": "xxx",
                 "frontColor": "red",
@@ -96,62 +107,73 @@
             
             {
                 "tileSize": "mediumTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/days/0/html1.png",
+                "webSite": "http://csell.net"
             },
             
             {
                 "tileSize": "mediumTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/days/0/xaml1.png",
+                "webSite": "http://csell.net"
             },  
 
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/articleHTML.png",
+                "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/downloadHTML.png",
+                "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/articleXAML.png",
+                "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/downloadHTML.png",
+                "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/articleHTML.png",
+                "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/articleXAML.png",
+                "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/articleXAML.png",
+                "webSite": "http://csell.net"
             },
             {
                 "tileSize": "mediumTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "webSite": "http://csell.net"
             },  
             {   
                 "tileSize": "smallTile-Template",
-                "company": "xxx",
-                "webSite": "xxx"
+                "title": "title here",
+                "tileImage": "/images/articleHTML.png",
+                "webSite": "http://csell.net"
             }
-        ]
+        ]   
+
     }
     ]
 }
