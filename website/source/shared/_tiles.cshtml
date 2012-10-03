@@ -8,15 +8,21 @@
 </script>
 
 <script type="text/html" id="largeTile-Template">
-    <div class="tile large live" data-stops="0,25%,50%,75%,100%" data-speed="3000" data-delay="0" data-direction="horizontal" data-stack="true">
+    <div class="tile large live exclude" 
+        data-stops="0,25%,50%,75%,100%" 
+        data-speed="3000" 
+        data-delay="0" 
+        data-direction="horizontal" 
+        data-stack="true">
+        
         <div class="live-front">
-            <img class="live-img" src="/images/placeholder/large_blank.png" alt="Article 1" />
+            <img class="live-img" data-bind="attr: { src: image, alt: title }" />
         </div>
         <div class="live-back">
-            <img class="live-img" src="/images/placeholder/large_blank.png" alt="Article 1" />
+            <img class="live-img" src="/images/placeholder/large_blank.png" data-bind="attr: { src: image, alt: title }" />
         </div>
-        <span class="tile-date redtxt"><span class="date">09</span><span class="month">July</span></span>
-        <span class="tile-cat red">Illustration</span>
+        <span class="tile-date whitetxt"><span class="date">0</span><span class="month">article</span></span>
+        <!--<span class="tile-cat red">Illustration</span>-->
     </div>
 </script>
 
@@ -28,8 +34,10 @@
         <div class="live-back">
             <img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
         </div>
-        <span class="tile-date limetxt"><span class="date">06</span><span class="month">July</span></span>
-        <span class="tile-cat lime">Title This</span>
+        <!--
+            <span class="tile-date limetxt"><span class="date">06</span><span class="month">article</span></span>
+            <span class="tile-cat lime">Title This</span>
+        -->
     </div>
 </script>
 
