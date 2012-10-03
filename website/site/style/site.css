@@ -6,7 +6,7 @@
 #loginInfo {
     display: block;
     float: right;
-    margin-top: 50px;
+    margin-top: 60px;
     margin-right: 50px;
     
 }
@@ -20,4 +20,8 @@
 
 #loginInfo img:first-child {
     padding-right: 20px;
+}
+
+a {
+    text-decoration: none;
 }

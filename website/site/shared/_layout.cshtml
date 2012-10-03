@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
 
-        <title>31 days of Windows 8</title>
+        <title>@PageData["Title"] | 31 days of Windows 8</title>
 
         <meta name="description" content="">
         <meta name="keywords" content="html5, Windows 8, Metro, Windows Store, Azure, Chicago, Community, That Conference, JavaScript, Microsoft, .NET Rocks, Carl Franklin, Richard Campbell, Clark Sell, Greg Levenhagen, Lwin Maung, Adam Hoffman, Azure WebSites, TFS">
@@ -28,7 +28,7 @@
     </head>
     <body>
         <header class="md-header md-header-main">
-            <h1>31 days of Windows 8</h1>
+            <h1><a href="/">31 days of Windows 8</a></h1>
 
         </header>
 
@@ -59,7 +59,9 @@
            
             $(document).ready(function(){
                 
-                $(".live").liveTile({pauseOnHover: true});
+                $(".live").liveTile({
+                    pauseOnHover: true,
+                    useHardwareAccel: true});
                 
                 $(".appbar").applicationBar({ 
                     preloadAltBaseTheme: true, 
