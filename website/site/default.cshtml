@@ -4,7 +4,7 @@
 }
 
 <div class="md-body">        
-    @RenderPage("/shared/_collection.cshtml")
+    @RenderPage("/shared/_tiles.cshtml")
 </div>
 
 @section bottomPageScripts {
@@ -12,15 +12,24 @@
     <script type="text/javascript">
         
         $(document).ready(function () {
-            $('.tilesCollection').masonry({
-                itemSelector : '.tile',
-                columnWidth : 160,
-                isAnimated: true,
-                isFitWidth: true
-            });
+            
+            $.getJSON("/api/days", function (data) {
+                viewModel.days(data.days);
+                ko.applyBindings(viewModel);
+                MD.Initialize(); 
+
+                $('.tilesCollection').masonry({
+                    itemSelector : '.tile',
+                    columnWidth : 160,
+                    isAnimated: true,
+                    isFitWidth: true
+                });
+
+                $(".live").liveTile({
+                    pauseOnHover: true,
+                    useHardwareAccel: true
+                });
+            })
         });
-
-
-
     </script>    
 }

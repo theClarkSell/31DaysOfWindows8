@@ -139,14 +139,9 @@
         for (i = 0; i < fns.length; i++) { fns[i](); }
     };
 
-
     MD.Initialize = function () {
         MD.UI.recalculateAll();
         MD.UI.Nav.fixPositions();
     };
     
 }(window.MD = window.MD || {}, jQuery));
-
-$(document).ready(function () {
-   MD.Initialize();
-});

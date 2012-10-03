@@ -29,7 +29,6 @@
     <body>
         <header class="md-header md-header-main">
             <h1><a href="/">31 days of Windows 8</a></h1>
-
         </header>
 
         <div id="loginInfo">
@@ -40,8 +39,6 @@
                 <img src="https://api.twitter.com/1/users/profile_image?screen_name=jeffblankenburg&size=bigger"/>
             </a>
         </div>
-        
-
 
         @RenderBody()
         @RenderPage("/shared/_footer.cshtml")
@@ -50,28 +47,25 @@
         <script type="text/javascript">
 
             var viewModel = {
-                tiles: ko.observable()
+                days: ko.observable(),
+                selectTemplate: function (tile) {
+                    return tile.tileSize;
+                }
             };
 
-            $.getJSON("/api/tiles", function (data) {
-                viewModel.tiles(data.tiles);
-            })
-           
-            $(document).ready(function(){
-                
-                $(".live").liveTile({
-                    pauseOnHover: true,
-                    useHardwareAccel: true});
-                
-                $(".appbar").applicationBar({ 
-                    preloadAltBaseTheme: true, 
+            $(document).ready(function () {
+
+                $(".appbar").applicationBar({
+                    preloadAltBaseTheme: true,
                     bindKeyboard: true,
                     metroLightUrl: '/images/metroIcons_light.jpg',
                     metroDarkUrl: '/images/metroIcons.jpg',
                     expandHeight: '90px'
-                }); 
+                });
+            });
 
-                ko.applyBindings(viewModel);           
+            $(window).resize(function () {
+                MD.Initialize();
             });
 
         </script>

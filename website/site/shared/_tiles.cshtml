@@ -1,0 +1,54 @@
+﻿
+<script type="text/html" id="tileGroup-Template">
+    <section>
+        <h2><a href="#">day <span data-bind="text: day"></span> - <span data-bind="text: title"></span></a></h2>
+        <div class="tilesCollection" data-bind="template: {name: viewModel.selectTemplate, foreach: tiles }">
+        </div>
+    </section>
+</script>
+
+<script type="text/html" id="largeTile-Template">
+    <div class="tile large live" data-stops="0,25%,50%,75%,100%" data-speed="3000" data-delay="0" data-direction="horizontal" data-stack="true">
+        <div class="live-front">
+            <img class="live-img" src="/images/placeholder/large_blank.png" alt="Article 1" />
+        </div>
+        <div class="live-back">
+            <img class="live-img" src="/images/placeholder/large_blank.png" alt="Article 1" />
+        </div>
+        <span class="tile-date redtxt"><span class="date">09</span><span class="month">July</span></span>
+        <span class="tile-cat red">Illustration</span>
+    </div>
+</script>
+
+<script type="text/html" id="mediumTile-Template">
+    <div class="tile medium live" data-stops="0,75%,100%" data-speed="750" data-delay="1500">
+        <div class="live-front">
+            <img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <div class="live-back">
+            <img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+        </div>
+        <span class="tile-date limetxt"><span class="date">06</span><span class="month">July</span></span>
+        <span class="tile-cat lime">Title This</span>
+    </div>
+</script>
+
+<script type="text/html" id="smallTile-Template">
+    <div class="tile small live exclude" data-stops="0,100%" data-speed="1000" data-delay="1500">
+        <div class="live-front red">
+            <span class="tile-text">Solid Color</span>
+        </div>
+        <div class="live-back green">
+            <span class="tile-text">No Hover Effect</span>
+        </div>
+    </div>
+</script>
+
+<div class="md-content">
+    <div id="collections" class="md-container">
+	    <div class="md-viewport md-viewport-horizontal">
+		    <div class="md-scrollable" data-bind="template: {name: 'tileGroup-Template', foreach: days}">
+            </div>
+        </div>
+    </div>
+</div>
