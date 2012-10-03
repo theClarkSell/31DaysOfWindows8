@@ -15,16 +15,25 @@ a{
 }
 
 body{
-	font:62.5%/1.5 "Segoe UI Light", Segoe UI, Tahoma Light, Arial Light, Helvetica, sans-serif;
+	font:62.5%/1.5 "Segoe UI Light", Segoe UI, Tahoma Light, Arial Light, Helvetica, sans-serif;    
 }
 
 #bodypat{
-	
+	margin-left: 120px;
 }
+
+#mainCore {
+    padding-top: 120px;
+}
+
+#flexbox {
+}
+
 #container{
-	max-width:960px;
+    
+	/*max-width:960px;*/
 	text-align:center;
-	margin:auto;
+	margin: auto;
 	overflow:hidden;
 }
 

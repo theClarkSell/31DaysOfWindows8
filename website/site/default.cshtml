@@ -1,0 +1,25 @@
+﻿@{
+    Layout = "~/shared/_layout.cshtml";
+}
+
+<div class="md-body">        
+    @RenderPage("/shared/_collection.cshtml")
+</div>
+
+@section bottomPageScripts {
+
+    <script type="text/javascript">
+        
+        $(document).ready(function () {
+            $('.tilesCollection').masonry({
+                itemSelector : '.tile',
+                columnWidth : 160,
+                isAnimated: true,
+                isFitWidth: true
+            });
+        });
+
+
+
+    </script>    
+}

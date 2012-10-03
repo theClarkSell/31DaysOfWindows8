@@ -1,0 +1,79 @@
+﻿<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+
+        <title>31 days of Windows 8</title>
+
+        <meta name="description" content="">
+        <meta name="keywords" content="html5, Windows 8, Metro, Windows Store, Azure, Chicago, Community, That Conference, JavaScript, Microsoft, .NET Rocks, Carl Franklin, Richard Campbell, Clark Sell, Greg Levenhagen, Lwin Maung, Adam Hoffman, Azure WebSites, TFS">
+
+        <link rel="stylesheet" href="/style/reset.css" />
+        <link rel="stylesheet" href="/style/md.core.css"/>
+        <link rel="stylesheet" href="/style/metrojs.css" />
+        <link rel="stylesheet" href="style/tiles.css" />
+        <link rel="stylesheet" href="style/colors.css" />
+        <link rel="stylesheet" href="style/site.css" />
+        
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js" type="text/javascript"></script>
+        <script src="/js/modernizr.2.6.2.js" type="text/javascript"></script>
+        <script type="text/javascript" src="/js/MetroJs.js"></script>
+        <script type="text/javascript" src="/js/jquery.masonry.2.1.05.min.js"></script>
+        <script type="text/javascript" src="/js/jquery.mousewheel.min.js"></script>
+        <script type="text/javascript" src="/js/md.core.js"></script>
+
+        @RenderSection("head", false)
+
+    </head>
+    <body>
+        <header class="md-header md-header-main">
+            <h1>31 days of Windows 8</h1>
+
+        </header>
+
+        <div id="loginInfo">
+            <a href="http://csell.net/">
+                <img src="https://api.twitter.com/1/users/profile_image?screen_name=csell5&size=bigger"/>
+            </a>
+            <a href="http://jeffblankenburg.com/">
+                <img src="https://api.twitter.com/1/users/profile_image?screen_name=jeffblankenburg&size=bigger"/>
+            </a>
+        </div>
+        
+
+
+        @RenderBody()
+        @RenderPage("/shared/_footer.cshtml")
+
+        <script src="http://ajax.aspnetcdn.com/ajax/knockout/knockout-2.1.0.js" type="text/javascript"></script>    
+        <script type="text/javascript">
+
+            var viewModel = {
+                tiles: ko.observable()
+            };
+
+            $.getJSON("/api/tiles", function (data) {
+                viewModel.tiles(data.tiles);
+            })
+           
+            $(document).ready(function(){
+                
+                $(".live").liveTile({pauseOnHover: true});
+                
+                $(".appbar").applicationBar({ 
+                    preloadAltBaseTheme: true, 
+                    bindKeyboard: true,
+                    metroLightUrl: '/images/metroIcons_light.jpg',
+                    metroDarkUrl: '/images/metroIcons.jpg',
+                    expandHeight: '90px'
+                }); 
+
+                ko.applyBindings(viewModel);           
+            });
+
+        </script>
+
+        @RenderSection("bottomPageScripts", false)
+    </body>
+</html>
