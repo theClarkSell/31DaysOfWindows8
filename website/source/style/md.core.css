@@ -38,7 +38,7 @@ a {
 
 .md-nav-main { position: absolute; top: 100pt; left: 90pt; }
 
-.md-content { position: absolute; top: 140pt; left: 0; right: 0; bottom: 0; overflow: hidden; }
+.md-content { position: absolute; top: 103pt; left: 0; right: 0; bottom: 0; overflow: hidden; }
 
 .md-content h2 { font-size: 20pt; line-height: 24pt; vertical-align: baseline; height: 30pt; }
 
@@ -78,7 +78,7 @@ form select { border: 1px solid black; }
 form button { border: 1pt solid black; background: #404040; color: white; padding: 4pt 12pt; }
     form button:active { border: 1pt solid black; background: white; color: black; padding: 4pt 12pt; }
 
-.md-list-tiles { }
+.md-list-tiles {  }
     .md-list-tiles .md-list-item { float: left; background: #f5f5f5; }
     .md-list-tiles .md-list-item:last-child { clear: right; }
     .md-list-tiles .md-list-tile-large { width: 190pt; height: 190pt; margin-right: 6pt; margin-bottom: 6pt; }
