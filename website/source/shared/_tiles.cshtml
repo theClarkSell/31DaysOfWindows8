@@ -16,7 +16,7 @@
         data-stack="true">
         
         <div class="live-front">
-            <img class="live-img" data-bind="attr: { src: image, alt: title }" />
+            <img class="live-img" data-bind="attr: {src: image, alt: title}" />
         </div>
         <div class="live-back">
             <img class="live-img" src="/images/placeholder/large_blank.png" data-bind="attr: { src: image, alt: title }" />
@@ -29,15 +29,15 @@
 <script type="text/html" id="mediumTile-Template">
     <div class="tile medium live" data-stops="0,75%,100%" data-speed="750" data-delay="1500">
         <div class="live-front">
-            <img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+            <img class="live-img" data-bind="attr: {src: tileImage }" />
         </div>
         <div class="live-back">
-            <img class="live-img" src="images/placeholder/medium_blank.png" alt="Article 2" />
+            <span class="tile-text" data-bind="text: webSite"></span>
         </div>
-        <!--
-            <span class="tile-date limetxt"><span class="date">06</span><span class="month">article</span></span>
-            <span class="tile-cat lime">Title This</span>
-        -->
+        
+        <span class="tile-date whitetxt"><span class="date" data-bind="text: title"></span><span class="month" data-bind="text: subtitle"></span></span>
+        <!--<span class="tile-cat white">Title This</span>-->
+        
     </div>
 </script>
 
@@ -45,7 +45,7 @@
     <a data-bind="attr: {href: webSite}" target="_blank">
         <div class="tile small live" data-stops="0,100%" data-speed="500" data-delay="2500">
             <div class="live-front blue">
-                <span class="tile-text">Solid Color</span>
+                <span class="tile-text" data-bind="text: title"></span>
             </div>
             <div class="live-back green">
                 <img class="live-img" data-bind="attr: {src: tileImage, alt: title}" />

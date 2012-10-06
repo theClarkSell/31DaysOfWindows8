@@ -17,13 +17,13 @@ a {
     /*text-decoration: none;*/
 }
     a:active { 
-        color: red; 
+        color: #f16529; 
     }
     
     a:hover { 
-        color: red;
+        color: #f16529;
         text-decoration-line: underline;
-        text-decoration-color: red;
+        text-decoration-color: #f16529;
         
     }
 

@@ -19,16 +19,18 @@
             
             {
                 "tileSize": "mediumTile-Template",
-                "title": "title here",
-                "tileImage": "/images/days/0/html1.png",
+                "title": "Clark",
+                "subtitle": "@csell5",
+                "tileImage": "images/html_csell_2.png",
                 "webSite": "http://csell.net"
             },
             
             {
                 "tileSize": "mediumTile-Template",
-                "title": "title here",
-                "tileImage": "/images/days/0/xaml1.png",
-                "webSite": "http://csell.net"
+                "title": "Jeff",
+                "subtitle": "@jeffblankenburg",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://jeffblankenburg.com"
             },  
 
             {   
@@ -75,13 +77,15 @@
             },
             {
                 "tileSize": "mediumTile-Template",
-                "title": "title here",
+                "tileImage": "/images/ga_add.gif",
+                "title": "",
+                "subtitle": "",
                 "webSite": "http://csell.net"
             },  
             {   
                 "tileSize": "smallTile-Template",
-                "title": "title here",
-                "tileImage": "/images/articleHTML.png",
+                "title": "resources",
+                "tileImage": "/images/more.png",
                 "webSite": "http://csell.net"
             }
         ]
@@ -107,16 +111,18 @@
             
             {
                 "tileSize": "mediumTile-Template",
-                "title": "title here",
-                "tileImage": "/images/days/0/html1.png",
+                "title": "Clark",
+                "subtitle": "@csell5",
+                "tileImage": "images/html_csell_2.png",
                 "webSite": "http://csell.net"
             },
             
             {
                 "tileSize": "mediumTile-Template",
-                "title": "title here",
-                "tileImage": "/images/days/0/xaml1.png",
-                "webSite": "http://csell.net"
+                "title": "Jeff",
+                "subtitle": "@jeffblankenburg",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://jeffblankenburg.com"
             },  
 
             {   
@@ -163,13 +169,15 @@
             },
             {
                 "tileSize": "mediumTile-Template",
+                "tileImage": "/images/articleXAML.png",
+                "subtitle": "",
                 "title": "title here",
                 "webSite": "http://csell.net"
             },  
             {   
                 "tileSize": "smallTile-Template",
-                "title": "title here",
-                "tileImage": "/images/articleHTML.png",
+                "title": "resources",
+                "tileImage": "/images/more.png",
                 "webSite": "http://csell.net"
             }
         ]   
