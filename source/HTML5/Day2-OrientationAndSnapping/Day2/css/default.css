@@ -1,0 +1,87 @@
+﻿body {
+    display: -ms-grid;
+    -ms-grid-columns: 120px 1fr 120px;
+    -ms-grid-rows: 120px 1fr 120px;
+    
+    font-size: xx-large;
+}
+
+li {
+    list-style: none;
+    padding-top: 20px;
+}
+
+a {
+    color: orange;
+}
+
+    a:hover {
+        color: red;
+    }
+
+header[role=banner] {
+	-ms-grid-row: 1;
+	-ms-grid-column: 1;
+	-ms-grid-column-span: 3;
+        
+    -ms-grid-columns: 120px 1fr;
+    -ms-grid-rows: 1fr;
+    display: -ms-grid;
+}
+	
+        header[role=banner] .win-backbutton {
+            margin-left: 39px;
+            margin-top: 59px;
+        }
+
+        header[role=banner] .titlearea {
+            -ms-grid-column: 2;
+            margin-top: 37px;
+        }
+
+            header[role=banner] .titlearea .pagetitle {
+                width: calc(100% - 20px);
+            }
+
+section[role=content] {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+
+    margin-top: 120px;
+}
+
+@media screen and (-ms-view-state: fullscreen-landscape) {
+    body {
+        background-color: black;
+    }
+}
+
+@media screen and (-ms-view-state: filled) {
+    body {
+        background-color: red;
+    }
+}
+
+@media screen and (-ms-view-state: snapped) {
+    body {
+        -ms-grid-columns: 20px 1fr 20px;
+        
+        background-color: blue;
+        font-size: large;
+    }
+
+    header[role=banner] {
+        -ms-grid-columns: 20px 1fr;
+    }
+}
+
+@media screen and (-ms-view-state: fullscreen-portrait) {
+    body {
+        -ms-grid-columns: 50px 1fr 20px;
+        background-color: green;
+    }
+    
+    header[role=banner] {
+        -ms-grid-columns: 50px 1fr;
+    }
+}
