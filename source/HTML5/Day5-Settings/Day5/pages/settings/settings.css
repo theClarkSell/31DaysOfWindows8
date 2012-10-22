@@ -1,0 +1,17 @@
+﻿
+.appSettings {
+    color: black;
+}
+
+.SettingsPane {
+    margin-top:36px;
+    margin-left:48px;
+}
+
+.SettingsTitle {
+    margin-left: 36px;
+}
+
+.SettingsContent {
+     margin-top: 24px;
+}
