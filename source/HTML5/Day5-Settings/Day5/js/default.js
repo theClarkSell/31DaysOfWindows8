@@ -35,13 +35,12 @@
         e.detail.applicationcommands = {
             "about": {
                 href: "/pages/settings/aboutflyout.html",
-                title: "About"
+                title: "not about"
             },
             "help": {
                 href: "/pages/settings/helpFlyout.html",
                 title: "Help"
             }
-
         }
 
         WinJS.UI.SettingsFlyout.populateSettings(e);

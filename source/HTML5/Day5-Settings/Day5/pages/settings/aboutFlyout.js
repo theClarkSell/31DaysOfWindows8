@@ -8,10 +8,12 @@
 
     ui.Pages.define("/pages/settings/aboutFlyout.html", {
         ready: function (element, options) {
-            document.getElementById("about").addEventListener("afterhide", afterSettingsHide, false);
+            document.getElementById("about").addEventListener(
+                "afterhide", afterSettingsHide, false);
         },
         unload: function () {
-            document.getElementById("about").removeEventListener("afterhide", afterSettingsHide);
+            document.getElementById("about").removeEventListener(
+                "afterhide", afterSettingsHide);
         }
     });
     
