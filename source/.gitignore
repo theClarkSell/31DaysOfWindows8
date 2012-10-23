@@ -6,6 +6,7 @@
 bin
 obj
 TestResults
+bld
 
 obj/
 [Bb]in
