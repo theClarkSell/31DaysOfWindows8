@@ -1,8 +1,8 @@
 ﻿<Application
-    x:Class="Day3_SemanticZoom.App"
+    x:Class="Day3_SplashScreen.App"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
-    xmlns:local="using:Day3_SemanticZoom">
+    xmlns:local="using:Day3_SplashScreen">
 
     <Application.Resources>
         <ResourceDictionary>

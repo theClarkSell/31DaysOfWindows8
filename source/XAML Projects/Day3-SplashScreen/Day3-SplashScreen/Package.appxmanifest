@@ -1,12 +1,12 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
 
-  <Identity Name="fdb09849-7118-4a5b-84fe-3f81e0976049"
+  <Identity Name="f6544a11-0d3e-4498-90f4-a7596d9b0124"
             Publisher="CN=Jeff"
             Version="1.0.0.0" />
 
   <Properties>
-    <DisplayName>Day3-SemanticZoom</DisplayName>
+    <DisplayName>Day3-SplashScreen</DisplayName>
     <PublisherDisplayName>Jeff</PublisherDisplayName>
     <Logo>Assets\StoreLogo.png</Logo>
   </Properties>
@@ -23,12 +23,12 @@
   <Applications>
     <Application Id="App"
         Executable="$targetnametoken$.exe"
-        EntryPoint="Day3_SemanticZoom.App">
+        EntryPoint="Day3_SplashScreen.App">
         <VisualElements
-            DisplayName="Day3-SemanticZoom"
+            DisplayName="Day3-SplashScreen"
             Logo="Assets\Logo.png"
             SmallLogo="Assets\SmallLogo.png"
-            Description="Day3-SemanticZoom"
+            Description="Day3-SplashScreen"
             ForegroundText="light"
             BackgroundColor="#464646">
             <DefaultTile ShowName="allLogos" />
