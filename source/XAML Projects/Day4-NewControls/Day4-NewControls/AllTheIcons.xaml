@@ -1,0 +1,327 @@
+﻿<common:LayoutAwarePage
+    x:Name="pageRoot"
+    x:Class="Day4_NewControls.AllTheIcons"
+    DataContext="{Binding DefaultViewModel, RelativeSource={RelativeSource Self}}"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Day4_NewControls"
+    xmlns:common="using:Day4_NewControls.Common"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Page.Resources>
+
+        <!-- TODO: Delete this line if the key AppName is declared in App.xaml -->
+        <x:String x:Key="AppName">Every App Bar Icon</x:String>
+    </Page.Resources>
+    
+    <Page.TopAppBar>
+        <AppBar>
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                    <ColumnDefinition Width="100" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                    <RowDefinition Height="100" />
+                </Grid.RowDefinitions>
+                <Button Grid.Row="00" Grid.Column="00" Style="{StaticResource SkipBackAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="01" Style="{StaticResource SkipAheadAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="02" Style="{StaticResource PlayAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="03" Style="{StaticResource PauseAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="04" Style="{StaticResource EditAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="05" Style="{StaticResource SaveAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="06" Style="{StaticResource DeleteAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="07" Style="{StaticResource DiscardAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="08" Style="{StaticResource RemoveAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="09" Style="{StaticResource AddAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="10" Style="{StaticResource NoAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="11" Style="{StaticResource YesAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="12" Style="{StaticResource MoreAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="13" Style="{StaticResource RedoAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="14" Style="{StaticResource UndoAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="15" Style="{StaticResource HomeAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="16" Style="{StaticResource OutAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="17" Style="{StaticResource NextAppBarButtonStyle}" />
+                <Button Grid.Row="00" Grid.Column="18" Style="{StaticResource PreviousAppBarButtonStyle}" />
+
+                <Button Grid.Row="01" Grid.Column="00" Style="{StaticResource FavoriteAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="01" Style="{StaticResource PhotoAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="02" Style="{StaticResource SettingsAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="03" Style="{StaticResource VideoAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="04" Style="{StaticResource RefreshAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="05" Style="{StaticResource DownloadAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="06" Style="{StaticResource MailAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="07" Style="{StaticResource SearchAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="08" Style="{StaticResource HelpAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="09" Style="{StaticResource UploadAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="10" Style="{StaticResource EmojiAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="11" Style="{StaticResource TwoPageAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="12" Style="{StaticResource LeaveChatAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="13" Style="{StaticResource MailForwardAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="14" Style="{StaticResource ClockAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="15" Style="{StaticResource SendAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="16" Style="{StaticResource CropAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="17" Style="{StaticResource RotateCameraAppBarButtonStyle}" />
+                <Button Grid.Row="01" Grid.Column="18" Style="{StaticResource PeopleAppBarButtonStyle}" />
+
+                <Button Grid.Row="02" Grid.Column="00" Style="{StaticResource ClosePaneAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="01" Style="{StaticResource OpenPaneAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="02" Style="{StaticResource WorldAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="03" Style="{StaticResource FlagAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="04" Style="{StaticResource PreviewLinkAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="05" Style="{StaticResource GlobeAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="06" Style="{StaticResource TrimAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="07" Style="{StaticResource AttachCameraAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="08" Style="{StaticResource ZoomInAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="09" Style="{StaticResource BookmarksAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="10" Style="{StaticResource DocumentAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="11" Style="{StaticResource ProtectedDocumentAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="12" Style="{StaticResource PageAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="13" Style="{StaticResource BulletsAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="14" Style="{StaticResource CommentAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="15" Style="{StaticResource Mail2AppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="16" Style="{StaticResource ContactInfoAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="17" Style="{StaticResource HangUpAppBarButtonStyle}" />
+                <Button Grid.Row="02" Grid.Column="18" Style="{StaticResource ViewAllAppBarButtonStyle}" />
+
+                <Button Grid.Row="03" Grid.Column="00" Style="{StaticResource MapPinAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="01" Style="{StaticResource PhoneAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="02" Style="{StaticResource VideoChatAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="03" Style="{StaticResource SwitchAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="04" Style="{StaticResource ContactAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="05" Style="{StaticResource RenameAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="06" Style="{StaticResource PinAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="07" Style="{StaticResource MusicInfoAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="08" Style="{StaticResource GoAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="09" Style="{StaticResource KeyboardAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="10" Style="{StaticResource DockLeftAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="11" Style="{StaticResource DockRightAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="12" Style="{StaticResource DockBottomAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="13" Style="{StaticResource RemoteAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="14" Style="{StaticResource SyncAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="15" Style="{StaticResource RotateAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="16" Style="{StaticResource ShuffleAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="17" Style="{StaticResource ListAppBarButtonStyle}" />
+                <Button Grid.Row="03" Grid.Column="18" Style="{StaticResource ShopAppBarButtonStyle}" />
+
+                <Button Grid.Row="04" Grid.Column="00" Style="{StaticResource SelectAllAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="01" Style="{StaticResource OrientationAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="02" Style="{StaticResource ImportAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="03" Style="{StaticResource ImportAllAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="04" Style="{StaticResource BrowsePhotosAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="05" Style="{StaticResource WebcamAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="06" Style="{StaticResource PicturesAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="07" Style="{StaticResource SaveLocalAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="08" Style="{StaticResource CaptionAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="09" Style="{StaticResource StopAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="10" Style="{StaticResource ShowResultsAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="11" Style="{StaticResource VolumeAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="12" Style="{StaticResource RepairAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="13" Style="{StaticResource MessageAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="14" Style="{StaticResource Page2AppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="15" Style="{StaticResource CalendarDayAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="16" Style="{StaticResource CalendarWeekAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="17" Style="{StaticResource CalendarAppBarButtonStyle}" />
+                <Button Grid.Row="04" Grid.Column="18" Style="{StaticResource CharactersAppBarButtonStyle}" />
+
+                <Button Grid.Row="05" Grid.Column="00" Style="{StaticResource MailReplyAllAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="01" Style="{StaticResource ReadAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="02" Style="{StaticResource LinkAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="03" Style="{StaticResource AccountsAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="04" Style="{StaticResource ShowBccAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="05" Style="{StaticResource HideBccAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="06" Style="{StaticResource CutAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="07" Style="{StaticResource AttachAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="08" Style="{StaticResource PasteAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="09" Style="{StaticResource FilterAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="10" Style="{StaticResource CopyAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="11" Style="{StaticResource Emoji2AppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="12" Style="{StaticResource ImportantAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="13" Style="{StaticResource SlideShowAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="14" Style="{StaticResource SortAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="15" Style="{StaticResource ManageAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="16" Style="{StaticResource AllAppsAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="17" Style="{StaticResource DisconnectDriveAppBarButtonStyle}" />
+                <Button Grid.Row="05" Grid.Column="18" Style="{StaticResource MapDriveAppBarButtonStyle}" />
+
+                <Button Grid.Row="06" Grid.Column="00" Style="{StaticResource NewWindowAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="01" Style="{StaticResource OpenWithAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="02" Style="{StaticResource ContactPresenceAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="03" Style="{StaticResource PriorityAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="04" Style="{StaticResource UploadSkyDriveAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="05" Style="{StaticResource GoToTodayAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="06" Style="{StaticResource FontAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="07" Style="{StaticResource FontColorAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="08" Style="{StaticResource Contact2AppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="09" Style="{StaticResource FolderAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="10" Style="{StaticResource AudioAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="11" Style="{StaticResource PlaceholderAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="12" Style="{StaticResource ViewAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="13" Style="{StaticResource SetLockScreenAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="14" Style="{StaticResource SetTitleAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="15" Style="{StaticResource CcAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="16" Style="{StaticResource StopSlideShowAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="17" Style="{StaticResource PermissionsAppBarButtonStyle}" />
+                <Button Grid.Row="06" Grid.Column="18" Style="{StaticResource HighlightAppBarButtonStyle}" />
+
+                <Button Grid.Row="07" Grid.Column="00" Style="{StaticResource DisableUpdatesAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="01" Style="{StaticResource UnfavoriteAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="02" Style="{StaticResource UnPinAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="03" Style="{StaticResource OpenLocalAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="04" Style="{StaticResource MuteAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="05" Style="{StaticResource ItalicAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="06" Style="{StaticResource BoldAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="07" Style="{StaticResource MoveToFolderAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="08" Style="{StaticResource LikeDislikeAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="09" Style="{StaticResource DislikeAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="10" Style="{StaticResource LikeAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="11" Style="{StaticResource AlignRightAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="12" Style="{StaticResource AlignCenterAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="13" Style="{StaticResource AlignLeftAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="14" Style="{StaticResource ZoomAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="15" Style="{StaticResource ZoomOutAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="16" Style="{StaticResource OpenFileAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="17" Style="{StaticResource OtherUserAppBarButtonStyle}" />
+                <Button Grid.Row="07" Grid.Column="18" Style="{StaticResource AdminAppBarButtonStyle}" />
+
+                <Button Grid.Row="08" Grid.Column="00" Style="{StaticResource StreetAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="01" Style="{StaticResource MapAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="02" Style="{StaticResource ClearSelectionAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="03" Style="{StaticResource FontDecreaseAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="04" Style="{StaticResource FontIncreaseAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="05" Style="{StaticResource FontSizeAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="06" Style="{StaticResource CellphoneAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="07" Style="{StaticResource ReshareAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="08" Style="{StaticResource TagAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="09" Style="{StaticResource RepeatOneAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="10" Style="{StaticResource RepeatAllAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="11" Style="{StaticResource OutlineStarAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="12" Style="{StaticResource SolidStarAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="13" Style="{StaticResource CalculatorAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="14" Style="{StaticResource DirectionsAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="15" Style="{StaticResource TargetAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="16" Style="{StaticResource LibraryAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="17" Style="{StaticResource PhonebookAppBarButtonStyle}" />
+                <Button Grid.Row="08" Grid.Column="18" Style="{StaticResource MemoAppBarButtonStyle}" />
+
+                <Button Grid.Row="09" Grid.Column="00" Style="{StaticResource MicrophoneAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="01" Style="{StaticResource PostUpdateAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="02" Style="{StaticResource BackToWindowAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="03" Style="{StaticResource FullScreenAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="04" Style="{StaticResource NewFolderAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="05" Style="{StaticResource CalendarReplyAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="06" Style="{StaticResource UnsyncFolderAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="07" Style="{StaticResource ReportHackedAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="08" Style="{StaticResource SyncFolderAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="09" Style="{StaticResource BlockContactAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="10" Style="{StaticResource SwitchAppsAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="11" Style="{StaticResource PhonebookAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="12" Style="{StaticResource MemoAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="13" Style="{StaticResource MicrophoneAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="14" Style="{StaticResource PostUpdateAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="15" Style="{StaticResource BackToWindowAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="16" Style="{StaticResource FullScreenAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="17" Style="{StaticResource NewFolderAppBarButtonStyle}" />
+                <Button Grid.Row="09" Grid.Column="18" Style="{StaticResource CalendarReplyAppBarButtonStyle}" />
+
+                <Button Grid.Row="10" Grid.Column="00" Style="{StaticResource UnsyncFolderAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="01" Style="{StaticResource ReportHackedAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="02" Style="{StaticResource SyncFolderAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="03" Style="{StaticResource BlockContactAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="04" Style="{StaticResource AddFriendAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="05" Style="{StaticResource TouchPointerAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="06" Style="{StaticResource GoToStartAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="07" Style="{StaticResource ZeroBarsAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="08" Style="{StaticResource OneBarAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="09" Style="{StaticResource TwoBarsAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="10" Style="{StaticResource ThreeBarsAppBarButtonStyle}" />
+                <Button Grid.Row="10" Grid.Column="11" Style="{StaticResource FourBarsAppBarButtonStyle}" />
+            </Grid>
+        </AppBar>
+    </Page.TopAppBar>
+
+    <!--
+        This grid acts as a root panel for the page that defines two rows:
+        * Row 0 contains the back button and page title
+        * Row 1 contains the rest of the page layout
+    -->
+    <Grid Style="{StaticResource LayoutRootStyle}">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="140"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+
+        <!-- Back button and page title -->
+        <Grid>
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Button x:Name="backButton" Click="GoBack" IsEnabled="{Binding Frame.CanGoBack, ElementName=pageRoot}" Style="{StaticResource BackButtonStyle}"/>
+            <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
+        </Grid>
+
+        <VisualStateManager.VisualStateGroups>
+
+            <!-- Visual states reflect the application's view state -->
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape"/>
+                <VisualState x:Name="Filled"/>
+
+                <!-- The entire page respects the narrower 100-pixel margin convention for portrait -->
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+
+                <!-- The back button and title have different styles when snapped -->
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
+    </Grid>
+</common:LayoutAwarePage>
