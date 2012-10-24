@@ -187,19 +187,4 @@
         }
     });
 
-    WinJS.Application.addEventListener("activated", function (args) {
-        if (args.detail.kind === appModel.Activation.ActivationKind.search) {
-            args.setPromise(ui.processAll().then(function () {
-                if (!nav.location) {
-                    nav.history.current = { location: Application.navigator.home, initialState: {} };
-                }
-
-                return nav.navigate(searchPageURI, { queryText: args.detail.queryText });
-            }));
-        }
-    });
-
-    appModel.Search.SearchPane.getForCurrentView().onquerysubmitted = function (args) {
-        nav.navigate(searchPageURI, args);
-    };
 })();

@@ -6,6 +6,9 @@
     var app = WinJS.Application;
     var activation = Windows.ApplicationModel.Activation;
     var nav = WinJS.Navigation;
+    var ui = WinJS.UI;
+    var appModel = Windows.ApplicationModel;
+    var search = Windows.ApplicationModel.Search;
 
     var searchPageURI = "/pages/search/searchResults.html";
 
@@ -30,10 +33,30 @@
                 }
             }));
         }
+
+        if (args.detail.kind === appModel.Activation.ActivationKind.search) {
+            args.setPromise(ui.processAll().then(function () {
+                if (!nav.location) {
+                    nav.history.current = {
+                        location: Application.navigator.home,
+                        initialState: {}
+                    };
+                }
+
+                return nav.navigate(
+                        "/pages/search/searchResults.html",
+                        { queryText: args.detail.queryText });
+            }));
+        }
+
     });
 
     app.oncheckpoint = function (args) {
         app.sessionState.history = nav.history;
+    };
+
+    search.SearchPane.getForCurrentView().onquerysubmitted = function (args) {
+        nav.navigate("/pages/search/searchResults.html", args);
     };
 
     app.start();
