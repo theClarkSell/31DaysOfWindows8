@@ -1,0 +1,42 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+
+  <Identity Name="7fa987bb-fa20-4ee3-bd62-daaff6333515"
+            Publisher="CN=Jeff"
+            Version="1.0.0.0" />
+
+  <Properties>
+    <DisplayName>Day4-NewControls</DisplayName>
+    <PublisherDisplayName>Jeff</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+
+  <Resources>
+    <Resource Language="x-generate"/>
+  </Resources>
+
+  <Applications>
+    <Application Id="App"
+        Executable="$targetnametoken$.exe"
+        EntryPoint="Day4_NewControls.App">
+        <VisualElements
+            DisplayName="Day4-NewControls"
+            Logo="Assets\Logo.png"
+            SmallLogo="Assets\SmallLogo.png"
+            Description="Day4-NewControls"
+            ForegroundText="light"
+            BackgroundColor="#464646">
+            <DefaultTile ShowName="allLogos" />
+            <SplashScreen Image="Assets\SplashScreen.png" />
+        </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
