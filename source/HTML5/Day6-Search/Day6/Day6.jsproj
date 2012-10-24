@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>53657140-d0da-4374-9606-b653e55dfd93</ProjectGuid>
+    <ProjectGuid>2329e42a-9473-484f-ba1b-09fa2d40af5f</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
     <VisualStudioVersion>11.0</VisualStudioVersion>
@@ -53,14 +53,27 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="default.html" />
+    <Content Include="css\default.css" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
-    <Content Include="images\WideLogo.png" />
+    <Content Include="js\data.js" />
     <Content Include="js\default.js" />
-    <Content Include="css\default.css" />
+    <Content Include="js\navigator.js" />
+    <Content Include="pages\itemDetail\itemDetail.css" />
+    <Content Include="pages\itemDetail\itemDetail.html" />
+    <Content Include="pages\itemDetail\itemDetail.js" />
+    <Content Include="pages\groupDetail\groupDetail.css" />
+    <Content Include="pages\groupDetail\groupDetail.html" />
+    <Content Include="pages\groupDetail\groupDetail.js" />
+    <Content Include="pages\groupedItems\groupedItems.css" />
+    <Content Include="pages\groupedItems\groupedItems.html" />
+    <Content Include="pages\groupedItems\groupedItems.js" />
+    <Content Include="default.html" />
+    <Content Include="pages\search\searchResults.css" />
+    <Content Include="pages\search\searchResults.html" />
+    <Content Include="pages\search\searchResults.js" />
     <None Include="Day6_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
