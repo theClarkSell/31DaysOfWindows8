@@ -6,8 +6,12 @@
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
+    
+    
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
+        <Canvas>
+            <Button x:Name="AppBarButton" Content="AppBar" Click="AppBarButton_Click" />
+        </Canvas>
     </Grid>
 </Page>

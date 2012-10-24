@@ -34,5 +34,10 @@ namespace Day4_NewControls
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
         }
+
+        private void AppBarButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(AppBar));
+        }
     }
 }
