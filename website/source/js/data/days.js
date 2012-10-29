@@ -35,24 +35,24 @@
 
             {   
                 "tileSize": "smallTile-Template",
-                "title": "title here",
+                "title": "Download the Windows 8 Trial",
                 "live": "false",
-                "tileImage": "/images/articleHTML.png",
-                "webSite": "http://csell.net"
+                "tileImage": "/images/win8trial.png",
+                "webSite": "http://aka.ms/cta-4"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "title here",
+                "title": "Visual Studio Express Download",
                 "live": "false",
-                "tileImage": "/images/downloadHTML.png",
-                "webSite": "http://csell.net"
+                "tileImage": "/images/vs2012express.png",
+                "webSite": "http://aka.ms/cta-6"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "title here",
+                "title": "Windows 8 SDK Download",
                 "live": "false",
-                "tileImage": "/images/articleXAML.png",
-                "webSite": "http://csell.net"
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://aka.ms/cta-4"
             },
             {   
                 "tileSize": "smallTile-Template",

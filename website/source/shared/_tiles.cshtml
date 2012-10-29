@@ -35,12 +35,14 @@
             <div class="live-front">
                 <img class="live-img" data-bind="attr: {src: tileImage }" />
             </div>
-            <div class="live-back">
+            <div class="live-back"
+                data-bind="css: { hidden: live === 'false' }">
                 <span class="tile-text" data-bind="text: webSite"></span>
             </div>
         
-            <span class="tile-date whitetxt"><span class="date" data-bind="text: title">
-                </span><span class="month" data-bind="text: subtitle"></span>
+            <span class="tile-date whitetxt">
+                <span class="date" data-bind="text: title"></span>
+                <span class="month" data-bind="text: subtitle"></span>
             </span>
         
         </div>
@@ -56,11 +58,12 @@
             data-stops="0,100%" data-speed="500" data-delay="2500">
 
             <div class="live-front blue">
-                <span class="tile-text" data-bind="text: title"></span>
+                <img class="live-img" data-bind="attr: {src: tileImage, alt: title}" />            
             </div>
     
-            <div class="live-back green">
-                <img class="live-img" data-bind="attr: {src: tileImage, alt: title}" />
+            <div class="live-back green" 
+                    data-bind="css: { hidden: live === 'false' }">
+                <span class="tile-text" data-bind="text: title"></span>
             </div>
         </div>
     </a>
