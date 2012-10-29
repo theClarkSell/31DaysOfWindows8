@@ -59,6 +59,14 @@
             },
             {   
                 "tileSize": "smallTile-Template",
+                "title": "Windows Azure Trial",
+                "live": "false",
+                "delay": 0,
+                "tileImage": "/images/windowsAzure.png",
+                "webSite": "http://aka.ms/cta-2"
+            },
+            {   
+                "tileSize": "smallTile-Template",
                 "title": "Windows on Channel 9",
                 "live": "false",
                 "delay": 0,
@@ -99,14 +107,6 @@
                 "webSite": "http://aka.ms/cta-1",
                 "delay": 1500
             }, 
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "resources",
-                "live": "true",
-                "delay": 2000,
-                "tileImage": "/images/more.png",
-                "webSite": "http://csell.net"
-            },
             {   
                 "tileSize": "smallTile-Template",
                 "title": "resources",
