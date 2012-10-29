@@ -76,16 +76,21 @@
                 "webSite": "http://csell.net"
             },
             {   
-                "tileSize": "googleAd-template"
+                "tileSize": "smallTile-Template",
+                "title": "resources",
+                "live": "true",
+                "tileImage": "/images/more.png",
+                "webSite": "http://csell.net"
             },
             {
                 "tileSize": "mediumTile-Template",
-                "tileImage": "/images/ga_add.gif",
-                "title": "",
                 "live": "false",
+                "title": "",
                 "subtitle": "",
-                "webSite": "http://csell.net",
-                "delay": 2000
+                "tileImage": "/images/ga_add.gif",
+                "webSite": "http://aka.ms/cta-1",
+                "delay": 1500
+
             },  
             {   
                 "tileSize": "smallTile-Template",
