@@ -54,8 +54,8 @@
 <script type="text/html" id="smallTile-Template">
     <a data-bind="attr: {href: webSite}" target="_blank">
         <div class="tile small" 
-            data-bind="css: { live: live === 'true' }"
-            data-stops="0,100%" data-speed="500" data-delay="2500">
+            data-bind="css: { live: live === 'true' }, attr: { 'data-delay': delay }"
+            data-stops="0,50%,100%" data-speed="1000">
 
             <div class="live-front blue">
                 <img class="live-img" data-bind="attr: {src: tileImage, alt: title}" />            

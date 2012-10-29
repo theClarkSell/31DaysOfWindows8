@@ -37,6 +37,7 @@
                 "tileSize": "smallTile-Template",
                 "title": "Download the Windows 8 Trial",
                 "live": "false",
+                "delay": 0,
                 "tileImage": "/images/win8trial.png",
                 "webSite": "http://aka.ms/cta-4"
             },
@@ -44,6 +45,7 @@
                 "tileSize": "smallTile-Template",
                 "title": "Visual Studio Express Download",
                 "live": "false",
+                "delay": 0,
                 "tileImage": "/images/vs2012express.png",
                 "webSite": "http://aka.ms/cta-6"
             },
@@ -51,6 +53,7 @@
                 "tileSize": "smallTile-Template",
                 "title": "Windows 8 SDK Download",
                 "live": "false",
+                "delay": 0,
                 "tileImage": "/images/win8sdk.png",
                 "webSite": "http://aka.ms/cta-4"
             },
@@ -58,29 +61,25 @@
                 "tileSize": "smallTile-Template",
                 "title": "title here",
                 "live": "false",
+                "delay": 0,
                 "tileImage": "/images/downloadHTML.png",
                 "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "title here",
-                "live": "false",
-                "tileImage": "/images/articleHTML.png",
-                "webSite": "http://csell.net"
-            },
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "title here",
-                "live": "false",
-                "tileImage": "/images/articleXAML.png",
-                "webSite": "http://csell.net"
-            },
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "resources",
+                "title": "Dev Center",
                 "live": "true",
-                "tileImage": "/images/more.png",
-                "webSite": "http://csell.net"
+                "delay": 1800,
+                "tileImage": "/images/linkHTML.png",
+                "webSite": "http://dev.windows.com"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "design center",
+                "live": "true",
+                "delay": 1000,
+                "tileImage": "/images/linkXAML.png",
+                "webSite": "http://design.windows.com"
             },
             {
                 "tileSize": "mediumTile-Template",
@@ -90,12 +89,21 @@
                 "tileImage": "/images/ga_add.gif",
                 "webSite": "http://aka.ms/cta-1",
                 "delay": 1500
-
             },  
+            
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "App Samples",
+                "live": "true",
+                "delay": 1500,
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/"
+            },
             {   
                 "tileSize": "smallTile-Template",
                 "title": "resources",
                 "live": "true",
+                "delay": 2000,
                 "tileImage": "/images/more.png",
                 "webSite": "http://csell.net"
             }
