@@ -71,7 +71,7 @@
                 "live": "false",
                 "delay": 0,
                 "tileImage": "/images/channel9.png",
-                "webSite": "http://cannel9.msdn.com/Windows"
+                "webSite": "http://channel9.msdn.com/Windows"
             },
             {   
                 "tileSize": "smallTile-Template",
@@ -79,7 +79,7 @@
                 "live": "true",
                 "delay": 1800,
                 "tileImage": "/images/linkHTML.png",
-                "webSite": "http://dev.windows.com"
+                "webSite": "http://bit.ly/win8devcenter"
             },
             {   
                 "tileSize": "smallTile-Template",
@@ -87,7 +87,7 @@
                 "live": "true",
                 "delay": 1000,
                 "tileImage": "/images/linkXAML.png",
-                "webSite": "http://design.windows.com"
+                "webSite": "http://bit.ly/win8designcenter"
             },
  
             {   
