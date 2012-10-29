@@ -59,11 +59,11 @@
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "title here",
+                "title": "Windows on Channel 9",
                 "live": "false",
                 "delay": 0,
-                "tileImage": "/images/downloadHTML.png",
-                "webSite": "http://csell.net"
+                "tileImage": "/images/channel9.png",
+                "webSite": "http://cannel9.msdn.com/Windows"
             },
             {   
                 "tileSize": "smallTile-Template",
