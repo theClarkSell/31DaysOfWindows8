@@ -4,7 +4,7 @@
     <head>
         <meta charset="utf-8" />
 
-        <title>@PageData["Title"] | 31 days of Windows 8</title>
+        <title>@PageData["Title"] | 31 Days of Windows 8</title>
 
         <meta name="description" content="">
         <meta name="keywords" content="html5, Windows 8, Metro, Windows Store, Azure, Chicago, Community, That Conference, JavaScript, Microsoft, .NET Rocks, Carl Franklin, Richard Campbell, Clark Sell, Greg Levenhagen, Lwin Maung, Adam Hoffman, Azure WebSites, TFS">
@@ -53,12 +53,20 @@
 
             var viewModel = {
                 days: ko.observable(),
-                selectTemplate: function (tile) {
+                selectTemplate: function (tile)
+                {
                     return tile.tileSize;
-                }
+                },
+                getDelay: ko.computed(function ()
+                {
+                    var num = Math.floor(1000 + (1 + 3000 - 1000) * Math.random())
+                    console.log(num);
+                    return num;
+                })
             };
 
-            $(document).ready(function () {
+            $(document).ready(function ()
+            {
 
                 $(".appbar").applicationBar({
                     preloadAltBaseTheme: true,
@@ -69,16 +77,17 @@
                 });
 
                 $("a.lightbox").fancybox({
-		            'margin' : 0 ,
-		            'overlayColor' : '#000',
-		            'transitionIn': 'elastic',
-		            'transitionOut': 'elastic',
-		            'speedOut': 100,
-		            'cyclic' : true
-	            });
+                    'margin': 0,
+                    'overlayColor': '#000',
+                    'transitionIn': 'elastic',
+                    'transitionOut': 'elastic',
+                    'speedOut': 100,
+                    'cyclic': true
+                });
             });
 
-            $(window).resize(function () {
+            $(window).resize(function ()
+            {
                 MD.Initialize();
             });
 

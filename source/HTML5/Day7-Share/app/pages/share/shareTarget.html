@@ -1,0 +1,40 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="ms-design-extensionType" content="ShareTarget" />
+    <title>Share Target Contract</title>
+
+    <!-- WinJS references -->
+    <link href="//Microsoft.WinJS.1.0/css/ui-light.css" rel="stylesheet" />
+    <script src="//Microsoft.WinJS.1.0/js/base.js"></script>
+    <script src="//Microsoft.WinJS.1.0/js/ui.js"></script>
+
+    <link href="/css/default.css" rel="stylesheet" />
+    <link href="/pages/share/shareTarget.css" rel="stylesheet" />
+    <script src="/pages/share/shareTarget.js"></script>
+</head>
+<body>
+    <!-- The content that will be loaded and displayed. -->
+    <section aria-label="Main content" role="main">
+        <header>
+            <div>
+                <img class="shared-thumbnail" src="#" alt="share metadata image" />
+            </div>
+            <div class="shared-metadata">
+                <h2 class="shared-title win-type-ellipsis"></h2>
+                <h4 class="shared-description"></h4>
+            </div>
+        </header>
+
+        <input class="commentbox" placeholder="Add a comment" type="text" />
+        <div class="sharecontrols">
+            <div class="progressindicators">
+                <progress></progress>
+                <span>Sharing...</span>
+            </div>
+            <input class="submitbutton" type="button" value="Share" />
+        </div>
+    </section>
+</body>
+</html>

@@ -1,0 +1,72 @@
+﻿section[role=main] {
+    -ms-grid-columns: 40px 1fr 40px;
+    -ms-grid-rows: 197px 40px 1fr;
+    display: -ms-grid;
+    width: 100%;
+}
+
+    /* Header used to identify the shared data */
+    section[role=main] header {
+        -ms-grid-column: 2;
+        -ms-grid-columns: auto 20px 1fr;
+        -ms-grid-row: 1;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+    }
+
+        section[role=main] header .shared-thumbnail {
+            margin-top: 20px;
+            max-height: 160px;
+            max-width: 240px;
+        }
+
+        section[role=main] header .shared-metadata {
+            -ms-grid-column: 3;
+            margin-top: 10px;
+            height: 180px;
+            overflow: hidden;
+        }
+
+            section[role=main] header .shared-metadata .shared-description {
+                margin-top: 15px;
+            }
+
+    section[role=main] .commentbox {
+        -ms-grid-column-align: stretch;
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+        height: 25px;
+        margin-top: 0px;
+        width: calc(100% - 4px);
+    }
+
+    /* Controls used to share data and show progress */
+    section[role=main] .sharecontrols {
+        -ms-grid-column: 2;
+        -ms-grid-column-align: stretch;
+        -ms-grid-columns: 1fr auto;
+        -ms-grid-row: 3;
+        -ms-grid-rows: 1fr;
+        display: -ms-grid;
+        margin-top: 20px;
+    }
+
+        section[role=main] .sharecontrols .submitbutton {
+            -ms-grid-column: 2;
+            margin: 0;
+        }
+
+        section[role=main] .sharecontrols .progressindicators {
+            visibility: hidden;
+        }
+
+            section[role=main] .sharecontrols .progressindicators progress {
+                display: inline;
+                height: 20px;
+                margin-right: 2px;
+                width: 20px;
+            }
+
+                section[role=main] .sharecontrols .progressindicators progress::-ms-fill {
+                    animation-name: -ms-ring;
+                }
