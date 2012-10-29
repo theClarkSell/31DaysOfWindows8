@@ -1,8 +1,19 @@
 ﻿
 <script type="text/html" id="tileGroup-Template">
-    <section>
-        <h2><a href="#"><span data-bind="text: day"></span> <span data-bind="text: title"></span></a></h2>
-        <div class="tilesCollection" data-bind="template: {name: viewModel.selectTemplate, foreach: tiles }">
+    <section data-bind="if: $root.canPublish($data)">
+        <h2>
+            <a data-bind="attr: { name: day }">
+                <div data-bind="if: day == 0">
+                    <span data-bind="text: title"></span>
+                </div>            
+                
+                <div data-bind="if: day > 0">
+                    Day <span data-bind="text: day"></span> -
+                    <span data-bind="text: title"></span>
+                </div>
+            </a>
+        </h2>
+        <div class="tilesCollection" data-bind="template: {name: $root.selectTemplate, foreach: tiles }">
         </div>
     </section>
 </script>
@@ -49,13 +60,11 @@
     </a>
 </script>
 
-
-
 <script type="text/html" id="smallTile-Template">
     <a data-bind="attr: {href: webSite}" target="_blank">
         <div class="tile small" 
             data-bind="css: { live: live === 'true' }, attr: { 'data-delay': delay }"
-            data-stops="0,50%,100%" data-speed="1000">
+            data-stops="0,35%,100%" data-speed="1000">
 
             <div class="live-front blue">
                 <img class="live-img" data-bind="attr: {src: tileImage, alt: title}" />            
