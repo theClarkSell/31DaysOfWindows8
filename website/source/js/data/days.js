@@ -81,16 +81,7 @@
                 "tileImage": "/images/linkXAML.png",
                 "webSite": "http://design.windows.com"
             },
-            {
-                "tileSize": "mediumTile-Template",
-                "live": "false",
-                "title": "",
-                "subtitle": "",
-                "tileImage": "/images/ga_add.gif",
-                "webSite": "http://aka.ms/cta-1",
-                "delay": 1500
-            },  
-            
+ 
             {   
                 "tileSize": "smallTile-Template",
                 "title": "App Samples",
@@ -98,6 +89,23 @@
                 "delay": 1500,
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://code.msdn.microsoft.com/windowsapps/"
+            },
+                        {
+                "tileSize": "mediumTile-Template",
+                "live": "false",
+                "title": "",
+                "subtitle": "",
+                "tileImage": "/images/ga_add.gif",
+                "webSite": "http://aka.ms/cta-1",
+                "delay": 1500
+            }, 
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "resources",
+                "live": "true",
+                "delay": 2000,
+                "tileImage": "/images/more.png",
+                "webSite": "http://csell.net"
             },
             {   
                 "tileSize": "smallTile-Template",
