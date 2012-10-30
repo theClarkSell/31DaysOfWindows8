@@ -37,29 +37,29 @@
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
         <StackPanel Grid.Row="1">
-            <StackPanel Orientation="Horizontal">
-                <Image Source="Assets/meme1.jpg" Height="300" />
-                <Image Source="Assets/meme2.jpg" Height="300" />
-                <Image Source="Assets/meme3.jpg" Height="300" />
-                <Image Source="Assets/meme4.jpg" Height="300" />
-                <Image Source="Assets/meme1.jpg" Height="300" />
-                <Image Source="Assets/meme2.jpg" Height="300" />
-                <Image Source="Assets/meme3.jpg" Height="300" />
-                <Image Source="Assets/meme4.jpg" Height="300" />
-            </StackPanel>
-            <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
-                <StackPanel Orientation="Horizontal">
-                    <Image Source="Assets/meme1.jpg" Height="300" />
-                    <Image Source="Assets/meme2.jpg" Height="300" />
-                    <Image Source="Assets/meme3.jpg" Height="300" />
-                    <Image Source="Assets/meme4.jpg" Height="300" />
-                    <Image Source="Assets/meme1.jpg" Height="300" />
-                    <Image Source="Assets/meme2.jpg" Height="300" />
-                    <Image Source="Assets/meme3.jpg" Height="300" />
-                    <Image Source="Assets/meme4.jpg" Height="300" />
-                </StackPanel>
-            </ScrollViewer>
+    <StackPanel Orientation="Horizontal">
+        <Image Source="Assets/meme1.jpg" Height="300" />
+        <Image Source="Assets/meme2.jpg" Height="300" />
+        <Image Source="Assets/meme3.jpg" Height="300" />
+        <Image Source="Assets/meme4.jpg" Height="300" />
+        <Image Source="Assets/meme1.jpg" Height="300" />
+        <Image Source="Assets/meme2.jpg" Height="300" />
+        <Image Source="Assets/meme3.jpg" Height="300" />
+        <Image Source="Assets/meme4.jpg" Height="300" />
+    </StackPanel>
+    <ScrollViewer VerticalScrollBarVisibility="Hidden" HorizontalScrollBarVisibility="Auto">
+        <StackPanel Orientation="Horizontal">
+            <Image Source="Assets/meme1.jpg" Height="300" />
+            <Image Source="Assets/meme2.jpg" Height="300" />
+            <Image Source="Assets/meme3.jpg" Height="300" />
+            <Image Source="Assets/meme4.jpg" Height="300" />
+            <Image Source="Assets/meme1.jpg" Height="300" />
+            <Image Source="Assets/meme2.jpg" Height="300" />
+            <Image Source="Assets/meme3.jpg" Height="300" />
+            <Image Source="Assets/meme4.jpg" Height="300" />
         </StackPanel>
+    </ScrollViewer>
+</StackPanel>
 
         <VisualStateManager.VisualStateGroups>
 

@@ -11,11 +11,12 @@
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
         
-        <Button x:Name="AppBarButton" Content="AppBar" Click="AppBarButton_Click" />
-        <Button x:Name="FlipViewButton" Content="FlipView" Click="FlipViewButton_Click" Margin="89,365,0,365" />
-        <Button x:Name="GridViewButton" Content="GridView" Click="GridViewButton_Click" Margin="184,365,0,365" />
-        <Button x:Name="ProgressRingButton" Content="ProgressRing" Click="ProgressRingButton_Click" Margin="284,365,0,365" />
-        <Button x:Name="ScrollViewerButton" Content="ScrollViewer" Click="ScrollViewerButton_Click" Margin="406,365,0,365" />
-        
+        <Button x:Name="AppBarButton" Content="AppBar" Click="AppBarButton_Click" Margin="10,10,0,607" Height="150" Width="150" />
+        <Button x:Name="FlipViewButton" Content="FlipView" Click="FlipViewButton_Click" Margin="165,10,0,608" Height="150" Width="150" />
+        <Button x:Name="GridViewButton" Content="GridView" Click="GridViewButton_Click" Margin="320,11,0,607" Height="150" Width="150" />
+        <Button x:Name="ProgressRingButton" Content="ProgressRing" Click="ProgressRingButton_Click" Margin="10,166,0,452" Height="150" Width="150" />
+        <Button x:Name="ScrollViewerButton" Content="ScrollViewer" Click="ScrollViewerButton_Click" Margin="165,166,0,452" Height="150" Width="150" />
+        <Button x:Name="SemanticZoomButton" Content="SemanticZoom" Click="SemanticZoomButton_Click" Margin="320,166,0,452" Height="150" Width="150" />
+        <Button x:Name="WebViewButton" Content="WebView" Click="WebViewButton_Click" Margin="475,166,0,452" Height="150" Width="150" />
     </Grid>
 </Page>

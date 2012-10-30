@@ -60,5 +60,15 @@ namespace Day4_NewControls
             this.Frame.Navigate(typeof(ScrollViewerExample));
         }
 
+        private void SemanticZoomButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(SemanticZoomExample));
+        }
+
+        private void WebViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(WebViewExample));
+        }
+
     }
 }
