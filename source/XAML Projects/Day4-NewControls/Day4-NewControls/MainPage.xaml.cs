@@ -39,5 +39,26 @@ namespace Day4_NewControls
         {
             this.Frame.Navigate(typeof(AppBar));
         }
+
+        private void FlipViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(FlipViewExample));
+        }
+
+        private void GridViewButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(GridViewExample));
+        }
+
+        private void ProgressRingButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ProgressRingExample));
+        }
+
+        private void ScrollViewerButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ScrollViewerExample));
+        }
+
     }
 }

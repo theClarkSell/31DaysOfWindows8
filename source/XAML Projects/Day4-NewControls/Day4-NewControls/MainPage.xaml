@@ -10,8 +10,12 @@
     
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Canvas>
-            <Button x:Name="AppBarButton" Content="AppBar" Click="AppBarButton_Click" />
-        </Canvas>
+        
+        <Button x:Name="AppBarButton" Content="AppBar" Click="AppBarButton_Click" />
+        <Button x:Name="FlipViewButton" Content="FlipView" Click="FlipViewButton_Click" Margin="89,365,0,365" />
+        <Button x:Name="GridViewButton" Content="GridView" Click="GridViewButton_Click" Margin="184,365,0,365" />
+        <Button x:Name="ProgressRingButton" Content="ProgressRing" Click="ProgressRingButton_Click" Margin="284,365,0,365" />
+        <Button x:Name="ScrollViewerButton" Content="ScrollViewer" Click="ScrollViewerButton_Click" Margin="406,365,0,365" />
+        
     </Grid>
 </Page>
