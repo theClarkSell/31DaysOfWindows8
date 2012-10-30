@@ -20,7 +20,7 @@
                 "subtitle": "@csell5",
                 "tileImage": "images/html_csell_2.png",
                 "webSite": "http://csell.net",
-                "delay": "1500"
+                "delay": "4000"
             },
             
             {
@@ -30,7 +30,7 @@
                 "subtitle": "@jeffblankenburg",
                 "tileImage": "images/xaml_jb_2.png",
                 "webSite": "http://jeffblankenburg.com",
-                "delay": "2000"
+                "delay": "3000"
             },  
 
             {   
@@ -77,7 +77,7 @@
                 "tileSize": "smallTile-Template",
                 "title": "Dev Center",
                 "live": "true",
-                "delay": "1800",
+                "delay": "3500",
                 "tileImage": "/images/linkHTML.png",
                 "webSite": "http://bit.ly/win8devcenter"
             },
@@ -85,7 +85,7 @@
                 "tileSize": "smallTile-Template",
                 "title": "design center",
                 "live": "true",
-                "delay": "1000",
+                "delay": "4500",
                 "tileImage": "/images/linkXAML.png",
                 "webSite": "http://bit.ly/win8designcenter"
             },
@@ -94,7 +94,7 @@
                 "tileSize": "smallTile-Template",
                 "title": "App Samples",
                 "live": "true",
-                "delay": "1500",
+                "delay": "2500",
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://code.msdn.microsoft.com/windowsapps/"
             },
@@ -105,15 +105,15 @@
                 "subtitle": "",
                 "tileImage": "/images/ga_add.gif",
                 "webSite": "http://aka.ms/cta-1",
-                "delay": "1500"
+                "delay": "3800"
             }, 
             {   
                 "tileSize": "smallTile-Template",
                 "title": "resources",
                 "live": "true",
-                "delay": "2000",
+                "delay": "4500",
                 "tileImage": "/images/more.png",
-                "webSite": "http://csell.net"
+                "webSite": "resources"
             }
         ]
     },

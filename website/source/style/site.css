@@ -26,3 +26,14 @@
 a {
     text-decoration: none;
 }
+
+.staticContent {
+    margin-left: 120px;
+    margin-right: 50px;
+    font-size: x-large; 
+}
+
+    .staticContent h1 {
+        font-size: xx-large; 
+        margin-bottom: 10px;
+    }

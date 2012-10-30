@@ -41,7 +41,7 @@
 <script type="text/html" id="mediumTile-Template">
      <a data-bind="attr: {href: webSite}" target="_blank">
         <div class="tile medium" 
-                data-stops="0,75%,100%" data-speed="750" 
+                data-stops="0,75%,100%" data-speed="1000" 
                 data-bind="css: { live: live === 'true' }, attr: { 'data-delay': delay }">
             <div class="live-front">
                 <img class="live-img" data-bind="attr: {src: tileImage }" />
@@ -64,7 +64,7 @@
     <a data-bind="attr: {href: webSite}" target="_blank">
         <div class="tile small" 
             data-bind="css: { live: live === 'true' }, attr: { 'data-delay': delay }"
-            data-stops="0,35%,100%" data-speed="1000">
+            data-stops="0,35%,100%" data-speed="1500">
 
             <div class="live-front blue">
                 <img class="live-img" data-bind="attr: {src: tileImage, alt: title}" />            
@@ -82,6 +82,7 @@
     <div id="collections" class="md-container">
 	    <div class="md-viewport md-viewport-horizontal">
 		    <div class="md-scrollable" data-bind="template: {name: 'tileGroup-Template', foreach: days}">
+                               
             </div>
         </div>
     </div>
