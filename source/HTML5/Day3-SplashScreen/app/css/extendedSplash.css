@@ -1,10 +1,13 @@
 ﻿.extendedSplashScreen {
-    background-color:#00b2f0;
+    
+    background-color:#ff0000;
     height: 100%;
     width: 100%;
+
     position: absolute;
     top: 0px;
     left: 0px;
+
     text-align: center;
 }
 
@@ -32,3 +35,4 @@
     width: 75%;
     color: #ffffff;
 }
+
