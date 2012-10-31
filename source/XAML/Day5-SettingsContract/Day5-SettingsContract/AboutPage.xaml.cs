@@ -4,6 +4,7 @@ using System.IO;
 using System.Linq;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.ApplicationSettings;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -11,28 +12,31 @@ using Windows.UI.Xaml.Data;
 using Windows.UI.Xaml.Input;
 using Windows.UI.Xaml.Media;
 using Windows.UI.Xaml.Navigation;
-using Windows.UI.ApplicationSettings;
-
 
 // The User Control item template is documented at http://go.microsoft.com/fwlink/?LinkId=234236
 
 namespace Day5_SettingsContract
 {
-    public sealed partial class SettingsPage : UserControl
+    public sealed partial class AboutPage : UserControl
     {
-        public SettingsPage()
+        public AboutPage()
         {
             this.InitializeComponent();
         }
 
         private void MySettingsBackClicked(object sender, RoutedEventArgs e)
         {
-            if (this.Parent.GetType() == typeof(Popup))
+            Popup parent = this.Parent as Popup;
+            if (parent != null)
             {
-                ((Popup)this.Parent).IsOpen = false;
+                parent.IsOpen = false;
             }
-            SettingsPane.Show();
 
+            // If the app is not snapped, then the back button shows the Settings pane again.
+            if (Windows.UI.ViewManagement.ApplicationView.Value != Windows.UI.ViewManagement.ApplicationViewState.Snapped)
+            {
+                SettingsPane.Show();
+            }
         }
     }
 }

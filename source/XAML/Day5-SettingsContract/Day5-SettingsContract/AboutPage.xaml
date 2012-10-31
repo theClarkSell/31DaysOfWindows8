@@ -1,13 +1,14 @@
 ﻿<UserControl
-    x:Class="Day5_SettingsContract.SettingsPage"
+    x:Class="Day5_SettingsContract.AboutPage"
     xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
     xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
     xmlns:local="using:Day5_SettingsContract"
     xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d"
-    d:DesignHeight="768"
-    d:DesignWidth="346">
+    d:DesignHeight="300"
+    d:DesignWidth="400">
+
     <UserControl.Resources>
         <Style x:Key="SettingsBackButtonStyle" TargetType="Button">
             <Setter Property="MinWidth" Value="0"/>
@@ -22,26 +23,29 @@
                     <ControlTemplate TargetType="Button">
                         <Grid x:Name="RootGrid" Width="30" Height="30">
                             <Grid Margin="-6,-6,0,0">
-                                <TextBlock x:Name="BackgroundGlyph" Text="&#xE0D4;" />
-                                <TextBlock x:Name="NormalGlyph" Text="{StaticResource BackButtonSnappedGlyph}" />
-                                <TextBlock x:Name="ArrowGlyph" Text="&#xE0C4;" Opacity="0"/>
+                                <TextBlock x:Name="BackgroundGlyph" Text="&#xE0D4;" Foreground="Transparent"/>
+                                <TextBlock x:Name="NormalGlyph" Text="{StaticResource BackButtonSnappedGlyph}" Foreground="White"/>
+                                <TextBlock x:Name="ArrowGlyph" Text="&#xE0C4;" Foreground="#00b2f0" Opacity="0"/>
                             </Grid>
                             <Rectangle
-                            x:Name="FocusVisualWhite"
-                            IsHitTestVisible="False"
-                            
-                            StrokeEndLineCap="Square"
-                            StrokeDashArray="1,1"
-                            Opacity="0"
-                            StrokeDashOffset="1.5"/>
+                                x:Name="FocusVisualWhite"
+                                IsHitTestVisible="False"
+                                Stroke="{StaticResource FocusVisualWhiteStrokeThemeBrush}" 
+                                StrokeEndLineCap="Square"
+                                StrokeDashArray="1,1"
+                                Opacity="0"
+                                StrokeDashOffset="1.5"
+                                />
+
                             <Rectangle
-                            x:Name="FocusVisualBlack"
-                            IsHitTestVisible="False"
-                            
-                            StrokeEndLineCap="Square"
-                            StrokeDashArray="1,1"
-                            Opacity="0"
-                            StrokeDashOffset="0.5"/>
+                                x:Name="FocusVisualBlack"
+                                IsHitTestVisible="False"
+                                Stroke="{StaticResource FocusVisualBlackStrokeThemeBrush}" 
+                                StrokeEndLineCap="Square"
+                                StrokeDashArray="1,1"
+                                Opacity="0"
+                                StrokeDashOffset="0.5"
+                                />
 
                             <VisualStateManager.VisualStateGroups>
                                 <VisualStateGroup x:Name="CommonStates">
@@ -49,17 +53,14 @@
                                     <VisualState x:Name="PointerOver">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0"/>
-                                            </ObjectAnimationUsingKeyFrames>
-                                            <ObjectAnimationUsingKeyFrames Storyboard.TargetName="NormalGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0"/>
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource BackButtonPointerOverBackgroundThemeBrush}"/>
                                             </ObjectAnimationUsingKeyFrames>
                                         </Storyboard>
                                     </VisualState>
                                     <VisualState x:Name="Pressed">
                                         <Storyboard>
                                             <ObjectAnimationUsingKeyFrames Storyboard.TargetName="BackgroundGlyph" Storyboard.TargetProperty="Foreground">
-                                                <DiscreteObjectKeyFrame KeyTime="0"/>
+                                                <DiscreteObjectKeyFrame KeyTime="0" Value="White"/>
                                             </ObjectAnimationUsingKeyFrames>
                                             <DoubleAnimation
                                             Storyboard.TargetName="ArrowGlyph"
@@ -106,51 +107,39 @@
             </Setter>
         </Style>
     </UserControl.Resources>
-    <Border BorderBrush="Black" BorderThickness="1,0,0,0">
+
+    <Border BorderBrush="#00b2f0" BorderThickness="1,0,0,0">
         <Grid Background="White" VerticalAlignment="Stretch">
+
             <!-- Root grid definition -->
             <Grid.RowDefinitions>
-                <RowDefinition Height="80" />
+                <RowDefinition Height="80"/>
                 <RowDefinition Height="*" />
             </Grid.RowDefinitions>
 
             <!-- Header area for panel -->
-            <Grid Background="Orange" Grid.Row="0">
+            <Grid Background="#00b2f0" Grid.Row="0">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="*" />
+                </Grid.ColumnDefinitions>
 
-                <Grid Margin="40,32,17,13">
-
-                    <Grid.Transitions>
-                        <TransitionCollection>
-                            <EntranceThemeTransition FromHorizontalOffset="50" />
-                        </TransitionCollection>
-                    </Grid.Transitions>
-
-                    <Grid.ColumnDefinitions>
-                        <ColumnDefinition Width="30" />
-                        <ColumnDefinition Width="*" />
-                        <ColumnDefinition />
-                    </Grid.ColumnDefinitions>
-
-                    <Button Click="MySettingsBackClicked" Margin="0,3,0,0" Grid.Column="0" Style="{StaticResource SettingsBackButtonStyle}" HorizontalAlignment="Left" />
-
-                    <TextBlock Margin="10,0,0,0" Grid.Column="1" FontFamily="Segoe UI" FontWeight="SemiLight" FontSize="24.6667" Text="Sound Options" HorizontalAlignment="Left" />
-
-                    <Image Source="Assets/SmallLogo.png" HorizontalAlignment="Right" Grid.Column="2" Margin="0,0,6,0" />
-
-                </Grid>
-
+                <StackPanel Orientation="Horizontal" Grid.Column="0" Margin="40, 32, 17, 13">
+                    <Button Click="MySettingsBackClicked" Margin="0,3,0,0"  Style="{StaticResource SettingsBackButtonStyle}"/>
+                    <TextBlock Margin="10,0,0,0" FontFamily="Segoe UI" FontWeight="SemiLight" FontSize="24.6667" Text="About This App" Foreground="White"/>
+                    <Image Source="Assets/smalltile-sdk.png" Margin="400,0,6,0"/>
+                </StackPanel>
             </Grid>
 
             <!-- Settings Panel Content -->
-            <Grid Grid.Row="1" Margin="40,24,23,0" VerticalAlignment="Top">
-                <Grid.Transitions>
-                    <TransitionCollection>
-                        <EntranceThemeTransition FromHorizontalOffset="120" />
-                    </TransitionCollection>
-                </Grid.Transitions>
-                <ToggleSwitch Header="Sound Effects" />
-            </Grid>
+            <ScrollViewer VerticalScrollBarVisibility="Auto" Grid.Row="1">
+                <Grid Margin="40,33,40,39" VerticalAlignment="Top" Grid.RowSpan="3">
 
+                    <StackPanel x:Name="FlyoutContent">
+                        
+                    </StackPanel>
+                </Grid>
+            </ScrollViewer>
         </Grid>
+
     </Border>
 </UserControl>
