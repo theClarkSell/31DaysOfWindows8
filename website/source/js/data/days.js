@@ -112,7 +112,7 @@
             }, 
             {   
                 "tileSize": "smallTile-Template",
-                "title": "PhotoShop Tempalates",
+                "title": "Photoshop Templates",
                 "live": "true",
                 "delay": "4500",
                 "tileImage": "/images/psdTile.png",
