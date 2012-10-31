@@ -21,8 +21,6 @@ namespace Day5_SettingsContract
 {
     sealed partial class App : Application
     {
-        private Rect windowBounds;
-        
         public App()
         {
             this.InitializeComponent();
@@ -31,11 +29,12 @@ namespace Day5_SettingsContract
 
         protected override void OnLaunched(LaunchActivatedEventArgs args)
         {
+            SettingsPane.GetForCurrentView().CommandsRequested += App_CommandsRequested;
+            
             Frame rootFrame = Window.Current.Content as Frame;
 
             if (rootFrame == null)
             {
-                // Create a Frame to act as the navigation context and navigate to the first page
                 rootFrame = new Frame();
 
                 if (args.PreviousExecutionState == ApplicationExecutionState.Terminated)
@@ -47,58 +46,52 @@ namespace Day5_SettingsContract
                 Window.Current.Content = rootFrame;
             }
 
-            windowBounds = Window.Current.Bounds;
-            ApplySettings();
-
             if (rootFrame.Content == null)
             {
                 
                 // When the navigation stack isn't restored navigate to the first page,
                 // configuring the new page by passing required information as a navigation
                 // parameter
-                if (!rootFrame.Navigate(typeof(MainPage), args.Arguments))
-                {
-                    throw new Exception("Failed to create initial page");
-                }
+            if (!rootFrame.Navigate(typeof(MainPage), args.Arguments))
+            {
+                throw new Exception("Failed to create initial page");
+            }
             }
             // Ensure the current window is active
             Window.Current.Activate();
         }
 
-        private void ApplySettings()
+        void App_CommandsRequested(SettingsPane sender, SettingsPaneCommandsRequestedEventArgs args)
         {
-            SettingsPane.GetForCurrentView().CommandsRequested += (s, a) =>
+            SettingsCommand command = new SettingsCommand("about", "About This App", (handler) =>
             {
-                SettingsCommand cmd = new SettingsCommand("foo", "Test", (handler) =>
-                {
-                    Popup p = new Popup();
-                    p.IsLightDismissEnabled = true;
-                    p.ChildTransitions = new TransitionCollection();
-                    p.ChildTransitions.Add(new PaneThemeTransition()
-                    {
-                        Edge = (SettingsPane.Edge == SettingsEdgeLocation.Right) ?
-                               EdgeTransitionLocation.Right :
-                               EdgeTransitionLocation.Left
-                    });
+                Popup popup = BuildSettingsItem(new AboutPage(), 646);
+                popup.IsOpen = true;
+            });
 
-                    AboutPage about = new AboutPage();
-                    about.Width = 646;
-                    about.Height = windowBounds.Height;
-                    p.Child = about;
-
-                    p.SetValue(Canvas.LeftProperty, SettingsPane.Edge == SettingsEdgeLocation.Right ? (windowBounds.Width - 646) : 0);
-                    p.SetValue(Canvas.TopProperty, 0);
-
-                    p.IsOpen = true;
-                });
-
-                a.Request.ApplicationCommands.Add(cmd);
-            };
+            args.Request.ApplicationCommands.Add(command);
         }
 
-        void OnWindowSizeChanged(object sender, Windows.UI.Core.WindowSizeChangedEventArgs e)
+        private Popup BuildSettingsItem(UserControl u, int w)
         {
-            windowBounds = Window.Current.Bounds;
+            Popup p = new Popup();
+            p.IsLightDismissEnabled = true;
+            p.ChildTransitions = new TransitionCollection();
+            p.ChildTransitions.Add(new PaneThemeTransition()
+            {
+                Edge = (SettingsPane.Edge == SettingsEdgeLocation.Right) ?
+                       EdgeTransitionLocation.Right :
+                       EdgeTransitionLocation.Left
+            });
+
+            u.Width = w;
+            u.Height = Window.Current.Bounds.Height;
+            p.Child = u;
+
+            p.SetValue(Canvas.LeftProperty, SettingsPane.Edge == SettingsEdgeLocation.Right ? (Window.Current.Bounds.Width - w) : 0);
+            p.SetValue(Canvas.TopProperty, 0);
+
+            return p;
         }
 
         /// <summary>

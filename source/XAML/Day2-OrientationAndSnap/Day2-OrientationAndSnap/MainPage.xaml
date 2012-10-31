@@ -8,14 +8,10 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="200" />
-            <ColumnDefinition Width="*" />
-        </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            
-        </Grid.RowDefinitions>
-        <TextBlock Text="No orientation reading." x:Name="AlertBox" FontSize="50" TextAlignment="Center" Margin="0,100,0,0" />
+        <TextBlock Text="No orientation reading."
+                   x:Name="AlertBox"
+                   FontSize="50"
+                   TextAlignment="Center"
+                   Margin="0,100,0,0" />
     </Grid>
 </Page>

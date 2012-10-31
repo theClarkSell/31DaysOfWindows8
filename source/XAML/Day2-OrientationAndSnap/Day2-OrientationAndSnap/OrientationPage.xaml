@@ -37,48 +37,46 @@
             <TextBlock x:Name="pageTitle" Grid.Column="1" Text="{StaticResource AppName}" Style="{StaticResource PageHeaderTextStyle}"/>
         </Grid>
 
-<VisualStateManager.VisualStateGroups>
-
-    <!-- Visual states reflect the application's view state -->
-    <VisualStateGroup x:Name="ApplicationViewStates">
-        <VisualState x:Name="FullScreenLandscape">
-            <Storyboard>
-                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
-                    <DiscreteObjectKeyFrame KeyTime="0" Value="Purple"/>
-                </ObjectAnimationUsingKeyFrames>
-            </Storyboard>
-        </VisualState>
-        <VisualState x:Name="Filled">
-            <Storyboard>
-                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
-                    <DiscreteObjectKeyFrame KeyTime="0" Value="Orange"/>
-                </ObjectAnimationUsingKeyFrames>
-            </Storyboard>
-        </VisualState>
-        <VisualState x:Name="FullScreenPortrait">
-            <Storyboard>
-                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
-                    <DiscreteObjectKeyFrame KeyTime="0" Value="DarkGreen"/>
-                </ObjectAnimationUsingKeyFrames>
-                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
-                    <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
-                </ObjectAnimationUsingKeyFrames>
-            </Storyboard>
-        </VisualState>
-        <VisualState x:Name="Snapped">
-            <Storyboard>
-                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
-                    <DiscreteObjectKeyFrame KeyTime="0" Value="Blue"/>
-                </ObjectAnimationUsingKeyFrames>
-                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
-                    <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
-                </ObjectAnimationUsingKeyFrames>
-                <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
-                    <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
-                </ObjectAnimationUsingKeyFrames>
-            </Storyboard>
-        </VisualState>
-    </VisualStateGroup>
-</VisualStateManager.VisualStateGroups>
+        <VisualStateManager.VisualStateGroups>
+            <VisualStateGroup x:Name="ApplicationViewStates">
+                <VisualState x:Name="FullScreenLandscape">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Purple"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Filled">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Orange"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="FullScreenPortrait">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="DarkGreen"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource PortraitBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+                <VisualState x:Name="Snapped">
+                    <Storyboard>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="layoutRoot" Storyboard.TargetProperty="Background">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="Blue"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="backButton" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedBackButtonStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                        <ObjectAnimationUsingKeyFrames Storyboard.TargetName="pageTitle" Storyboard.TargetProperty="Style">
+                            <DiscreteObjectKeyFrame KeyTime="0" Value="{StaticResource SnappedPageHeaderTextStyle}"/>
+                        </ObjectAnimationUsingKeyFrames>
+                    </Storyboard>
+                </VisualState>
+            </VisualStateGroup>
+        </VisualStateManager.VisualStateGroups>
     </Grid>
 </common:LayoutAwarePage>
