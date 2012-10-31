@@ -112,9 +112,17 @@
             }, 
             {   
                 "tileSize": "smallTile-Template",
-                "title": "resources",
+                "title": "PhotoShop Tempalates",
                 "live": "true",
                 "delay": "4500",
+                "tileImage": "/images/psdTile.png",
+                "webSite": "http://bit.ly/Win8Assets"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "resources",
+                "live": "true",
+                "delay": "5500",
                 "tileImage": "/images/more.png",
                 "webSite": "resources"
             }
