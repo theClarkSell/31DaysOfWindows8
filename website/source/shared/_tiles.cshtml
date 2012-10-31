@@ -2,7 +2,7 @@
 <script type="text/html" id="tileGroup-Template">
     <section data-bind="if: $root.canPublish($data)">
         <h2>
-            <a data-bind="attr: { name: day }">
+            <a data-bind="attr: { href: '/?day=' + day }">
                 <div data-bind="if: day == 0">
                     <span data-bind="text: title"></span>
                 </div>            
