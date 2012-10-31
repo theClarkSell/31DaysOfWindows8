@@ -48,7 +48,7 @@
             </div>
             <div class="live-back"
                 data-bind="css: { hidden: live === 'false' }">
-                <span class="tile-text" data-bind="text: tileBack"></span>
+                <span class="tile-text" data-bind="text: tileBack.toLowerCase()"></span>
             </div>
         
             <span class="tile-date whitetxt">
@@ -72,7 +72,7 @@
     
             <div class="live-back green" 
                     data-bind="css: { hidden: live === 'false' }">
-                <span class="tile-text" data-bind="text: title"></span>
+                <span class="tile-text" data-bind="text: title.toLowerCase()"></span>
             </div>
         </div>
     </a>
