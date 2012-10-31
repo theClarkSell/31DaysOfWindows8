@@ -64,10 +64,25 @@
                 }),
                 canPublish: function (item)
                 {
-                    var result = new Date(item.publishTime) < new Date();
+                    var qs = getQueryStrings();
+                    var day = qs['day'];
+
+                    var result = false;
+                    var dayOk = new Date(item.publishTime) < new Date();
+
+                    if (day) {
+                        if (day == item.day && dayOk)
+                            result = true;
+                         else
+                            result = false;
+                    } else 
+                    {
+                        result = dayOk
+                    }
+                    
                     return result;
                 }
-            };
+             };
 
             $(document).ready(function ()
             {
@@ -94,6 +109,24 @@
             {
                 MD.Initialize();
             });
+
+                function getQueryStrings()
+                {
+                    var vars = [], hash;
+                    var q = document.URL.split('?')[1];
+                    if (q != undefined)
+                    {
+                        q = q.split('&');
+                        for (var i = 0; i < q.length; i++)
+                        {
+                            hash = q[i].split('=');
+                            vars.push(hash[1]);
+                            vars[hash[0]] = hash[1];
+                        }
+                    }
+
+                    return vars;
+                }
 
         </script>
 

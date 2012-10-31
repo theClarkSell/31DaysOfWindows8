@@ -1,7 +1,15 @@
 ﻿@{
     Layout = "~/shared/_layout.cshtml";
     PageData["title"] = "Home";
+
+    
+    var dayRequested = Request.QueryString["day"];
+    if ( null != dayRequested ) {
+        PageData["day"] = dayRequested;
+    }
 }
+
+
 
 <div class="md-body">        
     @RenderPage("/shared/_tiles.cshtml")
