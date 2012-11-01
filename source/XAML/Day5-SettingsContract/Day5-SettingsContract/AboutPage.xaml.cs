@@ -38,5 +38,10 @@ namespace Day5_SettingsContract
                 SettingsPane.Show();
             }
         }
+
+        protected override void OnLostFocus(RoutedEventArgs e)
+        {
+            base.OnLostFocus(e);
+        }
     }
 }
