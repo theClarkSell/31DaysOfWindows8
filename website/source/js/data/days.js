@@ -170,7 +170,7 @@
                 "title": "Download the HTML5 Demo",
                 "live": "false",
                 "delay": "0",
-                "tileImage": "/images/days/1/html-code.png",
+                "tileImage": "/images/githubhtml.png",
                 "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day1-TheBlankApp"
             },
             {   
@@ -178,7 +178,7 @@
                 "title": "Download the HTML5 Demo",
                 "live": "false",
                 "delay": "0",
-                "tileImage": "/images/days/1/xaml-code.png",
+                "tileImage": "/images/githubxaml.png",
                 "webSite": "http://bit.ly/31daysofwindows8-day1code"
             },
             {   
@@ -284,7 +284,7 @@
                 "title": "Download the HTML5 Demo",
                 "live": "false",
                 "delay": "0",
-                "tileImage": "/images/days/1/html-code.png",
+                "tileImage": "/images/githubhtml.png",
                 "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day1-TheBlankApp"
             },
             {   
@@ -292,7 +292,7 @@
                 "title": "Download the HTML5 Demo",
                 "live": "false",
                 "delay": "0",
-                "tileImage": "/images/days/1/xaml-code.png",
+                "tileImage": "/images/githubxaml.png",
                 "webSite": "http://bit.ly/31daysofwindows8-day1code"
             },
             {   
