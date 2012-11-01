@@ -80,8 +80,8 @@ namespace Day5_SettingsContract
             p.ChildTransitions.Add(new PaneThemeTransition()
             {
                 Edge = (SettingsPane.Edge == SettingsEdgeLocation.Right) ?
-                       EdgeTransitionLocation.Right :
-                       EdgeTransitionLocation.Left
+                        EdgeTransitionLocation.Right :
+                        EdgeTransitionLocation.Left
             });
 
             u.Width = w;
