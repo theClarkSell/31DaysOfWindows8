@@ -24,20 +24,20 @@ namespace Day5_SettingsContract
             this.InitializeComponent();
         }
 
-        private void MySettingsBackClicked(object sender, RoutedEventArgs e)
+    private void BackButton_Click(object sender, RoutedEventArgs e)
+    {
+        Popup parent = this.Parent as Popup;
+        if (parent != null)
         {
-            Popup parent = this.Parent as Popup;
-            if (parent != null)
-            {
-                parent.IsOpen = false;
-            }
-
-            // If the app is not snapped, then the back button shows the Settings pane again.
-            if (Windows.UI.ViewManagement.ApplicationView.Value != Windows.UI.ViewManagement.ApplicationViewState.Snapped)
-            {
-                SettingsPane.Show();
-            }
+            parent.IsOpen = false;
         }
+
+        // If the app is not snapped, then the back button shows the Settings pane again.
+        if (Windows.UI.ViewManagement.ApplicationView.Value != Windows.UI.ViewManagement.ApplicationViewState.Snapped)
+        {
+            SettingsPane.Show();
+        }
+    }
 
     }
 }
