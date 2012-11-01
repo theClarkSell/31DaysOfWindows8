@@ -8,7 +8,7 @@
     top: 0px;
     left: 0px;
 
-    text-align: center;
+    /*text-align: center;*/
 }
 
 .extendedSplashScreen.hidden {
@@ -23,7 +23,7 @@
 {
     position: absolute;
     width: 100%;
-    top: calc(100% - 140px);
+    top: calc(100% - 250px);
     text-align: center;
 }
 

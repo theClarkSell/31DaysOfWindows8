@@ -9,7 +9,6 @@
     var activation = Windows.ApplicationModel.Activation;
 
     var _splash,
-        _dismissed = false,
         _coordinates = { x: 0, y: 0, width: 0, height: 0 };
 
 
@@ -18,13 +17,11 @@
         if (args.detail.kind === activation.ActivationKind.launch) {
 
             _splash = args.detail.splashScreen;
-            _splash.addEventListener("dismissed", onSplashScreenDismissed, false);
-
-            DefaultPage.coordinates = _splash.imageLocation;
-            
+            _coordinates = _splash.imageLocation;
             ExtendedSplash.show(_splash);
 
             window.addEventListener("resize", onResize, false);
+            _splash.addEventListener("dismissed", onSplashScreenDismissed, false);
 
             args.setPromise(WinJS.UI.processAll());
         }
@@ -37,19 +34,16 @@
         if (document.querySelector("#dismissalOutput")) {
             document.querySelector("#dismissalOutput").innerText = "Received the splash screen dismissal event.";
         }
+        
     }
 
     function onResize() {
         
         if (_splash) {
-            DefaultPage.coordinates = _splash.imageLocation;
+            _coordinates = _splash.imageLocation;
             ExtendedSplash.updateImageLocation(_splash);
         }
     }
-
-    WinJS.Namespace.define("DefaultPage", {
-        coordinates: _coordinates
-    });
 
     app.start();
 })();

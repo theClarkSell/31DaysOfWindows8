@@ -55,6 +55,7 @@
     </AppxManifest>
     <Content Include="css\extendedSplash.css" />
     <Content Include="default.html" />
+    <Content Include="images\31Days.png" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
