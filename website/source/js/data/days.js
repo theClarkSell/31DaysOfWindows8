@@ -101,6 +101,14 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://code.msdn.microsoft.com/windowsapps/"
             },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Photoshop Templates",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/psdTile.png",
+                "webSite": "http://bit.ly/Win8Assets"
+            },
 			{
                 "tileSize": "mediumTile-Template",
                 "live": "false",
@@ -111,14 +119,7 @@
                 "webSite": "http://aka.ms/cta-1",
                 "delay": "3800"
             }, 
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "Photoshop Templates",
-                "live": "true",
-                "delay": "4500",
-                "tileImage": "/images/psdTile.png",
-                "webSite": "http://bit.ly/Win8Assets"
-            },
+            
             {   
                 "tileSize": "smallTile-Template",
                 "title": "resources",
@@ -139,9 +140,9 @@
         "tiles": [
             {   
                 "tileSize": "largeTile-Template",
-                "title": "",
-				"subTitle": "",
-                "image": "/images/days/1/logo.png",
+                "title": "02",
+				"subTitle": "Two important lessons to get your app past certification, snap and orientation also make your app that much better for your users.",
+                "image": "/images/days/2/logo.png",
                 "live": "false"
             },
             
@@ -152,7 +153,7 @@
                 "subtitle": "@csell5",
 				"tileBack": "Read The Article",
                 "tileImage": "images/html_csell_2.png",
-                "webSite": "http://csell.net/2012/11/01/31-days-of-windows-8-day-1-the-blank-app",
+                "webSite": "http://csell.net/2012/11/02/31-days-of-windows-8-day-2-orientation-snap",
                 "delay": "4000"
             },
             
@@ -163,68 +164,67 @@
                 "subtitle": "@jeffblankenburg",
 				"tileBack": "Read The Article",
                 "tileImage": "images/xaml_jb_2.png",
-                "webSite": "http://www.jeffblankenburg.com/2012/11/01/31-days-of-windows-8-day-1-the-blank-app",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/02/31-days-of-windows-8-day-2-orientation-snap",
                 "delay": "3000"
             },  
 
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Download the HTML5 Demo",
+                "title": "Download the HTML5 source code",
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubhtml.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day1-TheBlankApp"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day2-OrientationAndSnapping"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Download the HTML5 Demo",
+                "title": "Download the XAML source code",
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubxaml.png",
-                "webSite": "http://bit.ly/31daysofwindows8-day1code"
+                "webSite": "http://bit.ly/31daysofwindows8-day2code"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Getting Started",
+                "title": "XXX",
                 "live": "true",
                 "delay": "4500",
                 "tileImage": "/images/msdn.png",
-                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br211386.aspx"
+                "webSite": "XXX"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Get your Developer License",
+                "title": "XXX",
                 "live": "true",
                 "delay": "5000",
                 "tileImage": "/images/msdn.png",
-                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh974578.aspx"
+                "webSite": "XXX"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Visual Studio Templates",
+                "title": "XXX",
                 "live": "true",
                 "delay": "3500",
                 "tileImage": "/images/msdn.png",
-                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh738343.aspx"
+                "webSite": "XXX"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "default images",
+                "title": "XXX",
                 "live": "true",
                 "delay": "4500",
                 "tileImage": "/images/linkXAML.png",
-                "webSite": "http://www.31daysofwindows8.com/content/defaultimages.zip"
+                "webSite": "XXX"
             },
- 
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Signing an app package",
+                "title": "XXX",
                 "live": "true",
                 "delay": "2500",
                 "tileImage": "/images/msdn.png",
-                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230260.aspx"
+                "webSite": "XXX"
             },
-                        {
+			{
                 "tileSize": "mediumTile-Template",
                 "live": "false",
                 "title": "",
@@ -329,8 +329,7 @@
                 "delay": "4500",
                 "tileImage": "/images/linkXAML.png",
                 "webSite": "http://www.31daysofwindows8.com/content/defaultimages.zip"
-            },
- 
+            },             
             {   
                 "tileSize": "smallTile-Template",
                 "title": "Signing an app package",
@@ -339,7 +338,7 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230260.aspx"
             },
-                        {
+			{
                 "tileSize": "mediumTile-Template",
                 "live": "false",
                 "title": "",
@@ -348,7 +347,7 @@
                 "tileImage": "/images/ga_add.gif",
                 "webSite": "http://aka.ms/cta-1",
                 "delay": "3800"
-            }, 
+            },
             {   
                 "tileSize": "smallTile-Template",
                 "title": "resources",
