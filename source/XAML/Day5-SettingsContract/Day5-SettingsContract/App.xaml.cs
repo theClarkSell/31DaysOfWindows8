@@ -8,6 +8,7 @@ using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI;
 using Windows.UI.ApplicationSettings;
+using Windows.UI.Popups;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -93,6 +94,7 @@ namespace Day5_SettingsContract
 
             return p;
         }
+   
 
         /// <summary>
         /// Invoked when application execution is being suspended.  Application state is saved
