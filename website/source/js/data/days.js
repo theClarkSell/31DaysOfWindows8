@@ -102,7 +102,7 @@
                 "webSite": "http://code.msdn.microsoft.com/windowsapps/"
             },
 			{
-                "tileSize": "mediumTile-Template",
+                "tileSize": "mediumTileLinker-Template",
                 "live": "false",
                 "title": "",
                 "subtitle": "",
@@ -224,8 +224,8 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230260.aspx"
             },
-                        {
-                "tileSize": "mediumTile-Template",
+            {
+                "tileSize": "mediumTileLinker-Template",
                 "live": "false",
                 "title": "",
                 "subtitle": "",
@@ -340,7 +340,7 @@
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230260.aspx"
             },
                         {
-                "tileSize": "mediumTile-Template",
+                "tileSize": "mediumTileLinker-Template",
                 "live": "false",
                 "title": "",
                 "subtitle": "",
