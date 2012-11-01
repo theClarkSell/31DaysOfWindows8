@@ -90,12 +90,24 @@ a .tile:hover .tilehover{
 .tile-date .date{
 	font-size:6em;
 }
+
 .tile-date .month{
 	font-size:2em;
 	position:absolute;
-	top:70px;
+	top:75px;
 	right:5px;
 }
+
+.tile-date .subTitle {
+    font-size:2em;
+	position:absolute;
+	top:100px;
+	right:5px;
+    width: 260px;
+    
+    text-align: center;
+}
+
 .tile-cat{
 	position:absolute;
 	bottom:0;

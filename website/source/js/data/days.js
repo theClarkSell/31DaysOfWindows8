@@ -8,7 +8,8 @@
         "tiles": [
             {   
                 "tileSize": "largeTile-Template",
-                "title": "Start Here",
+                "title": "",
+				"subTitle": "",
                 "image": "/images/days/0/0.png",
                 "live": "false"
             },
@@ -138,7 +139,8 @@
         "tiles": [
             {   
                 "tileSize": "largeTile-Template",
-                "title": "Start Here",
+                "title": "",
+				"subTitle": "",
                 "image": "/images/days/1/logo.png",
                 "live": "false"
             },
@@ -252,7 +254,8 @@
         "tiles": [
             {   
                 "tileSize": "largeTile-Template",
-                "title": "Start Here",
+                "title": "01",
+				"subTitle": "An immersive look at Visual Studio 2012's Blank App Template and all of the parts of an app.",
                 "image": "/images/days/1/logo.png",
                 "live": "false"
             },
