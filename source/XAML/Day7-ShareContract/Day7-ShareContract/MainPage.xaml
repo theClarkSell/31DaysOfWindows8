@@ -1,0 +1,16 @@
+﻿<Page
+    x:Class="Day7_ShareContract.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Day7_ShareContract"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="UnformattedTextButton" Content="UnformattedText" Click="UnformattedTextButton_Click"/>
+        <Button x:Name="LinkButton" Content="Link" Click="LinkButton_Click" Margin="148,365,0,365"/>
+        <Button x:Name="FormattedTextButton" Content="FormattedText" Click="FormattedTextButton_Click" Margin="210,365,0,365"/>
+
+    </Grid>
+</Page>
