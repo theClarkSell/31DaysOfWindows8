@@ -16,7 +16,7 @@
         <CollectionViewSource x:Name="filtersViewSource" Source="{Binding Filters}"/>
         <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
         <!-- TODO: Update the following string to be the name of your app -->
-        <x:String x:Key="AppName">App Name</x:String>
+        <x:String x:Key="AppName">Search Contract Example</x:String>
     </Page.Resources>
 
     <!--

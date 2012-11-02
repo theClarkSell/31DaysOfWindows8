@@ -135,7 +135,7 @@
         "day": "2",
         "sectionLink": "#2",
         "title": "Snapping and Orientation",
-        "publishTime": "11/1/2012 2:08",
+        "publishTime": "11/2/2012 2:08",
 
         "tiles": [
             {   
@@ -192,6 +192,14 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465371.aspx"
             },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "media queries",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://www.w3.org/TR/css3-mediaqueries/"
+            },
             {   
                 "tileSize": "smallTile-Template",
                 "title": "Simple Orientation Sensor",
@@ -216,6 +224,15 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx"
             },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Async Await",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/hh191443.aspx"
+            },
+			
             {   
                 "tileSize": "smallTile-Template",
                 "title": "remote debugging",
