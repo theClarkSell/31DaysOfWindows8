@@ -135,7 +135,7 @@
         "day": "2",
         "sectionLink": "#2",
         "title": "Snapping and Orientation",
-        "publishTime": "11/2/2012 2:08",
+        "publishTime": "11/1/2012 2:08",
 
         "tiles": [
             {   
@@ -186,51 +186,47 @@
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XXX",
+                "title": "Guidelines",
                 "live": "true",
                 "delay": "4500",
                 "tileImage": "/images/msdn.png",
-                "webSite": "XXX"
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465371.aspx"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XXX",
+                "title": "Simple Orientation Sensor",
                 "live": "true",
                 "delay": "5000",
                 "tileImage": "/images/msdn.png",
-                "webSite": "XXX"
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.simpleorientationsensor.aspx#Y0"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XXX",
+                "title": "remote debugging tools",
                 "live": "true",
                 "delay": "3500",
-                "tileImage": "/images/msdn.png",
-                "webSite": "XXX"
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://www.microsoft.com/en-us/download/details.aspx?id=30674"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XXX",
+                "title": "certification",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/linkXAML.png",
-                "webSite": "XXX"
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XXX",
+                "title": "remote debugging",
                 "live": "true",
                 "delay": "2500",
                 "tileImage": "/images/msdn.png",
-                "webSite": "XXX"
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh441469.aspx"
             },
-<<<<<<< HEAD
-			{
-                "tileSize": "mediumTile-Template",
-=======
+
             {
                 "tileSize": "mediumTileLinker-Template",
->>>>>>> 0c74076eda3d8e292e7024a7a1e6786a6f2e0aa0
                 "live": "false",
                 "title": "",
                 "subtitle": "",
@@ -343,13 +339,8 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230260.aspx"
             },
-<<<<<<< HEAD
 			{
-                "tileSize": "mediumTile-Template",
-=======
-                        {
                 "tileSize": "mediumTileLinker-Template",
->>>>>>> 0c74076eda3d8e292e7024a7a1e6786a6f2e0aa0
                 "live": "false",
                 "title": "",
                 "subtitle": "",
