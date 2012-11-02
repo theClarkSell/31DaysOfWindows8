@@ -173,7 +173,7 @@ namespace Day6_SearchContract
         void searchPane_SuggestionsRequested(SearchPane sender, SearchPaneSuggestionsRequestedEventArgs args)
         {
           args.Request.SearchSuggestionCollection.AppendQuerySuggestions((from el in elements 
-                                              where (el.Name.ToLower().StartsWith(args.QueryText.ToLower()) || el.Symbol.ToLower().StartsWith(args.QueryText.ToLower()))
+                                              where el.Name.ToLower().StartsWith(args.QueryText.ToLower()) || el.Symbol.ToLower().StartsWith(args.QueryText.ToLower())
                                               orderby el.Name ascending
                                               select el.Name).Take(5));
         }
