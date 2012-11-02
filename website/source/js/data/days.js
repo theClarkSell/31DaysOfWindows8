@@ -110,7 +110,7 @@
                 "webSite": "http://bit.ly/Win8Assets"
             },
 			{
-                "tileSize": "mediumTile-Template",
+                "tileSize": "mediumTileLinker-Template",
                 "live": "false",
                 "title": "",
                 "subtitle": "",
@@ -224,8 +224,13 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "XXX"
             },
+<<<<<<< HEAD
 			{
                 "tileSize": "mediumTile-Template",
+=======
+            {
+                "tileSize": "mediumTileLinker-Template",
+>>>>>>> 0c74076eda3d8e292e7024a7a1e6786a6f2e0aa0
                 "live": "false",
                 "title": "",
                 "subtitle": "",
@@ -338,8 +343,13 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230260.aspx"
             },
+<<<<<<< HEAD
 			{
                 "tileSize": "mediumTile-Template",
+=======
+                        {
+                "tileSize": "mediumTileLinker-Template",
+>>>>>>> 0c74076eda3d8e292e7024a7a1e6786a6f2e0aa0
                 "live": "false",
                 "title": "",
                 "subtitle": "",

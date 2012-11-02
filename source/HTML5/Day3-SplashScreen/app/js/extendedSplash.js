@@ -6,7 +6,6 @@
         var extendedSplashImage = document.querySelector("#extendedSplashImage");
         position(extendedSplashImage, splash);
 
-        var extendedSplashScreen = document.querySelector("#extendedSplashScreen");
         WinJS.Utilities.removeClass(extendedSplashScreen, "hidden");
     }
 
