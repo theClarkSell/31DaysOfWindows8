@@ -25,7 +25,7 @@ namespace Day6_SearchContract
     public sealed partial class SearchResults : Day6_SearchContract.Common.LayoutAwarePage
     {
         List<Element> elements = new List<Element>();
-        IEnumerable<SearchResult> searchResults;
+        IEnumerable<Element> searchResults;
         string searchString;
 
         public SearchResults()
@@ -76,13 +76,7 @@ namespace Day6_SearchContract
             searchResults = from el in elements
                             where el.Name.Contains(searchString)
                             orderby el.Name ascending
-                            select new SearchResult
-                            {
-                                //Image = new BitmapImage(new Uri("Assets/StoreLogo.png", UriKind.Relative)),
-                                Description = el.Name,
-                                Title = el.Symbol
-                                //Subtitle = el.Category
-                            };
+                            select el;
         }
 
         /// <summary>
