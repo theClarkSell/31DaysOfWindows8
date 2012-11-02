@@ -182,7 +182,7 @@
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubxaml.png",
-                "webSite": "http://bit.ly/31daysofwindows8-day2code"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day2-OrientationAndSnap"
             },
             {   
                 "tileSize": "smallTile-Template",
@@ -310,11 +310,11 @@
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Download the HTML5 Demo",
+                "title": "Download the XAML Demo",
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubxaml.png",
-                "webSite": "http://bit.ly/31daysofwindows8-day1code"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day1-TheBlankApp"
             },
             {   
                 "tileSize": "smallTile-Template",
