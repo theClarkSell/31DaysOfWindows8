@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.IO;
 using System.Linq;
 using Windows.ApplicationModel.Activation;
+using Windows.ApplicationModel.Search;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
 using Windows.UI.Xaml;
@@ -25,13 +26,13 @@ namespace Day6_SearchContract
     public sealed partial class SearchResults : Day6_SearchContract.Common.LayoutAwarePage
     {
         List<Element> elements = new List<Element>();
-        IEnumerable<Element> searchResults;
         string searchString;
-
+        SearchPane searchPane;
         public SearchResults()
         {
             this.InitializeComponent();
             BuildElementList();
+            searchPane = SearchPane.GetForCurrentView();
         }
 
         private void BuildElementList()
@@ -72,11 +73,6 @@ namespace Day6_SearchContract
             elements.Add(new Element { AtomicNumber = 34, AtomicWeight = 78.96, Category = "Non Metals", Name = "Selenium", Symbol = "Se", State = "Solid" });
             elements.Add(new Element { AtomicNumber = 35, AtomicWeight = 79.90, Category = "Non Metals", Name = "Bromine", Symbol = "Br", State = "Liquid" });
             elements.Add(new Element { AtomicNumber = 36, AtomicWeight = 83.80, Category = "Noble Gases", Name = "Krypton", Symbol = "Kr", State = "Gas" });
-
-            searchResults = from el in elements
-                            where el.Name.Contains(searchString)
-                            orderby el.Name ascending
-                            select el;
         }
 
         /// <summary>
@@ -90,16 +86,13 @@ namespace Day6_SearchContract
         /// session.  This will be null the first time a page is visited.</param>
         protected override void LoadState(Object navigationParameter, Dictionary<String, Object> pageState)
         {
-            var queryText = navigationParameter as String;
-            searchString = queryText;
-
-            
+            searchString = (navigationParameter as String).ToLower();
 
             var filterList = new List<Filter>();
-            filterList.Add(new Filter("All", searchResults.Count(), true));
+            filterList.Add(new Filter("All", 0, true));
 
             // Communicate results through the view model
-            this.DefaultViewModel["QueryText"] = '\u201c' + queryText + '\u201d';
+            this.DefaultViewModel["QueryText"] = '\u201c' + searchString + '\u201d';
             this.DefaultViewModel["Filters"] = filterList;
             this.DefaultViewModel["ShowFilters"] = filterList.Count > 1;
             
@@ -123,36 +116,24 @@ namespace Day6_SearchContract
                 // RadioButton representation used when not snapped to reflect the change
                 selectedFilter.Active = true;
 
-                // TODO: Respond to the change in active filter by setting this.DefaultViewModel["Results"]
-                //       to a collection of items with bindable Image, Title, Subtitle, and Description properties
+                IEnumerable<Element> searchResults = from el in elements
+                                                     where el.Name.ToLower().Contains(searchString)
+                                                     orderby el.Name ascending
+                                                     select el;
                 
                 this.DefaultViewModel["Results"] = searchResults;
 
                 // Ensure results are found
                 object results;
-                IEnumerable<SearchResult> resultsCollection;
+                IEnumerable<Element> resultsCollection;
 
-                if (this.DefaultViewModel.TryGetValue("Results", out results))
+                if (this.DefaultViewModel.TryGetValue("Results", out results) &&
+                    (resultsCollection = results as IEnumerable<Element>) != null &&
+                    resultsCollection.Count() != 0)
                 {
-                    if ((resultsCollection = results as IEnumerable<SearchResult>) != null)
-                    {
-                        if (resultsCollection.Count() != 0)
-                        {
-                            VisualStateManager.GoToState(this, "ResultsFound", true);
-                            return;
-                        }
-                    }
+                    VisualStateManager.GoToState(this, "ResultsFound", true);
+                    return;
                 }
-
-
-
-                //if (this.DefaultViewModel.TryGetValue("Results", out results) &&
-                //    (resultsCollection = results as ICollection) != null &&
-                //    resultsCollection.Count != 0)
-                //{
-                //    VisualStateManager.GoToState(this, "ResultsFound", true);
-                //    return;
-                //}
             }
 
             // Display informational text when there are no search results.
@@ -173,6 +154,28 @@ namespace Day6_SearchContract
                 var filter = (sender as FrameworkElement).DataContext;
                 filtersViewSource.View.MoveCurrentTo(filter);
             }
+        }
+
+        
+
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+            searchPane.SuggestionsRequested += searchPane_SuggestionsRequested;
+        }
+
+        protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
+        {
+            base.OnNavigatingFrom(e);
+            searchPane.SuggestionsRequested -= searchPane_SuggestionsRequested;
+        }
+
+        void searchPane_SuggestionsRequested(SearchPane sender, SearchPaneSuggestionsRequestedEventArgs args)
+        {
+          args.Request.SearchSuggestionCollection.AppendQuerySuggestions((from el in elements 
+                                              where (el.Name.ToLower().StartsWith(args.QueryText.ToLower()) || el.Symbol.ToLower().StartsWith(args.QueryText.ToLower()))
+                                              orderby el.Name ascending
+                                              select el.Name).Take(5));
         }
 
         /// <summary>
