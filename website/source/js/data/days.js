@@ -213,7 +213,7 @@
                 "title": "remote debugging tools",
                 "live": "true",
                 "delay": "3500",
-                "tileImage": "/images/win8sdk.png",
+                "tileImage": "/images/tools.png",
                 "webSite": "http://www.microsoft.com/en-us/download/details.aspx?id=30674"
             },
             {   
