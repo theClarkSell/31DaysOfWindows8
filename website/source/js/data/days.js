@@ -130,8 +130,139 @@
             }
         ]
     },
+    	    {
+        "day": "3",
+        "sectionLink": "#3",
+        "title": "The Splash Screen",
+        "publishTime": "11/3/2012 2:08",
 
-	    {
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "03",
+				"subTitle": "Learn how to manage, manipulate, and extend the app loading experience for your user.",
+                "image": "/images/days/3/logo.png",
+                "live": "false"
+            },
+            
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/03/31-days-of-windows-8-day-3-the-splash-screen/",
+                "delay": "4000"
+            },
+            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/03/31-days-of-windows-8-day-3-the-splash-screen/",
+                "delay": "3000"
+            },  
+
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the HTML5 source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day3-SplashScreen"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the XAML source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day3-SplashScreen"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "espn api",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://developer.espn.com/"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "certification 3.8",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/cert.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx#acr_3_8"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "splashscreen class",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/codeXAML.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.activation.splashscreen.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "quickstart adding splash screen",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/codeHTML.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465346.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "guidelines for splash screens",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465338.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Organizing using Namespaces",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh967793.aspx"
+            },
+			
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "extending splash screen",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh700390.aspx"
+            },
+
+            {
+                "tileSize": "mediumTileLinker-Template",
+                "live": "false",
+                "title": "",
+                "subtitle": "",
+				"tileBack": "",
+                "tileImage": "/images/ga_add.gif",
+                "webSite": "http://aka.ms/cta-1",
+                "delay": "3800"
+            }, 
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+
+	{
         "day": "2",
         "sectionLink": "#2",
         "title": "Snapping and Orientation",
@@ -189,7 +320,7 @@
                 "title": "Guidelines",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/msdn.png",
+                "tileImage": "/images/guidelines.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465371.aspx"
             },
 			{   
@@ -221,7 +352,7 @@
                 "title": "certification",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/msdn.png",
+                "tileImage": "/images/cert.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx"
             },
 			{   
@@ -263,7 +394,7 @@
         ]
     },
 	
-	    {
+    {
         "day": "1",
         "sectionLink": "#1",
         "title": "The Blank Template",
