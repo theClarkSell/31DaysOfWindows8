@@ -11,13 +11,29 @@
     mc:Ignorable="d"
     d:ExtensionType="Search">
 
-    <Page.Resources>
-        <CollectionViewSource x:Name="resultsViewSource" Source="{Binding Results}"/>
-        <CollectionViewSource x:Name="filtersViewSource" Source="{Binding Filters}"/>
-        <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
-        <!-- TODO: Update the following string to be the name of your app -->
-        <x:String x:Key="AppName">Search Contract Example</x:String>
-    </Page.Resources>
+<Page.Resources>
+    <CollectionViewSource x:Name="resultsViewSource" Source="{Binding Results}"/>
+    <CollectionViewSource x:Name="filtersViewSource" Source="{Binding Filters}"/>
+    <common:BooleanToVisibilityConverter x:Key="BooleanToVisibilityConverter"/>
+    <!-- TODO: Update the following string to be the name of your app -->
+    <x:String x:Key="AppName">Search Contract Example</x:String>
+    <DataTemplate x:Key="ModifiedSmallIcon300x70ItemTemplate">
+        <Grid Width="294" Margin="6">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition Width="Auto"/>
+                <ColumnDefinition Width="*"/>
+            </Grid.ColumnDefinitions>
+            <Border Background="{StaticResource ListViewItemPlaceholderBackgroundThemeBrush}" Margin="0,0,0,10" Width="40" Height="40">
+                <TextBlock Text="{Binding Symbol}" FontSize="32" FontWeight="Bold" TextAlignment="Center" VerticalAlignment="Center" />
+            </Border>
+            <StackPanel Grid.Column="1" Margin="10,-10,0,0">
+                <TextBlock Text="{Binding Name}" Style="{StaticResource BodyTextStyle}" TextWrapping="NoWrap"/>
+                <TextBlock Text="{Binding Category}" Style="{StaticResource BodyTextStyle}" Foreground="{StaticResource ApplicationSecondaryForegroundThemeBrush}" TextWrapping="NoWrap"/>
+                <TextBlock Text="{Binding State}" Style="{StaticResource BodyTextStyle}" Foreground="{StaticResource ApplicationSecondaryForegroundThemeBrush}" TextWrapping="NoWrap"/>
+            </StackPanel>
+        </Grid>
+    </DataTemplate>
+</Page.Resources>
 
     <!--
         This grid acts as a root panel for the page that defines two rows:
@@ -78,7 +94,7 @@
                     IsSwipeEnabled="false"
                     IsItemClickEnabled="True"
                     ItemsSource="{Binding Source={StaticResource resultsViewSource}}"
-                    ItemTemplate="{StaticResource StandardSmallIcon300x70ItemTemplate}">
+                    ItemTemplate="{StaticResource ModifiedSmallIcon300x70ItemTemplate}">
                     
                     <GridView.ItemContainerStyle>
                         <Style TargetType="Control">
@@ -118,7 +134,7 @@
                     IsSwipeEnabled="false"
                     IsItemClickEnabled="True"
                     ItemsSource="{Binding Source={StaticResource resultsViewSource}}"
-                    ItemTemplate="{StaticResource StandardSmallIcon70ItemTemplate}">
+                    ItemTemplate="{StaticResource ModifiedSmallIcon300x70ItemTemplate}">
 
                     <ListView.ItemContainerStyle>
                         <Style TargetType="Control">
