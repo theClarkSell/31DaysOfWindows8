@@ -112,8 +112,14 @@
     <Compile Include="Common\LayoutAwarePage.cs" />
     <Compile Include="Common\RichTextColumns.cs" />
     <Compile Include="Common\SuspensionManager.cs" />
+    <Compile Include="FileSource.xaml.cs">
+      <DependentUpon>FileSource.xaml</DependentUpon>
+    </Compile>
     <Compile Include="FormattedTextSource.xaml.cs">
       <DependentUpon>FormattedTextSource.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ImageSource.xaml.cs">
+      <DependentUpon>ImageSource.xaml</DependentUpon>
     </Compile>
     <Compile Include="LinkSource.xaml.cs">
       <DependentUpon>LinkSource.xaml</DependentUpon>
@@ -133,11 +139,13 @@
     <None Include="Day7-ShareContract_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\0.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
     <Content Include="Common\ReadMe.txt" />
+    <Content Include="FileForSharing.txt" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -148,7 +156,15 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
+    <Page Include="FileSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
     <Page Include="FormattedTextSource.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ImageSource.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

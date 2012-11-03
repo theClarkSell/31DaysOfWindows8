@@ -2,8 +2,6 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
@@ -22,9 +20,9 @@ namespace Day7_ShareContract
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class FormattedTextSource : Day7_ShareContract.Common.LayoutAwarePage
+    public sealed partial class CustomDataSource : Day7_ShareContract.Common.LayoutAwarePage
     {
-        public FormattedTextSource()
+        public CustomDataSource()
         {
             this.InitializeComponent();
         }
@@ -46,14 +44,14 @@ namespace Day7_ShareContract
 
         void dtm_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
         {
-            string HTMLSource = "<strong>This is bold text,</strong> and this is not.  <a href='http://31daysofwindows8.com'>Check out the 31 Days of Windows 8!</a>";
-            string HTMLTitle = "31 Days of Windows 8!";
-            string HTMLDescription = "This just explains what we're sharing.";  //This is an optional value.
+            Uri linkSource = new Uri("http://31daysofwindows8.com");
+            string linkTitle = "31 Days of Windows 8!";
+            string linkDescription = "This just explains what we're sharing.";  //This is an optional value.
 
             DataPackage data = args.Request.Data;
-            data.Properties.Title = HTMLTitle;
-            data.Properties.Description = HTMLDescription;
-            data.SetHtmlFormat(HtmlFormatHelper.CreateHtmlFormat(HTMLSource));
+            data.Properties.Title = linkTitle;
+            data.Properties.Description = linkDescription;
+            data.SetUri(linkSource);
         }
 
         /// <summary>

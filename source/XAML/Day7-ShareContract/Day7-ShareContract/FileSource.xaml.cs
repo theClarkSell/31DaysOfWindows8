@@ -2,11 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
-using System.Net.Http;
-using System.Threading.Tasks;
+using Windows.ApplicationModel;
 using Windows.ApplicationModel.DataTransfer;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.Storage;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -22,9 +22,9 @@ namespace Day7_ShareContract
     /// <summary>
     /// A basic page that provides characteristics common to most applications.
     /// </summary>
-    public sealed partial class FormattedTextSource : Day7_ShareContract.Common.LayoutAwarePage
+    public sealed partial class FileSource : Day7_ShareContract.Common.LayoutAwarePage
     {
-        public FormattedTextSource()
+        public FileSource()
         {
             this.InitializeComponent();
         }
@@ -44,16 +44,28 @@ namespace Day7_ShareContract
             dtm.DataRequested -= dtm_DataRequested;
         }
 
-        void dtm_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        async void dtm_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
         {
-            string HTMLSource = "<strong>This is bold text,</strong> and this is not.  <a href='http://31daysofwindows8.com'>Check out the 31 Days of Windows 8!</a>";
-            string HTMLTitle = "31 Days of Windows 8!";
-            string HTMLDescription = "This just explains what we're sharing.";  //This is an optional value.
+            string FileTitle = "31 Days of Windows 8!";
+            string FileDescription = "This just explains what we're sharing.";  //This is an optional value.
 
             DataPackage data = args.Request.Data;
-            data.Properties.Title = HTMLTitle;
-            data.Properties.Description = HTMLDescription;
-            data.SetHtmlFormat(HtmlFormatHelper.CreateHtmlFormat(HTMLSource));
+            data.Properties.Title = FileTitle;
+            data.Properties.Description = FileDescription;
+
+            DataRequestDeferral waiter = args.Request.GetDeferral();
+
+            try
+            {
+                StorageFile textFile = await Package.Current.InstalledLocation.GetFileAsync("FileForSharing.txt");
+                List<IStorageItem> files = new List<IStorageItem>();
+                files.Add(textFile);
+                data.SetStorageItems(files);
+            }
+            finally
+            {
+                waiter.Complete();
+            }
         }
 
         /// <summary>

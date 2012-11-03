@@ -11,6 +11,8 @@
         <Button x:Name="UnformattedTextButton" Content="UnformattedText" Click="UnformattedTextButton_Click"/>
         <Button x:Name="LinkButton" Content="Link" Click="LinkButton_Click" Margin="148,365,0,365"/>
         <Button x:Name="FormattedTextButton" Content="FormattedText" Click="FormattedTextButton_Click" Margin="210,365,0,365"/>
-
+        <Button x:Name="FileButton" Content="File" Click="FileButton_Click" Margin="341,365,0,365"/>
+        <Button x:Name="ImageButton" Content="Image" Click="ImageButton_Click" Margin="398,365,0,365"/>
+        <Button x:Name="CustomDataButton" Content="Custom Data" Click="CustomDataButton_Click" Margin="474,365,0,365"/>
     </Grid>
 </Page>

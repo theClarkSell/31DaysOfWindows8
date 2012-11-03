@@ -49,5 +49,20 @@ namespace Day7_ShareContract
         {
             this.Frame.Navigate(typeof(FormattedTextSource));
         }
+
+        private void FileButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(FileSource));
+        }
+
+        private void ImageButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(ImageSource));
+        }
+
+        private void CustomDataButton_Click(object sender, RoutedEventArgs e)
+        {
+            this.Frame.Navigate(typeof(CustomDataSource));
+        }
     }
 }
