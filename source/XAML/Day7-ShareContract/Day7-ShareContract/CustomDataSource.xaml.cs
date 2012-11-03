@@ -44,14 +44,26 @@ namespace Day7_ShareContract
 
         void dtm_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
         {
-            Uri linkSource = new Uri("http://31daysofwindows8.com");
+            string customData = @"{
+                ""type"" : ""http://schema.org/Person"",
+                ""properties"" :
+                {
+                ""image"" : ""http://jeffblankenburg.com/images/200x200.png"",
+                ""name"" : ""Jeff Blankenburg"",
+                ""affiliation"" : ""Microsoft"",
+                ""birthDate"" : ""07/22/1976"",
+                ""jobTitle"" : ""Senior Technical Evangelist"",
+                ""nationality"" : ""United States of America"",
+                ""gender"" : ""Male""
+                }
+            }";
             string linkTitle = "31 Days of Windows 8!";
             string linkDescription = "This just explains what we're sharing.";  //This is an optional value.
 
             DataPackage data = args.Request.Data;
             data.Properties.Title = linkTitle;
             data.Properties.Description = linkDescription;
-            data.SetUri(linkSource);
+            data.SetData("http://schema.org/Person", customData);
         }
 
         /// <summary>
