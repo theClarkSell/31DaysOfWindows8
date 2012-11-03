@@ -30,7 +30,7 @@
             <DataFormat>Bitmap</DataFormat>
             <DataFormat>HTML</DataFormat>
             <DataFormat>StorageItems</DataFormat>
-            <DataFormat>http://schema.org/People</DataFormat>
+            <DataFormat>http://schema.org/Person</DataFormat>
           </ShareTarget>
         </Extension>
       </Extensions>

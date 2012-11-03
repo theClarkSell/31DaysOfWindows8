@@ -86,5 +86,13 @@ namespace Day7_ShareContract
             //TODO: Save application state and stop any background activity
             deferral.Complete();
         }
+
+        protected override void OnShareTargetActivated(ShareTargetActivatedEventArgs args)
+        {
+            var rootFrame = new Frame();
+            rootFrame.Navigate(typeof(MainPage), args.ShareOperation);
+            Window.Current.Content = rootFrame;
+            Window.Current.Activate();
+        }
     }
 }

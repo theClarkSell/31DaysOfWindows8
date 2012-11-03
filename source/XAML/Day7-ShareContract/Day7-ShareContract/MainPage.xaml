@@ -7,12 +7,20 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="UnformattedTextButton" Content="UnformattedText" Click="UnformattedTextButton_Click"/>
-        <Button x:Name="LinkButton" Content="Link" Click="LinkButton_Click" Margin="148,365,0,365"/>
-        <Button x:Name="FormattedTextButton" Content="FormattedText" Click="FormattedTextButton_Click" Margin="210,365,0,365"/>
-        <Button x:Name="FileButton" Content="File" Click="FileButton_Click" Margin="341,365,0,365"/>
-        <Button x:Name="ImageButton" Content="Image" Click="ImageButton_Click" Margin="398,365,0,365"/>
-        <Button x:Name="CustomDataButton" Content="Custom Data" Click="CustomDataButton_Click" Margin="474,365,0,365"/>
-    </Grid>
+    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="TitleBox" Text="Title" Height="26" Width="636" FontSize="21.333" Canvas.Left="10" Canvas.Top="10" />
+        <TextBlock x:Name="DescriptionBox" Text="Description" Height="26" Width="636" FontSize="21.333" Canvas.Left="10" Canvas.Top="36" />
+        <Button x:Name="UnformattedTextButton" Content="UnformattedText" Click="UnformattedTextButton_Click" Canvas.Left="8" Canvas.Top="600"/>
+        <Button x:Name="LinkButton" Content="Link" Click="LinkButton_Click" Canvas.Left="156" Canvas.Top="600"/>
+        <Button x:Name="FormattedTextButton" Content="FormattedText" Click="FormattedTextButton_Click" Canvas.Left="218" Canvas.Top="600"/>
+        <Button x:Name="FileButton" Content="File" Click="FileButton_Click" Canvas.Left="8" Canvas.Top="638"/>
+        <Button x:Name="ImageButton" Content="Image" Click="ImageButton_Click" Canvas.Left="65" Canvas.Top="638"/>
+        <Button x:Name="CustomDataButton" Content="Custom Data" Click="CustomDataButton_Click" Canvas.Left="141" Canvas.Top="638"/>
+        <TextBlock x:Name="CustomDataBox" Text="Custom Data Format" Height="347" Width="636" FontSize="21.333" Canvas.Left="10" Canvas.Top="248" />
+        <TextBlock x:Name="UnformattedTextBox" Text="UnformattedText" Height="26" Width="636" FontSize="21.333" Canvas.Left="8" Canvas.Top="62" />
+        <WebView x:Name="HTMLTextBox" Height="42" Canvas.Left="10" Canvas.Top="88" Width="636" />
+        <HyperlinkButton x:Name="UriButton" Content="HyperlinkButton" Canvas.Left="12" Canvas.Top="135" Width="636" HorizontalContentAlignment="Left"/>
+        <Image x:Name="ThumbImage" Height="137" Canvas.Left="303" Canvas.Top="179" Width="137"/>
+        <Image x:Name="WholeImage" Height="137" Canvas.Left="507" Canvas.Top="179" Width="137"/>
+    </Canvas>
 </Page>
