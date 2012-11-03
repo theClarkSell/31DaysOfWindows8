@@ -130,7 +130,136 @@
             }
         ]
     },
-    	    {
+	
+	{
+        "day": "4",
+        "sectionLink": "#4",
+        "title": "Controls",
+        "publishTime": "11/4/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "03",
+				"subTitle": "Take a look at some of the new tools and concepts Windows 8 has to offer you as a developer.",
+                "image": "/images/days/4/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/04/31-days-of-windows-8-day-4-new-controls",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/04/31-days-of-windows-8-day-4-new-controls",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the HTML5 source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day4-Controls"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the XAML source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day4-NewControls"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Controls",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/codexaml.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/BR227716"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "hands on css3",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://ie.microsoft.com/testdrive/Graphics/hands-on-css3/"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "html and dom api",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh700404.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Roadmap for Windows Store Apps",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/codeHTML.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/hh465037"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "guidlines for semantic zoom",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465319.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "xaml controls sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/codexaml.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Basic-Controls-29318599"
+            },
+			
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "adding controls",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465393.aspx"
+            },
+            {
+                "tileSize": "mediumTileLinker-Template",
+                "live": "false",
+                "title": "",
+                "subtitle": "",
+				"tileBack": "",
+                "tileImage": "/images/ga_add.gif",
+                "webSite": "http://aka.ms/cta-1",
+                "delay": "3800"
+            }, 
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "3",
         "sectionLink": "#3",
         "title": "The Splash Screen",
@@ -261,7 +390,7 @@
             }
         ]
     },
-
+	
 	{
         "day": "2",
         "sectionLink": "#2",
