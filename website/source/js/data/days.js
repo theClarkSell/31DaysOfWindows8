@@ -132,6 +132,125 @@
     },
 	
 	{
+        "day": "6",
+        "sectionLink": "#6",
+        "title": "Search Contract",
+        "publishTime": "11/6/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "06",
+				"subTitle": "Make your app searchable, and more discoverable, using the search contract",
+                "image": "/images/days/6/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/06/31-days-of-windows-8-day-6-search-contract/",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/06/31-days-of-windows-8-day-6-search-contract",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the HTML5 source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day6-Search"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the XAML source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day6-SearchContract"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines and checklist for search",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465233.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "quickstart adding search",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465238.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "SearchPane class",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br225058.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "search sample",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Search-app-contract-sample-118a92f5"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "adding search item template",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh923025.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows Application Model Search",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.search.aspx"
+            },
+
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "//build adding search video",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://channel9.msdn.com/Events/Build/BUILD2011/APP-406T"
+            },
+            
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "5",
         "sectionLink": "#5",
         "title": "The Settings Contract",
