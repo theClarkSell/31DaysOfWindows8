@@ -16,7 +16,7 @@
   <Applications>
     <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Day9_LiveTiles.App">
       <VisualElements DisplayName="Day9-LiveTiles" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Day9-LiveTiles" ForegroundText="light" BackgroundColor="#464646">
-        <DefaultTile ShowName="allLogos" />
+        <DefaultTile ShowName="allLogos" WideLogo="Assets\WideLogo.png" />
         <SplashScreen Image="Assets\SplashScreen.png" />
       </VisualElements>
     </Application>
