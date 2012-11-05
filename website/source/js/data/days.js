@@ -132,6 +132,116 @@
     },
 	
 	{
+        "day": "5",
+        "sectionLink": "#5",
+        "title": "The Settings Contract",
+        "publishTime": "11/5/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "05",
+				"subTitle": "Put your app's settings where your users expect them: behind the Settings Charm.",
+                "image": "/images/days/5/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/05/31-days-of-windows-8-day-5-settings-contract",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/05/31-days-of-windows-8-day-5-settings-contract",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the HTML5 source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day5-Settings"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the XAML source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day5-SettingsContract"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "settings guidelines",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh770544"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "settings flyout",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh701253.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "contracts and extensions",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh464906.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "food truck case study",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh868264.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "activating windows 8 contracts",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://blogs.msdn.com/b/windowsappdev/archive/2012/03/23/activating-windows-8-contracts-in-your-app.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Designing great productivity apps",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh868273.aspx"
+            },
+            
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "4",
         "sectionLink": "#4",
         "title": "Controls",
@@ -140,7 +250,7 @@
         "tiles": [
             {   
                 "tileSize": "largeTile-Template",
-                "title": "03",
+                "title": "04",
 				"subTitle": "Take a look at some of the new tools and concepts Windows 8 has to offer you as a developer.",
                 "image": "/images/days/4/logo.png",
                 "live": "false"
@@ -238,16 +348,6 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465393.aspx"
             },
-            {
-                "tileSize": "mediumTileLinker-Template",
-                "live": "false",
-                "title": "",
-                "subtitle": "",
-				"tileBack": "",
-                "tileImage": "/images/ga_add.gif",
-                "webSite": "http://aka.ms/cta-1",
-                "delay": "3800"
-            }, 
             {   
                 "tileSize": "smallTile-Template",
                 "title": "more resources",
@@ -369,17 +469,6 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh700390.aspx"
             },
-
-            {
-                "tileSize": "mediumTileLinker-Template",
-                "live": "false",
-                "title": "",
-                "subtitle": "",
-				"tileBack": "",
-                "tileImage": "/images/ga_add.gif",
-                "webSite": "http://aka.ms/cta-1",
-                "delay": "3800"
-            }, 
             {   
                 "tileSize": "smallTile-Template",
                 "title": "more resources",
@@ -501,17 +590,6 @@
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh441469.aspx"
             },
-
-            {
-                "tileSize": "mediumTileLinker-Template",
-                "live": "false",
-                "title": "",
-                "subtitle": "",
-				"tileBack": "",
-                "tileImage": "/images/ga_add.gif",
-                "webSite": "http://aka.ms/cta-1",
-                "delay": "3800"
-            }, 
             {   
                 "tileSize": "smallTile-Template",
                 "title": "resources",
@@ -615,16 +693,6 @@
                 "delay": "2500",
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230260.aspx"
-            },
-			{
-                "tileSize": "mediumTileLinker-Template",
-                "live": "false",
-                "title": "",
-                "subtitle": "",
-				"tileBack": "",
-                "tileImage": "/images/ga_add.gif",
-                "webSite": "http://aka.ms/cta-1",
-                "delay": "3800"
             },
             {   
                 "tileSize": "smallTile-Template",
