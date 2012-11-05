@@ -8,7 +8,7 @@
     mc:Ignorable="d">
 
     <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Button Content="Button" HorizontalAlignment="Left" Margin="258,161,0,0" VerticalAlignment="Top" Height="93" Width="156"/>
+        <Button x:Name="TextUpdateButton" Content="Text Update" HorizontalAlignment="Left" Margin="10,10,0,0" VerticalAlignment="Top" Height="150" Width="150" Click="TextUpdateButton_Click"/>
 
     </Grid>
 </Page>

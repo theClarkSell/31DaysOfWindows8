@@ -2,8 +2,10 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Windows.Data.Xml.Dom;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -33,6 +35,17 @@ namespace Day9_LiveTiles
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        private void TextUpdateButton_Click(object sender, RoutedEventArgs e)
+        {
+            XmlDocument tileData = TileUpdateManager.GetTemplateContent(TileTemplateType.TileSquareText04);
+            XmlNodeList textData = tileData.GetElementsByTagName("text");
+            textData[0].InnerText = "31 Days of Windows 8";
+            TileNotification notification = new TileNotification(tileData);
+            notification.ExpirationTime = DateTimeOffset.UtcNow.AddSeconds(30);
+
+            TileUpdateManager.CreateTileUpdaterForApplication().Update(notification);
         }
     }
 }
