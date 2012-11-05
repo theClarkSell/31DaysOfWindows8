@@ -24,9 +24,14 @@ namespace Day8_LocalAndRoamingData
     {
         ApplicationDataContainer settingsLocal;
         ApplicationDataContainer settingsRoaming;
-
         string currentBook;
         int currentPage;
+
+        StorageFolder folderLocal;
+        StorageFolder folderRoaming;
+        string fileName = "tacotext.txt";
+        string fileContents = "taco";
+        
         
         public MainPage()
         {
@@ -36,6 +41,35 @@ namespace Day8_LocalAndRoamingData
             settingsRoaming = ApplicationData.Current.RoamingSettings;
 
             AddSettings();
+
+            folderLocal = ApplicationData.Current.LocalFolder;
+            folderRoaming = ApplicationData.Current.RoamingFolder;
+
+            AddFile();
+        }
+
+        private async void AddFile()
+        {
+            StorageFile fileLocal = await folderLocal.CreateFileAsync(fileName, CreationCollisionOption.ReplaceExisting);
+            await FileIO.WriteTextAsync(fileLocal, fileContents + "taco");
+
+            ReadFile();
+        }
+
+        private async void ReadFile()
+        {
+            StorageFile fileLocal = await folderLocal.GetFileAsync(fileName);
+            string textLocal = await FileIO.ReadTextAsync(fileLocal);
+
+            fileContents = textLocal;
+
+            DeleteFile();
+        }
+
+        private async void DeleteFile()
+        {
+            StorageFile fileLocal = await folderLocal.GetFileAsync(fileName);
+            fileLocal.DeleteAsync();
         }
 
         private void AddSettings()
