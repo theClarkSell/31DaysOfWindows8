@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Day3" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day 3 Splash Screen" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="Day 3" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day 3 Splash Screen" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="#ff0000" />
       </VisualElements>
