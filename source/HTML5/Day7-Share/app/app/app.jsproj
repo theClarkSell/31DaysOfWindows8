@@ -61,10 +61,17 @@
     <Content Include="images\WideLogo.png" />
     <Content Include="js\default.js" />
     <Content Include="js\navigator.js" />
+    <Content Include="js\script.js" />
     <Content Include="pages\home\home.css" />
     <Content Include="pages\home\home.html" />
     <Content Include="pages\home\home.js" />
     <Content Include="default.html" />
+    <Content Include="pages\notHome\notHome.css" />
+    <Content Include="pages\notHome\notHome.html" />
+    <Content Include="pages\notHome\notHome.js" />
+    <Content Include="pages\shareTarget\shareTarget.css" />
+    <Content Include="pages\shareTarget\shareTarget.html" />
+    <Content Include="pages\shareTarget\shareTarget.js" />
     <None Include="app_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>

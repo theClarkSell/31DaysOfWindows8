@@ -17,8 +17,15 @@
     <Application Id="App" StartPage="default.html">
       <VisualElements DisplayName="Day 7 Sharing" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day 7 - Sharing" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="images\splashscreen.png" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#ff0000" />
       </VisualElements>
+      <Extensions>
+        <Extension Category="windows.shareTarget" StartPage="pages/shareTarget/shareTarget.html">
+          <ShareTarget>
+            <DataFormat>URI</DataFormat>
+          </ShareTarget>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

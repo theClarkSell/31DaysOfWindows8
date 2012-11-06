@@ -1,0 +1,25 @@
+﻿#mainContent{
+    width: 100%;
+    height: 100%;
+    
+    font-size: x-large;
+
+    display: -ms-grid;
+    -ms-grid-columns: 40px 1fr 40px;
+    -ms-grid-rows: 240px 1fr 120px;
+}
+
+    #mainContent header {
+        -ms-grid-column: 2;
+        -ms-grid-row: 1;
+    }
+    
+    #mainContent article {
+        -ms-grid-column: 2;
+        -ms-grid-row: 2;
+    }
+
+    #mainContent footer {
+        -ms-grid-column: 2;
+        -ms-grid-row: 3;
+    }
