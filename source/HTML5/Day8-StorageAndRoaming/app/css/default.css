@@ -14,7 +14,14 @@
     -ms-grid-row: 2;
 
     text-align: center;
+
 }
+
+    #content li {
+        list-style: none;
+        display: block;
+    }
+
 @media screen and (-ms-view-state: fullscreen-landscape) {
 }
 
