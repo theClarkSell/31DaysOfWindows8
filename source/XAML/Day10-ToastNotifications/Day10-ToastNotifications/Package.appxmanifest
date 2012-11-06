@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="7021dc40-d47c-449c-9a31-eac9e7cbbc5b" Publisher="CN=Jeff" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Day10-ToastNotifications</DisplayName>
+    <PublisherDisplayName>Jeff</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Day10_ToastNotifications.App">
+      <VisualElements DisplayName="Day10-ToastNotifications" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Day10-ToastNotifications" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
