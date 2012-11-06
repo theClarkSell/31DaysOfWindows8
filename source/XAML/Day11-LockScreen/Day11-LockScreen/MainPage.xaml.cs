@@ -2,8 +2,11 @@
 using System.Collections.Generic;
 using System.IO;
 using System.Linq;
+using Windows.ApplicationModel.Background;
+using Windows.Data.Xml.Dom;
 using Windows.Foundation;
 using Windows.Foundation.Collections;
+using Windows.UI.Notifications;
 using Windows.UI.Xaml;
 using Windows.UI.Xaml.Controls;
 using Windows.UI.Xaml.Controls.Primitives;
@@ -31,8 +34,26 @@ namespace Day11_LockScreen
         /// </summary>
         /// <param name="e">Event data that describes how this page was reached.  The Parameter
         /// property is typically used to configure the page.</param>
-        protected override void OnNavigatedTo(NavigationEventArgs e)
+        protected async override void OnNavigatedTo(NavigationEventArgs e)
         {
+            
+            BackgroundAccessStatus status = await BackgroundExecutionManager.RequestAccessAsync();
+        }
+
+        private void LockScreenButton_Click(object sender, RoutedEventArgs e)
+        {
+            BackgroundAccessStatus status = BackgroundExecutionManager.GetAccessStatus();
+            
+            if ((status == BackgroundAccessStatus.AllowedWithAlwaysOnRealTimeConnectivity) ||
+                (status == BackgroundAccessStatus.AllowedMayUseActiveRealTimeConnectivity))
+            {
+                XmlDocument badgeData = BadgeUpdateManager.GetTemplateContent(BadgeTemplateType.BadgeNumber);
+                XmlNodeList badgeXML = badgeData.GetElementsByTagName("badge");
+                ((XmlElement)badgeXML[0]).SetAttribute("value", "Playing");
+
+                BadgeNotification badge = new BadgeNotification(badgeData);
+                BadgeUpdateManager.CreateBadgeUpdaterForApplication().Update(badge);
+            }
         }
     }
 }
