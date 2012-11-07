@@ -12,7 +12,7 @@
     var _localSettings = _applicationData.roamingSettings;
     var _tempFolder = _applicationData.temporaryFolder;
 
-    var _inputA, _labelA, _inputB, _labelB, _saveButton;
+    var _inputA, _labelA, _inputB, _labelB, _saveButton, _saveFileButton, _filePath;
 
     var _dataFile = {
         firstName: "Clark",
@@ -59,12 +59,16 @@
 
         _saveButton = document.querySelector("#saveButton");
 
+        _filePath = document.querySelector("#filePath");
+        _saveFileButton = document.querySelector("#saveFileButton");
+
     }
 
     function wireUpHandlers() {
         _inputA.addEventListener("change", inputALeave);
         _inputB.addEventListener("change", inputBLeave);
         _saveButton.addEventListener("click", saveLocal);
+        _saveFileButton.addEventListener("click", writeFile);
 
         WinJS.Application.addEventListener("forceA", inputALeave, false);
         WinJS.Application.addEventListener("forceB", inputBLeave, false);
@@ -88,20 +92,18 @@
     }
 
     function writeFile() {
+
+        _filePath.innerText = _tempFolder.path;
+
         _tempFolder.createFileAsync("31DaysOfWindows8.txt",
             Windows.Storage.CreationCollisionOption.replaceExisting)
-        .then(function (sampleFile) {
-            var contents = JSON.stringify(_dataFile);
+                .then(function (sampleFile) {
+                    var contents = JSON.stringify(_dataFile);
 
-            return Windows.Storage.FileIO.writeTextAsync(sampleFile, contents);
-        }).done(function () {
-      });
+                    return Windows.Storage.FileIO.writeTextAsync(sampleFile, contents);
+                }).done(function () {
+        });
     }
-
-    function readFile() {
-
-    }
-
 
     app.onready = function () {
         getDomElements();
