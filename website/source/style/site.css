@@ -37,3 +37,10 @@ a {
         font-size: xx-large; 
         margin-bottom: 10px;
     }
+
+
+.daysImage {
+    margin-right: 15px;
+    width:  100px;
+    height: 100px;
+}

@@ -1,7 +1,7 @@
 {
-        "day": "XX",
-        "sectionLink": "#XX",
-        "title": "XX",
+        "day": "7",
+        "sectionLink": "#7",
+        "title": "",
         "publishTime": "11/5/2012 2:08",
 
         "tiles": [

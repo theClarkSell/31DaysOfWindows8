@@ -3,18 +3,46 @@
     PageData["title"] = "Days";
 }
 
+<script type="text/html" id="day-tiles-template">
+    <!--
+    <div data-bind="if: title.toLowerCase() == 'clark'">
+        <a data-bind="attr: {href: webSite}" target="_blank">
+            <img src="images/articleHTML.png" width="100" height="100" border="0">
+        </a>
+    </div>&nbsp;&nbsp;
+
+    <div data-bind="if: title.toLowerCase() == 'Download the HTML5 source code'">
+        <a data-bind="attr: {href: webSite}" target="_blank">
+            <img src="images/githubhtml.png" width="100" height="100" border="0">
+        </a>&nbsp;&nbsp;
+    </div>
+    
+    <a data-bind="attr: {href: webSite}, if: title == 'Jeff'">
+        <img src="images/articleXAML.png" width="100" height="100" border="0">
+    </a>&nbsp;&nbsp;
+
+    <a data-bind="attr: { href: webSite }" >
+        <img src="images/githubXAML.png" width="100" height="100" border="0">
+    </a>&nbsp;&nbsp;
+    -->
+</script>
+
+<script type="text/html" id="days-template">
+    <p><a data-bind="attr: { href: '/?day=' + day }">
+        <img data-bind="attr: { src: '/images/days/' + day + '/logo.png'}" class="daysImage"/>
+         Day <span data-bind="text: day"></span> - <span data-bind="text: title"></span>
+        </a>
+    </p>
+
+</script>
+
 <div class="md-content">
     <div id="collections" class="md-container">
         <div class="md-viewport md-viewport-vertical"> 
             <div class="md-scrollable">  
                 <div class="staticContent" >
-                    <article>
-                        <h1>Days</h1>
-                        
-                        <p><a href="/?day=2">Day #1 - The Blank App Template</a></br><a href="http://csell.net/2012/11/01/31-days-of-windows-8-day-1-the-blank-app"><img src="images/articleHTML.png" width="100" height="100" border="0"></a>&nbsp;&nbsp;<a href="http://www.jeffblankenburg.com/2012/11/01/31-days-of-windows-8-day-1-the-blank-app"><img src="images/articleXAML.png" width="100" height="100" border="0"></a></p>
-
-			<p><a href="/?day=2">Day #2 - Snapping and Orientation</a></br><a href="http://csell.net/2012/11/02/31-days-of-windows-8-day-2-orientation-snap"><img src="images/articleHTML.png" width="100" height="100" border="0"></a>&nbsp;&nbsp;<a href="http://www.jeffblankenburg.com/2012/11/02/31-days-of-windows-8-day-2-orientation-snap"><img src="images/articleXAML.png" width="100" height="100" border="0"></a></p>                    
-
+                    <h1>Days</h1>
+                    <article class="md-scrollable" data-bind="template: {name: 'days-template', foreach: days}">
                     </article>
                 </section>       
             </div>
@@ -25,9 +53,16 @@
 @section bottomPageScripts {
 
     <script type="text/javascript">
-        
-        $(document).ready(function () {
-            MD.Initialize(); 
+
+        $(document).ready(function ()
+        {
+            $.getJSON("/api/days", function (data)
+            {
+                viewModel.days(data.days);
+                ko.applyBindings(viewModel);
+
+                MD.Initialize();
+            });
         });
 
     </script>

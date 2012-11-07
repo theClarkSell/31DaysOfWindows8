@@ -130,6 +130,123 @@
             }
         ]
     },
+	{
+        "day": "7",
+        "sectionLink": "#7",
+        "title": "Share Contract",
+        "publishTime": "11/7/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "07",
+				"subTitle": "Make it easy to move data in and out of your app with the Share contact",
+                "image": "/images/days/7/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/07/31-days-of-windows-8-day-7-share-contract",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/07/31-days-of-windows-8-day-7-share-contract",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the HTML5 source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day7-Share"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Download the XAML source code",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day7-ShareContract"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines for sharing content",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465251.aspx#guidelines_for_debugging_target_apps"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "DataPackage Class",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.datatransfer.datapackage.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Data Formats",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh771179.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "sharing and receiving content",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh758314.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "sharing content sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Sharing-Content-Source-App-d9bffd84"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "sharing target sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Sharing-Content-Target-App-e2689782"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "adding quick links",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br205969.aspx"
+            },
+            
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
 	
 	{
         "day": "6",
