@@ -253,6 +253,14 @@
                 "tileImage": "/images/win8sdk.png",
                 "webSite": "http://code.msdn.microsoft.com/windowsapps/ApplicationData-sample-fb043eb2"
             },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Temporary application data",
+                "live": "true",
+                "delay": "1500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465130.aspx"
+            },
             {   
                 "tileSize": "smallTile-Template",
                 "title": "more resources",
