@@ -132,6 +132,149 @@
     },
 	
 	{
+        "day": "9",
+        "sectionLink": "#9",
+        "title": "Live Tiles",
+        "publishTime": "11/9/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "09",
+				"subTitle": "take a look at how storing your user's data can dramatically alter their experience.",
+                "image": "/images/days/9/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/09/31-days-of-windows-8-day-9-live-tiles",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/09/31-days-of-windows-8-day-9-live-tiles",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day9-LiveTiles"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day9-LiveTiles"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "The tile template catalog",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh761491.aspx#TileSquareText04"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Sending a tile update html",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465439.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines and checklist for tiles and badges",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465403.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Sending periodic notifications",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465458.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Notifications Extensions Library",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/tools.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh969156.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Sending a tile update XAML",
+                "live": "true",
+                "delay": "1000",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868253(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "scheduled, periodic, and push notifications",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh761484.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "WnsRecipe",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/tools.png",
+                "webSite": "http://nuget.org/packages/WnsRecipe"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Secondary Tiles Sample",
+                "live": "true",
+                "delay": "5500",
+                "tileImage": "/images/sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Secondary-Tiles-Sample-edf2a178"
+            },
+			
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Pinning secondary tiles",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh761489.aspx"
+            },
+			
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "8",
         "sectionLink": "#8",
         "title": "Storage",
