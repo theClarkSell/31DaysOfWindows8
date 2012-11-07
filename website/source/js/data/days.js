@@ -130,6 +130,140 @@
             }
         ]
     },
+	
+	{
+        "day": "8",
+        "sectionLink": "#8",
+        "title": "Storage",
+        "publishTime": "11/7/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "08",
+				"subTitle": "Does your app have data? Why not save it or better yet roam it.",
+                "image": "/images/days/8/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/08/31-days-of-windows-8-day-8-local-and-roaming-data",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/08/31-days-of-windows-8-day-8-local-and-roaming-data",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day8-StorageAndRoaming"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day8-LocalAndRoamingData"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Accessing app data with WinRT",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh464917.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Local application data",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/codexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh700361(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines for roaming application data",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465094.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "ApplicationData DataChanged Event",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.applicationdata.datachanged.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Manage app lifecycle and state",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/codehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh986966"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Roaming your app data",
+                "live": "true",
+                "delay": "1000",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://blogs.msdn.com/b/windowsappdev/archive/2012/07/17/roaming-your-app-data.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Local application data",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/codehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465118.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "ApplicationData Class",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.storage.applicationdata.aspx"
+            },       
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Application data sample",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/ApplicationData-sample-fb043eb2"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
 	{
         "day": "7",
         "sectionLink": "#7",
