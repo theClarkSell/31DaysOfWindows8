@@ -13,7 +13,7 @@
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
     <PackageCertificateKeyFile>Day8-LocalAndRoamingData_TemporaryKey.pfx</PackageCertificateKeyFile>
-    <PackageCertificateThumbprint>E4F8002F81F783BFB2CB2543F08312D16E7C9059</PackageCertificateThumbprint>
+    <PackageCertificateThumbprint>DAD92A4FB18C9DBD7DD9F3A42D0B3534F9391472</PackageCertificateThumbprint>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>

@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProductVersion>8.0.30703</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
-    <ProjectGuid>1c038201-844b-457e-8e82-84c76e62dd31</ProjectGuid>
-    <OutputType>Library</OutputType>
+    <ProjectGuid>{A255A35E-0F32-4C66-8AFD-D9BB6F2E6D50}</ProjectGuid>
+    <OutputType>winmdobj</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>BackgroundTasks</RootNamespace>
     <AssemblyName>BackgroundTasks</AssemblyName>
@@ -102,7 +102,7 @@
     <!-- A reference to the entire .Net Framework and Windows SDK are automatically included -->
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Class1.cs" />
+    <Compile Include="TileUpdater.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <PropertyGroup Condition=" '$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0' ">
@@ -116,5 +116,4 @@
   <Target Name="AfterBuild">
   </Target>
   -->
-
 </Project>
