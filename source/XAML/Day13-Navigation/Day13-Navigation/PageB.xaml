@@ -48,6 +48,7 @@
                 Width="150"
                 Height="150"
                 Click="HomeButton_Click" Margin="155,239,0,239" />
+        <TextBlock x:Name="TextBlockValue" HorizontalAlignment="Left" Margin="118,10,0,0" Grid.Row="1" TextWrapping="Wrap" Text="TextBlock" VerticalAlignment="Top" Height="51" Width="239" FontSize="24"/>
         <VisualStateManager.VisualStateGroups>
 
             <!-- Visual states reflect the application's view state -->

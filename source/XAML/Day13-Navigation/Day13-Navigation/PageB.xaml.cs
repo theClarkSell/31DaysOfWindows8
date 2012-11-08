@@ -26,6 +26,24 @@ namespace Day13_Navigation
             this.InitializeComponent();
         }
 
+        protected override void OnNavigatedTo(NavigationEventArgs e)
+        {
+            base.OnNavigatedTo(e);
+
+            string text = e.Parameter as string;
+
+            if (!string.IsNullOrWhiteSpace(text))
+            {
+                TextBlockValue.Text = text;
+            }
+            else
+            {
+                TextBlockValue.Text = "You need to pass a string. Press back and enter a value.";
+            }
+
+            //Element gallium = e.Parameter as Element;
+            //TextBlockValue.Text = gallium.Category;
+        }
         
 
         /// <summary>

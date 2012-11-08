@@ -10,9 +10,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-<Page.Resources>
-    <x:String x:Key="AppName">Page A</x:String>
-</Page.Resources>
+    <Page.Resources>
+        <x:String x:Key="AppName">Page A</x:String>
+    </Page.Resources>
 
     <!--
         This grid acts as a root panel for the page that defines two rows:
@@ -40,6 +40,17 @@
                 Width="150"
                 Height="150"
                 Click="PageBButton_Click" />
+        <Button x:Name="GalliumButton"
+                Grid.Row="1"
+                Content="Gallium"
+                Width="150"
+                Height="150"
+                Click="Gallium_Click" Margin="0,89,0,389" />
+        <StackPanel Grid.Row="1" Orientation="Horizontal" Width="376" Height="45" Margin="121,10,869,573">
+            <TextBox Width="310" Height="45" Text="" x:Name="TextBoxValue"/>
+            <Button x:Name="GoButton" Content="Send" Width="66" Height="45" Click="GoButton_Click"/>
+        </StackPanel>
+        
         <VisualStateManager.VisualStateGroups>
 
             <!-- Visual states reflect the application's view state -->

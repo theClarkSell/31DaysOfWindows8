@@ -24,6 +24,7 @@ namespace Day13_Navigation
         public PageA()
         {
             this.InitializeComponent();
+            NavigationCacheMode = NavigationCacheMode.Enabled;
         }
 
         /// <summary>
@@ -52,6 +53,21 @@ namespace Day13_Navigation
         private void PageBButton_Click(object sender, RoutedEventArgs e)
         {
             Frame.Navigate(typeof(PageB));
+        }
+
+        private void GoButton_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PageB), TextBoxValue.Text);
+        }
+
+        private void Gallium_Click(object sender, RoutedEventArgs e)
+        {
+            Frame.Navigate(typeof(PageB), new Element { AtomicNumber = 31, 
+                                                        AtomicWeight = 69.72,
+                                                        Category = "Other Metals",
+                                                        Name = "Gallium",
+                                                        Symbol = "Ga",
+                                                        State = "Solid" });
         }
     }
 }
