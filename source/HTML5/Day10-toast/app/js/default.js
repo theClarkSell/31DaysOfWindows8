@@ -58,11 +58,12 @@
     function sendBasicToast() {
         var notifications = Windows.UI.Notifications;
 
-        var template = notifications.ToastTemplateType.toastImageAndText01;
+        var template = notifications.ToastTemplateType.toastImageAndText02;
         var toastXml = notifications.ToastNotificationManager.getTemplateContent(template);
 
         var toastTextElements = toastXml.getElementsByTagName("text");
-        toastTextElements[0].innerText = _toastMessage.value; //taking from screen
+        toastTextElements[0].innerText = "31 Days of Windows 8";
+        toastTextElements[1].innerText = _toastMessage.value; //taking from screen
 
         var toastImageElements = toastXml.getElementsByTagName("image");
         toastImageElements[0].setAttribute("src", "ms-appx:///images/clarkHeadShot.jpg");
@@ -71,16 +72,18 @@
         var toastNode = toastXml.selectSingleNode("/toast");
         toastNode.setAttribute("duration", "long");
 
-        /*
         var toastNode = toastXml.selectSingleNode("/toast");
+
         var audio = toastXml.createElement("audio");
         audio.setAttribute("src", "ms-winsoundevent:Notification.IM");
         toastNode.appendChild(audio);
-        */
+        
 
         /*
-        toastXml.selectSingleNode("/toast").setAttribute("launch", 
-            '{"type":"toast","param1":"12345","param2":"67890"}');
+            toastXml.selectSingleNode("/toast").setAttribute("launch", '{
+                            "type":"toast",
+                            "args1":"31days",
+                            "args2":"#10"}' );
         */
 
         var toast = new notifications.ToastNotification(toastXml);

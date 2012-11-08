@@ -131,6 +131,150 @@
         ]
     },
 	
+		{
+        "day": "10",
+        "sectionLink": "#10",
+        "title": "Toast Notifications",
+        "publishTime": "11/10/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "10",
+				"subTitle": "sometimes you need to get your user's attention immediately",
+                "image": "/images/days/10/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/10/31-days-of-windows-8-day-10-toast-notifications",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/10/31-days-of-windows-8-day-10-toast-notifications",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day10-toast"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day10-ToastNotifications"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines and checklist for toast notifications",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465391.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Sending a toast notification",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465448.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Sending a toast notification",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868254(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "The toast template catalog",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh761494.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Using the NotificationsExtensions library",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/tools.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh969156.aspx"
+            },
+
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "How to handle activation from a toast notification",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh761468.aspx"
+            },
+						{   
+                "tileSize": "smallTile-Template",
+                "title": "WnsReceipe",
+                "live": "true",
+                "delay": "1000",
+                "tileImage": "/images/tools.png",
+                "webSite": "http://nuget.org/packages/WnsRecipe"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Tiles, badges, and notifications",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh779725.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Hands-on labs for Windows 8",
+                "live": "true",
+                "delay": "5500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/windows/apps/jj674832"
+            },
+			
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "How to opt in for toast notifications",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/Hh781238"
+            },
+			
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
 	{
         "day": "9",
         "sectionLink": "#9",
