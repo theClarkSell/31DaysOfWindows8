@@ -394,7 +394,7 @@
                 "title": "Secondary Tiles Sample",
                 "live": "true",
                 "delay": "5500",
-                "tileImage": "/images/sdk.png",
+                "tileImage": "/images/win8sdk.png",
                 "webSite": "http://code.msdn.microsoft.com/windowsapps/Secondary-Tiles-Sample-edf2a178"
             },
 			
