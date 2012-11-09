@@ -23,15 +23,19 @@ namespace Day14_Geolocation
     /// </summary>
     public sealed partial class MainPage : Page
     {
+        Geolocator location;
+        
         public MainPage()
         {
             this.InitializeComponent();
+            
         }
 
-        Geolocator location = new Geolocator();
+         
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+            location = new Geolocator();
             location.PositionChanged += location_PositionChanged;
             location.StatusChanged += location_StatusChanged;
         }
@@ -48,15 +52,18 @@ namespace Day14_Geolocation
             {
                 Geoposition position = args.Position;
 
-                string latitude = position.Coordinate.Latitude.ToString();
-                string longitude = position.Coordinate.Longitude.ToString();
-                string accuracy = position.Coordinate.Accuracy.ToString();
+                LatitudeValue.Text = position.Coordinate.Latitude.ToString();
+                LongitudeValue.Text = position.Coordinate.Longitude.ToString();
+                AccuracyValue.Text = position.Coordinate.Accuracy.ToString();
             });
         }
 
         async void location_StatusChanged(Geolocator sender, StatusChangedEventArgs args)
         {
-            
+            await Dispatcher.RunAsync(CoreDispatcherPriority.Normal, () =>
+            {
+                StatusValue.Text = args.Status.ToString();
+            });
         }
     }
 }

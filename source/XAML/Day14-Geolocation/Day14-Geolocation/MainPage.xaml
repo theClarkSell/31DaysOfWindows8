@@ -7,7 +7,14 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock x:Name="LatitudeTitle" Text="Latitude" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="43" Canvas.Top="39"/>
+        <TextBlock x:Name="LatitudeValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="341" Canvas.Top="31"/>
+        <TextBlock x:Name="LongitudeTitle" Text="Longitude" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="147"/>
+        <TextBlock x:Name="LongitudeValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="345" Canvas.Top="137"/>
+        <TextBlock x:Name="AccuracyTitle" Text="Accuracy" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="43" Canvas.Top="250"/>
+        <TextBlock x:Name="AccuracyValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="343" Canvas.Top="248"/>
+        <TextBlock x:Name="StatusTitle" Text="Status" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="349"/>
+        <TextBlock x:Name="StatusValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="347" Canvas.Top="353"/>
+    </Canvas>
 </Page>
