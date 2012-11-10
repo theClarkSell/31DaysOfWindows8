@@ -131,7 +131,281 @@
         ]
     },
 	
-		{
+	{
+        "day": "12",
+        "sectionLink": "#12",
+        "title": "Background Tasks",
+        "publishTime": "11/12/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "11",
+				"subTitle": "get stuff done, even when your app isn't running.",
+                "image": "/images/days/12/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/12/31-days-of-windows-8-day-12-background-tasks",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/12/31-days-of-windows-8-day-12-background-tasks",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day12-BackgroundTasks"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day12-BackgroundTasks"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Background Task Builder",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.backgroundtaskbuilder"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "How to debug a background task",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/jj542416.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Introduction to Background Tasks",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://www.microsoft.com/en-us/download/details.aspx?id=27411"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Create and register a background task",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh977055.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Create and register a background task",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh977045(v=win.10).aspx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Raw notification overview",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/jj676791.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Supporting your app with background tasks",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh977046(v=win.10).aspx"
+            },
+						{   
+                "tileSize": "smallTile-Template",
+                "title": "Supporting your app with background tasks",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh977056(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "System Trigger Type enumeration",
+                "live": "true",
+                "delay": "1000",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.background.systemtriggertype.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Background task sample",
+                "live": "true",
+                "delay": "5500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Background-Task-Sample-9209ade9"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
+        "day": "11",
+        "sectionLink": "#11",
+        "title": "Lock Screen Apps",
+        "publishTime": "11/11/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "11",
+				"subTitle": "let your user know what's going on before they even log in to their machine.",
+                "image": "/images/days/11/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/11/31-days-of-windows-8-day-11-lock-screen-apps",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/11/31-days-of-windows-8-day-11-lock-screen-apps",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day11-LockScreenApps"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day11-LockScreen"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Badge Overview",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh779719.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines and checklist for tiles and badges ",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465403.aspx#user_experience_guidelines_for_tiles_and_badges_on_the_lock_screen"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "badge element",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br212849.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Lock screen overview",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh779720.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Showing tile and badge updates html",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/codehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh700416.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Showing tile and badge updates xaml",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/codexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868216(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Lock screen apps sample",
+                "live": "true",
+                "delay": "1000",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Lock-screen-apps-sample-9843dc3a"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "RequestAccessAsync",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/windows.applicationmodel.background.backgroundexecutionmanager.requestaccessasync"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "LockScreen Element",
+                "live": "true",
+                "delay": "5500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/br211448"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "10",
         "sectionLink": "#10",
         "title": "Toast Notifications",
@@ -394,7 +668,7 @@
                 "title": "Secondary Tiles Sample",
                 "live": "true",
                 "delay": "5500",
-                "tileImage": "/images/sdk.png",
+                "tileImage": "/images/win8sdk.png",
                 "webSite": "http://code.msdn.microsoft.com/windowsapps/Secondary-Tiles-Sample-edf2a178"
             },
 			
