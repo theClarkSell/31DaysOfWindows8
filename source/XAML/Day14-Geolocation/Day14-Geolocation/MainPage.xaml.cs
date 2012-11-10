@@ -23,21 +23,28 @@ namespace Day14_Geolocation
     /// </summary>
     public sealed partial class MainPage : Page
     {
-        Geolocator location;
-        
         public MainPage()
         {
             this.InitializeComponent();
-            
         }
 
-         
+        Geolocator location;
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
             location = new Geolocator();
             location.PositionChanged += location_PositionChanged;
             location.StatusChanged += location_StatusChanged;
+            //GetLocationDataOnce();
+        }
+
+        async private void GetLocationDataOnce()
+        {
+            Geoposition position = await location.GetGeopositionAsync().AsTask();
+
+            LatitudeValue.Text = position.Coordinate.Latitude.ToString();
+            LongitudeValue.Text = position.Coordinate.Longitude.ToString();
+            AccuracyValue.Text = position.Coordinate.Accuracy.ToString();
         }
 
         protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
@@ -55,6 +62,16 @@ namespace Day14_Geolocation
                 LatitudeValue.Text = position.Coordinate.Latitude.ToString();
                 LongitudeValue.Text = position.Coordinate.Longitude.ToString();
                 AccuracyValue.Text = position.Coordinate.Accuracy.ToString();
+                
+                TimestampValue.Text = position.Coordinate.Timestamp.ToString();
+
+                if (position.Coordinate.Altitude != null)
+                    AltitudeValue.Text = position.Coordinate.Altitude.ToString()
+                                         + "(+- " + position.Coordinate.AltitudeAccuracy.ToString() + ")";
+                if (position.Coordinate.Heading != null)
+                    HeadingValue.Text = position.Coordinate.Heading.ToString();
+                if (position.Coordinate.Speed != null)
+                    SpeedValue.Text = position.Coordinate.Speed.ToString();
             });
         }
 
