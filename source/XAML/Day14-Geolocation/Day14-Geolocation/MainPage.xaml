@@ -16,5 +16,13 @@
         <TextBlock x:Name="AccuracyValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="343" Canvas.Top="248"/>
         <TextBlock x:Name="StatusTitle" Text="Status" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="349"/>
         <TextBlock x:Name="StatusValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="347" Canvas.Top="353"/>
+        <TextBlock x:Name="AltitudeTitle" Text="Altitude" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="449"/>
+        <TextBlock x:Name="AltitudeValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="347" Canvas.Top="453"/>
+        <TextBlock x:Name="SpeedTitle" Text="Speed" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="553"/>
+        <TextBlock x:Name="SpeedValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="347" Canvas.Top="557"/>
+        <TextBlock x:Name="HeadingTitle" Text="Heading" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="44" Canvas.Top="661"/>
+        <TextBlock x:Name="HeadingValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="600" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="347" Canvas.Top="665"/>
+        <TextBlock x:Name="TimestampTitle" Text="Timestamp" HorizontalAlignment="Left" TextWrapping="Wrap" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="712" Canvas.Top="33"/>
+        <TextBlock x:Name="TimestampValue" HorizontalAlignment="Left" TextWrapping="Wrap" Width="1204" VerticalAlignment="Top" Style="{StaticResource HeaderTextStyle}" Canvas.Left="707" Canvas.Top="101" Height="108"/>
     </Canvas>
 </Page>
