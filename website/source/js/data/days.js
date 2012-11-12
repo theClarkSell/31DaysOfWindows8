@@ -140,7 +140,7 @@
         "tiles": [
             {   
                 "tileSize": "largeTile-Template",
-                "title": "11",
+                "title": "12",
 				"subTitle": "get stuff done, even when your app isn't running.",
                 "image": "/images/days/12/logo.png",
                 "live": "false"
