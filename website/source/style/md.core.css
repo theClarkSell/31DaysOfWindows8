@@ -36,9 +36,9 @@ a {
             .md-nav ul li:last-child { clear: right; }
             .md-nav ul li a { text-decoration: none; }
 
-.md-nav-main { position: absolute; top: 100pt; left: 90pt; }
+.md-nav-main { position: absolute; top: 85pt; left: 90pt; }
 
-.md-content { position: absolute; top: 120pt; left: 0; right: 0; bottom: 0; overflow: hidden; }
+.md-content { position: absolute; top: 140pt; left: 0; right: 0; bottom: 0; overflow: hidden; }
 
 .md-content h2 { font-size: 20pt; line-height: 24pt; vertical-align: baseline; height: 30pt; }
 
