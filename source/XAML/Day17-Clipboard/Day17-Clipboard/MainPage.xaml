@@ -7,7 +7,27 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="Copy" Style="{StaticResource HeaderTextStyle}" Height="100" Margin="27,22,520,646" />
+        <TextBox x:Name="TextBoxValue" Width="600" Text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Suspendisse orci turpis, accumsan id aliquam a, laoreet at sapien. Morbi aliquam condimentum nunc, eget volutpat tellus laoreet sit amet. Vestibulum ultrices luctus erat quis sollicitudin. Fusce rhoncus massa sit amet tortor euismod non porta sapien pretium. Pellentesque pharetra mauris a orci faucibus at ullamcorper ante scelerisque. Ut in nibh ut leo tincidunt auctor in eu est. Nullam sit amet urna est, sit amet egestas purus. Phasellus ac sodales ligula. Vestibulum vitae tortor ut nisl laoreet congue. Praesent adipiscing est ac ante vehicula sed congue enim porttitor." TextWrapping="Wrap" Canvas.Left="28" Canvas.Top="88" Height="182" />
+        <Button x:Name="TextButton" Content="Copy Text" Click="TextButton_Click" Canvas.Left="528" Canvas.Top="275" />
+        <Image x:Name="SourceImage" Source="Assets/WideLogo.png" Width="310" Height="150" Canvas.Left="28" Canvas.Top="337" />
+        <Button x:Name="ImageButton" Content="Copy Image" Click="ImageButton_Click" Canvas.Left="224" Canvas.Top="492" />
+        <Image Source="Assets/ExcelLogo.png" Width="150" Height="150" Canvas.Left="478" Canvas.Top="337" />
+        <Button x:Name="FileButton" Content="Copy File" Click="FileButton_Click" Canvas.Left="532" Canvas.Top="492" />
+        <WebView x:Name="HTMLSource" Canvas.Left="28" Canvas.Top="554" Height="130" Width="600" />
+        <Button x:Name="HTMLButton" Content="Copy HTML" Click="HTMLButton_Click" Canvas.Left="516" Canvas.Top="689" />
+        <TextBlock Grid.Column="1" Text="Paste" Style="{StaticResource HeaderTextStyle}" Height="43" Canvas.Left="691" Canvas.Top="22" Width="192" />
+        <Button x:Name="PasteButton" Content="Paste Clipboard" Click="PasteButton_Click" Grid.Column="1" Canvas.Left="1158" Canvas.Top="27" Height="41" />
+        <TextBlock Grid.Column="1" x:Name="MessageText" Text="" Height="50" VerticalAlignment="Center" Canvas.Left="696" Canvas.Top="708" Width="660" TextWrapping="Wrap" />
+        <TextBlock x:Name="TextBoxPaste" Width="600" Text="" TextWrapping="Wrap" Canvas.Left="696" Canvas.Top="119" Height="151" />
+        <TextBlock x:Name="ImageTitle" Width="312" Text="Pasted Image" TextWrapping="Wrap" Canvas.Left="696" Canvas.Top="301" Height="31" FontSize="24" />
+        <TextBlock x:Name="WebViewTitle" Width="312" Text="Pasted HTML" TextWrapping="Wrap" Canvas.Left="696" Canvas.Top="518" Height="31" FontSize="24" />
+        <Border BorderThickness="1" BorderBrush="White" Canvas.Left="696" Canvas.Top="337">
+            <Image x:Name="ImagePaste" MaxWidth="310" MaxHeight="150" Width="310" Height="150" />
+        </Border>
 
-    </Grid>
+        <WebView x:Name="HTMLPaste" Canvas.Left="696" Canvas.Top="554" Height="130" Width="600" />
+        <TextBlock x:Name="TextBoxTitle" Width="312" Text="Pasted Text" TextWrapping="Wrap" Canvas.Left="696" Canvas.Top="88" Height="31" FontSize="24" />
+    </Canvas>
 </Page>
