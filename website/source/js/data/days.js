@@ -131,6 +131,132 @@
         ]
     },
 	
+		{
+        "day": "15",
+        "sectionLink": "#15",
+        "title": "Geolocation",
+        "publishTime": "11/15/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "15",
+				"subTitle": "even the keyboard can be extended to make your app more interesting.",
+                "image": "/images/days/15/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/14/31-days-of-windows-8-day-14-geolocation",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/14/31-days-of-windows-8-day-14-geolocation",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day14-GeoLocation"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day14-Geolocation"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "xx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "xx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "xx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "xx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/tools.png",
+                "webSite": "xx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "xx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "xx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "xx"
+            },
+
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
 	{
         "day": "14",
         "sectionLink": "#14",
