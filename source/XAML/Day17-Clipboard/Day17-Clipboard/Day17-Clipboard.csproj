@@ -116,12 +116,16 @@
       <SubType>Designer</SubType>
     </AppxManifest>
     <None Include="Day17-Clipboard_TemporaryKey.pfx" />
+    <Content Include="Assets\PeriodicTable.xls" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="Assets\ExcelLogo.png" />
     <Content Include="Assets\Logo.png" />
     <Content Include="Assets\SmallLogo.png" />
     <Content Include="Assets\SplashScreen.png" />
     <Content Include="Assets\StoreLogo.png" />
+    <Content Include="Assets\WideLogo.png" />
+    <Content Include="SampleHTML.html" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
