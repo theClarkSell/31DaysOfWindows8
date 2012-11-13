@@ -16,6 +16,7 @@ using Windows.Data.Html;
 using Windows.Storage.Streams;
 using Windows.Storage;
 using Windows.UI.Xaml.Media.Imaging;
+using Windows.System;
 
 // The Blank Page item template is documented at http://go.microsoft.com/fwlink/?LinkId=234238
 
@@ -31,6 +32,7 @@ namespace Day17_Clipboard
         public MainPage()
         {
             this.InitializeComponent();
+            
         }
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
@@ -39,11 +41,20 @@ namespace Day17_Clipboard
             d = new DataPackage();
         }
 
-        
-
         private void TextButton_Click(object sender, RoutedEventArgs e)
         {
             d.SetText(TextBoxValue.Text);
+            Clipboard.SetContent(d);
+        }
+
+        private void HTMLButton_Click(object sender, RoutedEventArgs e)
+        {
+            string s = HtmlFormatHelper.CreateHtmlFormat(HTMLSource.InvokeScript("eval", new string[] { "document.documentElement.outerHTML;" }));
+            d.SetHtmlFormat(s);
+
+            string t = HtmlUtilities.ConvertToText(s);
+            d.SetText(t);
+
             Clipboard.SetContent(d);
         }
 
@@ -100,17 +111,6 @@ namespace Day17_Clipboard
                 string html = await DataPackage.GetHtmlFormatAsync();
                 HTMLPaste.NavigateToString(html);
             }
-        }
-
-        private void HTMLButton_Click(object sender, RoutedEventArgs e)
-        {
-            string s = HtmlFormatHelper.CreateHtmlFormat(HTMLSource.InvokeScript("eval", new string[] { "document.documentElement.outerHTML;" }));
-            d.SetHtmlFormat(s);
-
-            string t = HtmlUtilities.ConvertToText(s);
-            d.SetText(t);
-
-            Clipboard.SetContent(d);
         }
     }
 }
