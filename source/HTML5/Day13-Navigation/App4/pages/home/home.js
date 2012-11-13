@@ -4,7 +4,7 @@
     WinJS.UI.Pages.define("/pages/home/home.html", {
         ready: function (element, options) {
            
-            WinJS.Utilities.query("a").listen("click", anchorHandler, false);
+            //WinJS.Utilities.query("a").listen("click", anchorHandler, false);
         }
     });
 

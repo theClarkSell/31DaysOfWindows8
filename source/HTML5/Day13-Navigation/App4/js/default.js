@@ -37,5 +37,21 @@
         app.sessionState.history = nav.history;
     };
 
+    app.onready = function () {
+        WinJS.Utilities.query("a").listen("click", anchorHandler, false);
+    }
+
+    var myData = {
+        firstName: "Clark",
+        lastName: "Sell"
+    };
+
+    function anchorHandler(eventInfo) {
+        eventInfo.preventDefault();
+        var link = eventInfo.target;
+
+        WinJS.Navigation.navigate(link.href, myData);
+    }
+
     app.start();
 })();
