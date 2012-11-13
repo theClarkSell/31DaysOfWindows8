@@ -132,6 +132,132 @@
     },
 	
 	{
+        "day": "14",
+        "sectionLink": "#14",
+        "title": "Geolocation",
+        "publishTime": "11/14/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "14",
+				"subTitle": "every app is more interesting when it knows where in the world you are.",
+                "image": "/images/days/14/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/14/31-days-of-windows-8-day-14-geolocation",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/14/31-days-of-windows-8-day-14-geolocation",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day14-GeoLocation"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day14-Geolocation"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML Guidelines for location-aware apps",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465148.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Guidelines for location aware apps",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465127(v=win.10)"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Geolocation sample",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Geolocation-2483de66"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Introduction to the Geolocation API in IE",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/ie/gg589513(v=vs.85).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Bing Maps SDK Download",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/tools.png",
+                "webSite": "http://visualstudiogallery.msdn.microsoft.com/bb764f67-6b2c-4e14-b2d3-17477ae1eaca"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Detecting geolocation in html",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465139.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "W3C Geolocation API Specification",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://www.w3.org/TR/geolocation-API/"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows Devices Geolocation Namespace",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.geolocation.aspx"
+            },
+
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "13",
         "sectionLink": "#13",
         "title": "Navigation",
