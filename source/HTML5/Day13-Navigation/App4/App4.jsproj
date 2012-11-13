@@ -35,7 +35,7 @@
     </ProjectConfiguration>
   </ItemGroup>
   <PropertyGroup Label="Globals">
-    <ProjectGuid>53657140-d0da-4374-9606-b653e55dfd93</ProjectGuid>
+    <ProjectGuid>c5167b88-5410-45f1-aa20-83dfd970c87c</ProjectGuid>
   </PropertyGroup>
   <PropertyGroup Condition="'$(VisualStudioVersion)' == '' or '$(VisualStudioVersion)' &lt; '11.0'">
     <VisualStudioVersion>11.0</VisualStudioVersion>
@@ -47,37 +47,31 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>Day6_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>App4_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <Content Include="default.html" />
+    <Content Include="css\default.css" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
     <Content Include="images\splashscreen.png" />
     <Content Include="images\storelogo.png" />
-    <Content Include="images\WideLogo.png" />
     <Content Include="js\default.js" />
-    <Content Include="css\default.css" />
     <Content Include="js\navigator.js" />
-    <Content Include="js\scratch.js" />
-    <Content Include="mpn-page1.html" />
-    <Content Include="pages\multiPage\default.html" />
-    <Content Include="pages\multiPage\page1\page1.css" />
-    <Content Include="pages\multiPage\page1\page1.html" />
-    <Content Include="pages\multiPage\page1\page1.js" />
-    <Content Include="pages\multiPage\page2\page2.css" />
-    <Content Include="pages\multiPage\page2\page2.html" />
-    <Content Include="pages\multiPage\page2\page2.js" />
-    <Content Include="pages\singlePage\default.html" />
-    <Content Include="pages\singlePage\page1\page1.css" />
-    <Content Include="pages\singlePage\page1\page1.html" />
-    <Content Include="pages\singlePage\page1\page1.js" />
-    <Content Include="pages\singlePage\page2\page2.css" />
-    <Content Include="pages\singlePage\page2\page2.html" />
-    <Content Include="pages\singlePage\page2\page2.js" />
+    <Content Include="js\script.js" />
+    <Content Include="pages\home2\home2.css" />
+    <Content Include="pages\home2\home2.html" />
+    <Content Include="pages\home2\home2.js" />
+    <Content Include="pages\home3\home3.css" />
+    <Content Include="pages\home3\home3.html" />
+    <Content Include="pages\home3\home3.js" />
+    <Content Include="pages\home\home.css" />
+    <Content Include="pages\home\home.html" />
+    <Content Include="pages\home\home.js" />
+    <Content Include="default.html" />
+    <None Include="App4_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />

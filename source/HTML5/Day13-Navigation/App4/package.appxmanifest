@@ -1,8 +1,8 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="53657140-d0da-4374-9606-b653e55dfd93" Version="1.0.0.0" Publisher="CN=Clark" />
+  <Identity Name="c5167b88-5410-45f1-aa20-83dfd970c87c" Version="1.0.0.0" Publisher="CN=Clark" />
   <Properties>
-    <DisplayName>Day6</DisplayName>
+    <DisplayName>App4</DisplayName>
     <PublisherDisplayName>Clark</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
@@ -17,7 +17,7 @@
     <Application Id="App" StartPage="default.html">
       <VisualElements DisplayName="Day 13" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day 13 - Navigation" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
-        <SplashScreen Image="images\splashscreen.png" />
+        <SplashScreen Image="images\splashscreen.png" BackgroundColor="#ff0000" />
       </VisualElements>
     </Application>
   </Applications>

@@ -1,5 +1,5 @@
-﻿// For an introduction to the Blank template, see the following documentation:
-// http://go.microsoft.com/fwlink/?LinkId=232509
+﻿// For an introduction to the Navigation template, see the following documentation:
+// http://go.microsoft.com/fwlink/?LinkId=232506
 (function () {
     "use strict";
 
@@ -34,13 +34,8 @@
     });
 
     app.oncheckpoint = function (args) {
-        // TODO: This application is about to be suspended. Save any state
-        // that needs to persist across suspensions here. If you need to 
-        // complete an asynchronous operation before your application is 
-        // suspended, call args.setPromise().
         app.sessionState.history = nav.history;
     };
 
     app.start();
-
 })();

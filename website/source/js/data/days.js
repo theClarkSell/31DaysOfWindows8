@@ -132,6 +132,123 @@
     },
 	
 	{
+        "day": "13",
+        "sectionLink": "#13",
+        "title": "Navigation",
+        "publishTime": "11/12/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "13",
+				"subTitle": "your app should have more than one page.  see how to make navigation easy.",
+                "image": "/images/days/13/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/13/31-days-of-windows-8-day-13-navigation/",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/13/31-days-of-windows-8-day-13-navigation",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day13-Navigation"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day13-Navigation"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Navigation design for Windows Store apps",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh761500.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Navigation Model",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh738344.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Using single-page navigation HTML",
+                "live": "true",
+                "delay": "5000",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh452768.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Navigating between pages XAML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh771188(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "WinJS UI Pages",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh770584.aspx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Video: Navigation in Windows 8 XAML apps",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://www.youtube.com/watch?feature=player_embedded&v=G0iEwr2SwA4"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 History Spec",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://dev.w3.org/html5/spec/single-page.html#history"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "12",
         "sectionLink": "#12",
         "title": "Background Tasks",
