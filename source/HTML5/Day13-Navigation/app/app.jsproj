@@ -61,6 +61,8 @@
     <Content Include="images\WideLogo.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="js\navigator.js" />
+    <Content Include="js\scratch.js" />
     <Content Include="mpn-page1.html" />
     <Content Include="pages\multiPage\default.html" />
     <Content Include="pages\multiPage\page1\page1.css" />
