@@ -134,7 +134,7 @@
 		{
         "day": "15",
         "sectionLink": "#15",
-        "title": "Geolocation",
+        "title": "On-Screen Keyboard",
         "publishTime": "11/15/2012 2:08",
 
         "tiles": [
@@ -152,7 +152,7 @@
                 "subtitle": "@csell5",
 				"tileBack": "Read The Article",
                 "tileImage": "images/html_csell_2.png",
-                "webSite": "http://csell.net/2012/11/14/31-days-of-windows-8-day-14-geolocation",
+                "webSite": "http://csell.net/2012/11/15/31-days-of-windows-8-day-15-the-on-screen-keyboard",
                 "delay": "4000"
             },            
             {
@@ -162,7 +162,7 @@
                 "subtitle": "@jeffblankenburg",
 				"tileBack": "Read The Article",
                 "tileImage": "images/xaml_jb_2.png",
-                "webSite": "http://www.jeffblankenburg.com/2012/11/14/31-days-of-windows-8-day-14-geolocation",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/15/31-days-of-windows-8-day-15-the-on-screen-keyboard",
                 "delay": "3000"
             },
             {   
@@ -171,7 +171,7 @@
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubhtml.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day14-GeoLocation"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day15-OnScreenKeyboard"
             },
             {   
                 "tileSize": "smallTile-Template",
@@ -179,73 +179,57 @@
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubxaml.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day14-Geolocation"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day15-OnScreenKeyboard"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "w3c input controls",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/guidelines.png",
-                "webSite": "xx"
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://www.w3.org/TR/html-markup/input.html#input"
             },
 			{   
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "Responding to the appearance of the on-screen keyboard",
                 "live": "true",
                 "delay": "3500",
-                "tileImage": "/images/msdn.png",
-                "webSite": "xx"
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Keyboard-Events-Sample-866ba41c"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "Emoji List",
                 "live": "true",
                 "delay": "5000",
-                "tileImage": "/images/win8sdk.png",
-                "webSite": "xx"
+                "tileImage": "/images/tools.png",
+                "webSite": "http://31daysofwindows8.com/content/emoji.jpg"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "Responding to keyboard interactions in HTML",
                 "live": "true",
                 "delay": "3500",
-                "tileImage": "/images/api.png",
-                "webSite": "xx"
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh700405"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "Responding to keyboard input in XAML",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/tools.png",
-                "webSite": "xx"
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868246(v=win.10)"
             },
 			{
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "Guidelines for touch keyboard and handwriting panel",
                 "live": "true",
                 "delay": "2500",
-                "tileImage": "/images/articlehtml.png",
-                "webSite": "xx"
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh972345"
             },
-			{   
-                "tileSize": "smallTile-Template",
-                "title": "xx",
-                "live": "true",
-                "delay": "4500",
-                "tileImage": "/images/articlehtml.png",
-                "webSite": "xx"
-            },
-			{   
-                "tileSize": "smallTile-Template",
-                "title": "xx",
-                "live": "true",
-                "delay": "4500",
-                "tileImage": "/images/api.png",
-                "webSite": "xx"
-            },
-
+			
             {   
                 "tileSize": "smallTile-Template",
                 "title": "more resources",
