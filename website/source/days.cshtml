@@ -28,12 +28,13 @@
 </script>
 
 <script type="text/html" id="days-template">
-    <p><a data-bind="attr: { href: '/?day=' + day }">
-        <img data-bind="attr: { src: '/images/days/' + day + '/logo.png'}" class="daysImage"/>
-         Day <span data-bind="text: day"></span> - <span data-bind="text: title"></span>
+    <p data-bind="if: $root.canPublish($data)">
+        <a data-bind="attr: { href: '/?day=' + day }">
+            <img data-bind="attr: { src: '/images/days/' + day + '/logo.png'}" class="daysImage"/>
+            Day <span data-bind="text: day"></span> - <span data-bind="text: title"></span>
         </a>
     </p>
-
+    
 </script>
 
 <div class="md-content">
