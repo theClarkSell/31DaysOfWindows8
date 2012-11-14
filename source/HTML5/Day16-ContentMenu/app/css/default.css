@@ -15,6 +15,16 @@
 
     text-align: center;
 }
+
+h2 {
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.selectable {
+    -ms-user-select: element;
+}
+
 @media screen and (-ms-view-state: fullscreen-landscape) {
 }
 
