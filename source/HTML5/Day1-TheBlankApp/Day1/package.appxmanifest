@@ -2,7 +2,7 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
   <Identity Name="f0611a29-f755-48cc-9744-e13b2b20f888" Version="1.0.0.0" Publisher="CN=csell" />
   <Properties>
-    <DisplayName>Day1</DisplayName>
+    <DisplayName>Day 1</DisplayName>
     <PublisherDisplayName>csell</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
