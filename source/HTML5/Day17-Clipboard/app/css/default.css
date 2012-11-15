@@ -15,6 +15,16 @@
 
     text-align: center;
 }
+
+button {
+    margin: 10px;
+}
+
+.selectable {
+    -ms-user-select: element;
+}
+
+
 @media screen and (-ms-view-state: fullscreen-landscape) {
 }
 
