@@ -25,10 +25,10 @@
     }
 
     function wireEventHandlers() {
-        document.getElementById("myImage").addEventListener("contextmenu",
-            imageContentHandler, false);
+        //document.getElementById("myImage").addEventListener("contextmenu", imageContentHandler, false);
 
-        //document.getElementById("myInputBox").addEventListener("contextmenu", inputHandler, false);
+        document.getElementById("myInputBox").addEventListener(
+            "contextmenu", inputHandler, false);
     }
     
     function showWhereOver(clickArgs) {
