@@ -20,15 +20,17 @@
     app.oncheckpoint = function (args) {
     };
 
-    function getDomElements() {
 
+    var _myImage, _myInputBox;
+
+    function getDomElements() {
+        _myImage = document.getElementById("myImage");
+        _myInputBox = document.getElementById("myInputBox");
     }
 
     function wireEventHandlers() {
-        //document.getElementById("myImage").addEventListener("contextmenu", imageContentHandler, false);
-
-        document.getElementById("myInputBox").addEventListener(
-            "contextmenu", inputHandler, false);
+        _myImage.addEventListener("contextmenu", imageContentHandler, false);
+        _myInputBox.addEventListener( "contextmenu", inputHandler, false);
     }
     
     function showWhereOver(clickArgs) {
@@ -89,8 +91,8 @@
         contextMenu.commands.append(new Windows.UI.Popups.UICommand("Delete", somethingHandler));
 
         //Show the context menu
-        //contextMenu.showAsync(showWhereOver(args));
-        contextMenu.showAsync(showWhereAbove(args));
+        //contextMenu.showAsync(showWhereOver(args)); //Shows the context menu at the point of the mouse rather than what the guidelines suggest
+        contextMenu.showAsync(showWhereAbove(args)); //Shows the context menu as the guidelines would suggest
     }
 
     function somethingTextHandler(args) {
@@ -100,9 +102,9 @@
     }
 
     function inputHandler(args) {
-
+        //you should try leaving the default behavior in just to see what happens when you don't to proper checking.
         args.preventDefault(); // Prevent the default context menu.
-
+        
         // Only show a context menu if text is selected
         if (isTextSelected()) {
 
