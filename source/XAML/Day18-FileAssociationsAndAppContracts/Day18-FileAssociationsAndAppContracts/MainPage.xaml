@@ -7,7 +7,9 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-
-    </Grid>
+    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="OpenExcelButton" Content="Open an XLS File" Width="310" Height="150" Click="OpenExcelButton_Click" />
+        <Button x:Name="OpenExcelButtonWithWarning" Content="Open an XLS File With Warning" Width="310" Height="150" Click="OpenExcelButtonWithWarning_Click" Canvas.Top="150" />
+        <Button x:Name="OpenExcelButtonWithOpenWith" Content="Open an XLS File With Open With Menu" Width="310" Height="150" Click="OpenExcelButtonWithOpenWithMenu_Click" Canvas.Top="300" />
+    </Canvas>
 </Page>

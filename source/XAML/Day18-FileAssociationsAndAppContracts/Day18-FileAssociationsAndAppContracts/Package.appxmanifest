@@ -30,6 +30,22 @@
             </SupportedFileTypes>
           </FileTypeAssociation>
         </Extension>
+        <Extension Category="windows.accountPictureProvider" />
+        <Extension Category="windows.autoPlayContent">
+          <AutoPlayContent>
+            <LaunchAction Verb="show" ActionDisplayName="Show Pictures" ContentEvent="ShowPicturesOnArrival" />
+          </AutoPlayContent>
+        </Extension>
+        <Extension Category="windows.protocol">
+          <Protocol Name="mailto">
+            <Logo>Assets\Logo.png</Logo>
+          </Protocol>
+        </Extension>
+        <Extension Category="windows.autoPlayDevice">
+          <AutoPlayDevice>
+            <LaunchAction Verb="show" ActionDisplayName="Show Pictures" DeviceEvent="WPD\ImageSource" />
+          </AutoPlayDevice>
+        </Extension>
       </Extensions>
     </Application>
   </Applications>
