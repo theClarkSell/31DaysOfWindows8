@@ -1,0 +1,17 @@
+﻿<Page
+    x:Class="Day19_FilePicker.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Day19_FilePicker"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="SingleFilePicker" Width="310" Height="150" Content="Select A Single File" Click="SingleFilePicker_Click" />
+        <Button x:Name="SingleFilePickerWithDestination" Width="310" Height="150" Content="Select A Single File With Destination" Click="SingleFilePickerWithDestination_Click" Canvas.Top="150" />
+        <Button x:Name="MultipleFilePicker" Width="310" Height="150" Content="Select Multiple Files" Click="MultipleFilePicker_Click" Canvas.Top="300" />
+        <Button x:Name="SaveFileDialog" Width="310" Height="150" Content="Save a File" Click="SaveAFile_Click" Canvas.Left="315" />
+        <Button x:Name="SelectFolder" Width="310" Height="150" Content="Select A Folder" Click="SelectFolder_Click" Canvas.Left="315" Canvas.Top="150" />
+    </Canvas>
+</Page>
