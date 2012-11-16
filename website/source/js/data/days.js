@@ -130,6 +130,138 @@
             }
         ]
     },
+	{
+        "day": "17",
+        "sectionLink": "#17",
+        "title": "Using the clipboard",
+        "publishTime": "11/17/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "17",
+				"subTitle": "make your app more useful by integrating with the Windows 8 clipboard",
+                "image": "/images/days/17/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/17/31-days-of-windows-8-day-17-the-clipboard",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/17/31-days-of-windows-8-day-17-the-clipboard",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day17-Clipboard"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day17-Clipboard"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines and checklist for clipboard commands",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh700347.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Clipboard app sample",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Clipboard-App-sample-309ec122"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Asynchronous programming in JavaScript",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh700330.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Copying and pasting data xaml",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh464940(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Copying and pasting data html",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh758298.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "QuickStart: Clipboard basics xaml",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh871366(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "QuickStart: Clipboard basics html",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh750308.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Clipboard Formats",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/desktop/ms649013(v=vs.85).aspx"
+            },
+						{   
+                "tileSize": "smallTile-Template",
+                "title": "Clipboard",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/desktop/ms648709(v=vs.85).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
 	
 	{
         "day": "16",
