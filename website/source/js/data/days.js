@@ -141,7 +141,7 @@
             {   
                 "tileSize": "largeTile-Template",
                 "title": "16",
-				"subTitle": "",
+				"subTitle": "for those times when cut, copy, and paste aren't enough",
                 "image": "/images/days/16/logo.png",
                 "live": "false"
             },         
@@ -152,7 +152,7 @@
                 "subtitle": "@csell5",
 				"tileBack": "Read The Article",
                 "tileImage": "images/html_csell_2.png",
-                "webSite": "http://csell.net/2012/11/15/31-days-of-windows-8-day-15-the-on-screen-keyboard",
+                "webSite": "http://csell.net/2012/11/16/31-days-of-windows-8-day-16-context-menus",
                 "delay": "4000"
             },            
             {
@@ -162,7 +162,7 @@
                 "subtitle": "@jeffblankenburg",
 				"tileBack": "Read The Article",
                 "tileImage": "images/xaml_jb_2.png",
-                "webSite": "http://www.jeffblankenburg.com/2012/11/15/31-days-of-windows-8-day-15-the-on-screen-keyboard",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/16/31-days-of-windows-8-day-16-context-menus",
                 "delay": "3000"
             },
             {   
@@ -171,7 +171,7 @@
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubhtml.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day15-OnScreenKeyboard"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day16-ContentMenu"
             },
             {   
                 "tileSize": "smallTile-Template",
@@ -179,55 +179,63 @@
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubxaml.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day15-OnScreenKeyboard"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day16-ContextMenu"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XX",
+                "title": "Guidelines and checklist for context menus",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/articlehtml.png",
-                "webSite": "XX"
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/Hh465308"
             },
 			{   
                 "tileSize": "smallTile-Template",
-                "title": "XX",
+                "title": "Displaying popups html",
                 "live": "true",
                 "delay": "3500",
-                "tileImage": "/images/win8sdk.png",
-                "webSite": "XX"
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh738362.aspx"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XX",
-                "live": "true",
-                "delay": "5000",
-                "tileImage": "/images/tools.png",
-                "webSite": "XX"
-            },
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "XX",
+                "title": "Adding context menus",
                 "live": "true",
                 "delay": "3500",
-                "tileImage": "/images/linkhtml.png",
-                "webSite": "XX"
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh465300"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "XX",
+                "title": "context menu sample",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/linkxaml.png",
-                "webSite": "XX"
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Context-menu-sample-40840351"
             },
-			{
+			{   
                 "tileSize": "smallTile-Template",
-                "title": "XX",
+                "title": "Popup Menu Class",
                 "live": "true",
-                "delay": "2500",
-                "tileImage": "/images/guidelines.png",
-                "webSite": "XX"
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/BR208693"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Message Dialog Class",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/windows.ui.popups.messagedialog"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "context menu sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Context-menu-sample-40840351"
             },
 			
             {   
