@@ -29,6 +29,7 @@
             </SupportedFileTypes>
           </FileTypeAssociation>
         </Extension>
+        <Extension Category="windows.accountPictureProvider" />
       </Extensions>
     </Application>
   </Applications>

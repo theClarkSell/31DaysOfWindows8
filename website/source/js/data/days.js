@@ -130,6 +130,132 @@
             }
         ]
     },
+	
+	{
+        "day": "18",
+        "sectionLink": "#18",
+        "title": "File Associations",
+        "publishTime": "11/18/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "18",
+				"subTitle": "sometimes you want to open a file with someone else's app",
+                "image": "/images/days/18/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/18/31-days-of-windows-8-day-18-file-associations",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/18/31-days-of-windows-8-day-18-file-associations-app-contracts",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day18-FileAssoociations"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day18-FileAssociationsAndAppContracts"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "How to launch the default app for a URI",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh452690.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "How to launch the default app for a URI",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh779671(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Association launching sample",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Association-Launching-535d2cec"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "App capability declarations",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh464936.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Launcher class",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.system.launcher.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "How to handle file activation",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh452684(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "How to handle file activation",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh779669(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "App contracts and extensions",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh464906.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
 	{
         "day": "17",
         "sectionLink": "#17",

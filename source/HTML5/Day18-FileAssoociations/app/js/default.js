@@ -42,5 +42,39 @@
         // args.setPromise().
     };
 
+
+
+
+    var _btnOpenExcel,
+        _launcher = Windows.System.Launcher,
+        _current = Windows.ApplicationModel.Package.current;
+
+    function getDomElements() {
+        _btnOpenExcel = document.querySelector("#btnOpenExcel");
+    }
+
+    function wireHandlers() {
+        _btnOpenExcel.addEventListener("click", function () {
+            var excelFile = "data\\sampleData.xlsx";
+            _current.installedLocation.getFileAsync(excelFile)
+                .then(function (file) {
+
+                    var launchOptions = new Windows.System.LauncherOptions();
+                    launchOptions.treatAsUntrusted = true;
+
+                    _launcher.launchFileAsync(file, launchOptions)
+                        .then (function (isSuccess) {
+                            if ( isSuccess ) { /* Rock on Garth! */ }
+                            else { /* failWail */ }
+                        });
+                });
+        });
+    }
+
+    app.onloaded = function () {
+        getDomElements();
+        wireHandlers();
+    }
+
     app.start();
 })();
