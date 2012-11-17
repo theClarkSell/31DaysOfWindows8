@@ -19,6 +19,17 @@
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="#ff0000" />
       </VisualElements>
+      <Extensions>
+        <Extension Category="windows.fileTypeAssociation">
+          <FileTypeAssociation Name="name">
+            <DisplayName>My Display Name</DisplayName>
+            <Logo>images\smalllogo.png</Logo>
+            <SupportedFileTypes>
+              <FileType>.31</FileType>
+            </SupportedFileTypes>
+          </FileTypeAssociation>
+        </Extension>
+      </Extensions>
     </Application>
   </Applications>
   <Capabilities>

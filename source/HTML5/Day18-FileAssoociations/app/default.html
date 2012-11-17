@@ -11,11 +11,22 @@
 
     <!-- Day6 references -->
     <link href="/css/default.css" rel="stylesheet" />
+    <script src="/js/knockout-2.2.0.js"></script>
     <script src="/js/default.js"></script>
 </head>
 <body>
+    <script type="text/html" id="myTemplate">
+        <p>
+            Day <span data-bind="text: day"></span>: <span data-bind="text: title"></span>
+        </p>
+     </script>
+
     <div id="content">
         <h1>Day #18 - File Associations and App Contracts</h1>
+
+        <br /><br />
+        <div data-bind="template: { name: 'myTemplate', foreach: days }"></div>
     </div>
+
 </body>
 </html>

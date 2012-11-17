@@ -19,6 +19,18 @@
             }
             args.setPromise(WinJS.UI.processAll());
         }
+
+        if (args.detail.kind === activation.ActivationKind.file) {
+
+            Windows.Storage.FileIO.readTextAsync(args.detail.files[0]).then(function (contents) {
+                
+                var myObject = JSON.parse(contents);
+                ko.applyBindings(myObject);
+
+            });
+
+        }
+
     };
 
     app.oncheckpoint = function (args) {
