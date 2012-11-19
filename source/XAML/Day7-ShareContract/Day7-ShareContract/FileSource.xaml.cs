@@ -44,7 +44,7 @@ namespace Day7_ShareContract
             dtm.DataRequested -= dtm_DataRequested;
         }
 
-        async void dtm_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
+        void dtm_DataRequested(DataTransferManager sender, DataRequestedEventArgs args)
         {
             string FileTitle = "31 Days of Windows 8!";
             string FileDescription = "This just explains what we're sharing.";  //This is an optional value.
@@ -53,19 +53,7 @@ namespace Day7_ShareContract
             data.Properties.Title = FileTitle;
             data.Properties.Description = FileDescription;
 
-            DataRequestDeferral waiter = args.Request.GetDeferral();
-
-            try
-            {
-                StorageFile textFile = await Package.Current.InstalledLocation.GetFileAsync("FileForSharing.txt");
-                List<IStorageItem> files = new List<IStorageItem>();
-                files.Add(textFile);
-                data.SetStorageItems(files);
-            }
-            finally
-            {
-                waiter.Complete();
-            }
+            
         }
 
         /// <summary>
