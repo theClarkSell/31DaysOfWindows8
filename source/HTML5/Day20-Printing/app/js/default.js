@@ -31,6 +31,8 @@
     };
 
 
+
+
     var _printThis,
         _printManager = Windows.Graphics.Printing.PrintManager,
         _printView = _printManager.getForCurrentView();
@@ -40,13 +42,15 @@
     }
 
     function wireDomElements () {
-        _printThis.addEventListener("click", printThisHandler, false);
+        //_printThis.addEventListener("click", printThisHandler, false);
 
+        
         _printView.onprinttaskrequested = function (eventArgs){
             eventArgs.request.createPrintTask("31 Days", function (args) {
                 args.setSource(MSApp.getHtmlPrintDocumentSource(document));
             });
         };
+        
     }
 
     function printThisHandler (event) {
@@ -54,7 +58,7 @@
     }
 
     app.onloaded = function () {
-        getDomElements();
+        //getDomElements();
         wireDomElements();
     }
 
