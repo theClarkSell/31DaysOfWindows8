@@ -132,6 +132,139 @@
     },
 	
 	{
+        "day": "20",
+        "sectionLink": "#20",
+        "title": "Printing",
+        "publishTime": "11/20/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "20",
+				"subTitle": "XX",
+                "image": "/images/days/20/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/20/31-days-of-windows-8-day-20-printing",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "xxx",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day20-Printing"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Simplifying Printing in Windows 8",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://blogs.msdn.com/b/b8/archive/2012/07/25/simplifying-printing-in-windows-8.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Creating a great printing experience in Windows 8",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://blogs.msdn.com/b/windowsappdev/archive/2012/09/25/creating-a-great-printing-experience-in-windows-8.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines for print-capable Windows Store apps",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh868178.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Printing in HTML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh465225(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Printing in XAML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465196.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Printing Sample",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Print-Sample-c544cce6"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "How to add custom settings to the print preview",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh973533.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "How to change standard options in the print preview",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh761453.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Standard Print Task Options",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.graphics.printing.standardprinttaskoptions.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows Graphics Printing",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br211944.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "19",
         "sectionLink": "#19",
         "title": "File Pickers",
@@ -140,7 +273,7 @@
         "tiles": [
             {   
                 "tileSize": "largeTile-Template",
-                "title": "18",
+                "title": "19",
 				"subTitle": "Grabbing files from the user's machine is easy and useful",
                 "image": "/images/days/19/logo.png",
                 "live": "false"
