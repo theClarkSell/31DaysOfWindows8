@@ -10,56 +10,65 @@
 
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
-            if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-                // TODO: This application has been newly launched. Initialize
-                // your application here.
-            } else {
-                // TODO: This application has been reactivated from suspension.
-                // Restore application state here.
-            }
             args.setPromise(WinJS.UI.processAll());
         }
     };
 
-    app.oncheckpoint = function (args) {
-        // TODO: This application is about to be suspended. Save any state
-        // that needs to persist across suspensions here. You might use the
-        // WinJS.Application.sessionState object, which is automatically
-        // saved and restored across suspension. If you need to complete an
-        // asynchronous operation before your application is suspended, call
-        // args.setPromise().
-    };
-
-
-
-
     var _printThis,
-        _printManager = Windows.Graphics.Printing.PrintManager,
+        _printing = Windows.Graphics.Printing,
+        _printManager = _printing.PrintManager,
         _printView = _printManager.getForCurrentView();
 
     function getDomElements() {
         _printThis = document.querySelector("#btnPrintThis");
     }
 
-    function wireDomElements () {
-        //_printThis.addEventListener("click", printThisHandler, false);
-
-        
+    function wireEventHandlers() {
         _printView.onprinttaskrequested = function (eventArgs){
-            eventArgs.request.createPrintTask("31 Days", function (args) {
+            var printTask = eventArgs.request.createPrintTask("31 Days", function (args) {
+                
+                printTask.oncompleted = printCompleted;
+
+                //printTask.options.displayedOptions.clear();
+                printTask.options.displayedOptions
+                    .append(_printing.StandardPrintTaskOptions.duplex);
+
+                printTask.options.colorMode = _printing.PrintColorMode.grayscale;
+                
                 args.setSource(MSApp.getHtmlPrintDocumentSource(document));
             });
+
         };
-        
+
+        _printThis.addEventListener("click", function () {
+            Windows.Graphics.Printing.PrintManager.showPrintUIAsync();
+        }, false);
     }
 
-    function printThisHandler (event) {
-        
+    function printCompleted(eventArgs) {
+
+        switch (eventArgs.completion) {
+            case _printing.PrintTaskCompletion.failed:
+                Windows.UI.Popups.MessageDialog("fail wail").showAsync();
+                break;
+            case _printing.PrintTaskCompletion.submitted:
+                Windows.UI.Popups.MessageDialog("Submitted").showAsync();
+                break;
+            case _printing.PrintTaskCompletion.abandoned:
+                Windows.UI.Popups.MessageDialog("Abandoned").showAsync();
+                break;
+            case _printing.PrintTaskCompletion.canceled:
+                Windows.UI.Popups.MessageDialog("Cancelled").showAsync();
+                break;
+            default:
+                break;
+        }    
     }
+
 
     app.onloaded = function () {
-        //getDomElements();
-        wireDomElements();
+        getDomElements();
+        wireEventHandlers();
     }
 
     app.start();
