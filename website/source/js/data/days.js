@@ -162,7 +162,7 @@
                 "subtitle": "@jeffblankenburg",
 				"tileBack": "Read The Article",
                 "tileImage": "images/xaml_jb_2.png",
-                "webSite": "xxx",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/20/31-days-of-windows-8-day-20-printing",
                 "delay": "3000"
             },
             {   
