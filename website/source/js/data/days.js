@@ -132,6 +132,147 @@
     },
 	
 	{
+        "day": "21",
+        "sectionLink": "#21",
+        "title": "Media Capture",
+        "publishTime": "11/21/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "21",
+				"subTitle": "Because YouTube is waiting!",
+                "image": "/images/days/21/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/21/31-days-of-windows-8-day-21-camera-capture",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/21/31-days-of-windows-8-day-21-camera-capture",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day21-CameraCapture"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day21-CameraCapture"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Video Element",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://dev.w3.org/html5/spec/the-video-element.html#the-video-element"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Media Capture and Streams",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://dev.w3.org/2011/webrtc/editor/getusermedia.html"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Jeff's Video",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://www.youtube.com/watch?v=N9NfqI_5H2s"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Adding multimedia in html",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/Hh465132(v=win.10)"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Adding multimedia in xaml",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh465134(v=win.10)"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Audio and Video",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh767372"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: capturing video using the MediaCapture API",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh452791"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: capturing a photo or video using the camera dialog ",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh465152"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Capturing or rendering audio, video, and images in HTML",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465156.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Capturing or rendering audio, video, and images in XAML",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465144(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "20",
         "sectionLink": "#20",
         "title": "Printing",
@@ -173,6 +314,16 @@
                 "tileImage": "/images/githubhtml.png",
                 "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day20-Printing"
             },
+			
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day20-Printing"
+            },
+			
             {   
                 "tileSize": "smallTile-Template",
                 "title": "Simplifying Printing in Windows 8",

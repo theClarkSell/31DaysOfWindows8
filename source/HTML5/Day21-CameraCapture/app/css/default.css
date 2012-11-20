@@ -5,7 +5,7 @@
 
     display: -ms-grid;
     -ms-grid-columns: 1fr;
-    -ms-grid-rows: 1fr 1fr 1fr;
+    -ms-grid-rows: 120px 1fr 1fr;
 
 }
 
@@ -15,6 +15,15 @@
 
     text-align: center;
 }
+
+img {
+    width: 400px
+}
+
+video {
+    
+}
+
 @media screen and (-ms-view-state: fullscreen-landscape) {
 }
 
