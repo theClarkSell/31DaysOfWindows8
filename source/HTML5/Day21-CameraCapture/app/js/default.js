@@ -29,10 +29,19 @@
         var captureUI = new Windows.Media.Capture.CameraCaptureUI();
         captureUI.captureFileAsync(Windows.Media.Capture.CameraCaptureUIMode.photo).then(function (capturedItem) {
             if (capturedItem) {
-                document.getElementById("message").innerHTML = "User captured a photo."
+    
+                var photoBlobUrl = URL.createObjectURL(capturedItem, { oneTimeOnly: true });
+
+                
+                var imageElement = document.createElement("img");
+                imageElement.setAttribute("src", photoBlobUrl);
+
+                document.querySelector("#result").appendChild(imageElement);
+
+                //document.querySelector("#imgResult").src = photoBlobUrl;
             }
             else {
-                document.getElementById("message").innerHTML = "User didn't capture a photo."
+                document.querySelector("message").innerHTML = "User didn't capture a photo."
             }
         });
     }
