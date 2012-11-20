@@ -25,25 +25,31 @@
         _imageCapture.addEventListener("click", imageCapture, false);
     }
 
+
+    var _capture = Windows.Media.Capture;
+
     function imageCapture() {
-        var captureUI = new Windows.Media.Capture.CameraCaptureUI();
-        captureUI.captureFileAsync(Windows.Media.Capture.CameraCaptureUIMode.photo).then(function (capturedItem) {
-            if (capturedItem) {
+
+        var captureUI = new _capture.CameraCaptureUI();
+        captureUI.captureFileAsync(_capture.CameraCaptureUIMode.photo)
+            .then(function (capturedItem) {
+                if (capturedItem) {
     
-                var photoBlobUrl = URL.createObjectURL(capturedItem, { oneTimeOnly: true });
+                    var photoBlobUrl = URL.createObjectURL(
+                        capturedItem,
+                        { oneTimeOnly: true });
 
-                
-                var imageElement = document.createElement("img");
-                imageElement.setAttribute("src", photoBlobUrl);
+                    var imageElement = document.createElement("img");
+                    imageElement.setAttribute("src", photoBlobUrl);
 
-                document.querySelector("#result").appendChild(imageElement);
-
-                //document.querySelector("#imgResult").src = photoBlobUrl;
+                    document.querySelector("#result").appendChild(imageElement);
+                }
+                else {
+                    document.querySelector("#result").innerText= "User Cancelled"
+                }
             }
-            else {
-                document.querySelector("message").innerHTML = "User didn't capture a photo."
-            }
-        });
+        );
+
     }
 
     app.onloaded = function () {
