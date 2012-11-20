@@ -141,7 +141,7 @@
             {   
                 "tileSize": "largeTile-Template",
                 "title": "20",
-				"subTitle": "XX",
+				"subTitle": "It's hard to match the fidelity of paper.",
                 "image": "/images/days/20/logo.png",
                 "live": "false"
             },         
