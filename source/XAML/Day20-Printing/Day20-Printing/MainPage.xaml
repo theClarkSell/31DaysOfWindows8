@@ -7,8 +7,7 @@
     xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
     mc:Ignorable="d">
 
-    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
-        <Button x:Name="RegisterButton" Content="Register for Printing"  Width="310" Height="150" Click="RegisterButton_Click" />
-        <Canvas x:Name="PrintingContainer" Opacity="0" />
-    </Canvas>
+    <Grid Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Canvas x:Name="PrintContainer" Opacity="0"/>
+    </Grid>
 </Page>

@@ -19,9 +19,9 @@ namespace Day20_Printing
     /// <summary>
     /// An empty page that can be used on its own or navigated to within a Frame.
     /// </summary>
-    public sealed partial class PrintingPage : Page
+    public sealed partial class ContinuationPage : Page
     {
-        public PrintingPage()
+        public ContinuationPage()
         {
             this.InitializeComponent();
         }
@@ -33,6 +33,12 @@ namespace Day20_Printing
         /// property is typically used to configure the page.</param>
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
+        }
+
+        public ContinuationPage(RichTextBlockOverflow textLinkContainer)
+        {
+            InitializeComponent();
+            textLinkContainer.OverflowContentTarget = continuationPageLinkedContainer;
         }
     }
 }

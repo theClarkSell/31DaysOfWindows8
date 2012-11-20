@@ -28,80 +28,158 @@ namespace Day20_Printing
             this.InitializeComponent();
         }
 
-        PrintDocument document;
-        IPrintDocumentSource source;
-        List<UIElement> printPreviewPages;
+        PrintDocument document = null;
+        IPrintDocumentSource source = null;
+        List<UIElement> pages = null;
+        FrameworkElement page1;
+        protected event EventHandler pagesCreated;
+        protected const double left = 0.075;
+        protected const double top = 0.03;
 
         protected override void OnNavigatedTo(NavigationEventArgs e)
         {
-            //document = new PrintDocument();
-            //source = document.DocumentSource;
+            document = new PrintDocument();
+            source = document.DocumentSource;
 
-            //document.AddPages += document_AddPages;
-            //document.GetPreviewPage += document_GetPreviewPage;
-            //document.Paginate += document_Paginate;
+            document.Paginate += printDocument_Paginate;
+            document.GetPreviewPage += printDocument_GetPreviewPage;
+            document.AddPages += printDocument_AddPages;
 
             PrintManager manager = PrintManager.GetForCurrentView();
-            manager.PrintTaskRequested += PrintTaskRequested;
-            
+            manager.PrintTaskRequested += manager_PrintTaskRequested;
+
+            pages = new List<UIElement>();
+
+            PrepareContent();
         }
 
         protected override void OnNavigatingFrom(NavigatingCancelEventArgs e)
         {
-            //document.AddPages -= document_AddPages;
-            //document.GetPreviewPage -= document_GetPreviewPage;
-            //document.Paginate -= document_Paginate;
-            
+            if (document == null) return;
+
+            document.Paginate -= printDocument_Paginate;
+            document.GetPreviewPage -= printDocument_GetPreviewPage;
+            document.AddPages -= printDocument_AddPages;
+
+            // Remove the handler for printing initialization.
             PrintManager manager = PrintManager.GetForCurrentView();
-            manager.PrintTaskRequested -= PrintTaskRequested;
-            
+            manager.PrintTaskRequested -= manager_PrintTaskRequested;
 
+            PrintContainer.Children.Clear();
         }
 
-        
-
-        private async  void RegisterButton_Click(object sender, RoutedEventArgs e)
+        private void PrepareContent()
         {
-            await Windows.Graphics.Printing.PrintManager.ShowPrintUIAsync();
-            
+            if (page1 == null)
+            {
+                page1 = new PageForPrinting();
+                StackPanel header = (StackPanel)page1.FindName("header");
+                header.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
+
+            PrintContainer.Children.Add(page1);
+            PrintContainer.InvalidateMeasure();
+            PrintContainer.UpdateLayout();
         }
 
-        private void CreatePrintContent()
+        void manager_PrintTaskRequested(PrintManager sender, PrintTaskRequestedEventArgs args)
         {
-            PrintingPage page = new PrintingPage();
-            PrintingContainer.Children.Add(page);
-            PrintingContainer.UpdateLayout();
-            
-        }
-
-        void document_Paginate(object sender, PaginateEventArgs e)
-        {
-            
-        }
-
-        void document_GetPreviewPage(object sender, GetPreviewPageEventArgs e)
-        {
-            
-        }
-
-        void document_AddPages(object sender, AddPagesEventArgs e)
-        {
-            
-        }
-
-        private void PrintTaskRequested(PrintManager sender, PrintTaskRequestedEventArgs args)
-        {
-            PrintTask printTask = null;
-            printTask = args.Request.CreatePrintTask("Simple Print Job", sourceRequested =>
+            PrintTask task = null;
+            task = args.Request.CreatePrintTask("Day #20 - Simple Print Job", sourceRequested =>
             {
                 sourceRequested.SetSource(source);
             });
         }
 
-        
+        void printDocument_AddPages(object sender, AddPagesEventArgs e)
+        {
+            for (int i = 0; i < pages.Count; i++)
+            {
+                document.AddPage(pages[i]);
+            }
 
-        
+            PrintDocument printDoc = (PrintDocument)sender;
+            printDoc.AddPagesComplete();
+        }
 
-        
+        void printDocument_GetPreviewPage(object sender, GetPreviewPageEventArgs e)
+        {
+            PrintDocument printDoc = (PrintDocument)sender;
+
+            printDoc.SetPreviewPage(e.PageNumber, pages[e.PageNumber - 1]);
+        }
+
+        void printDocument_Paginate(object sender, PaginateEventArgs e)
+        {
+            pages.Clear();
+            PrintContainer.Children.Clear();
+
+            RichTextBlockOverflow lastRTBOOnPage;
+            PrintTaskOptions printingOptions = ((PrintTaskOptions)e.PrintTaskOptions);
+            PrintPageDescription pageDescription = printingOptions.GetPageDescription(0);
+
+            lastRTBOOnPage = AddOnePrintPreviewPage(null, pageDescription);
+
+            while (lastRTBOOnPage.HasOverflowContent && lastRTBOOnPage.Visibility == Windows.UI.Xaml.Visibility.Visible)
+            {
+                lastRTBOOnPage = AddOnePrintPreviewPage(lastRTBOOnPage, pageDescription);
+            }
+
+            if (pagesCreated != null)
+            {
+                pagesCreated.Invoke(pages, null);
+            }
+
+            PrintDocument printDoc = (PrintDocument)sender;
+
+            printDoc.SetPreviewPageCount(pages.Count, PreviewPageCountType.Intermediate);
+        }
+
+        private RichTextBlockOverflow AddOnePrintPreviewPage(RichTextBlockOverflow lastRTBOAdded, PrintPageDescription printPageDescription)
+        {
+            FrameworkElement page;
+            RichTextBlockOverflow link;
+
+            if (lastRTBOAdded == null)
+            {
+                page = page1;
+                StackPanel footer = (StackPanel)page.FindName("footer");
+                footer.Visibility = Windows.UI.Xaml.Visibility.Collapsed;
+            }
+            else
+            {
+                page = new ContinuationPage(lastRTBOAdded);
+            }
+
+            page.Width = printPageDescription.PageSize.Width;
+            page.Height = printPageDescription.PageSize.Height;
+
+            Grid printableArea = (Grid)page.FindName("printableArea");
+
+            double marginWidth = Math.Max(printPageDescription.PageSize.Width - printPageDescription.ImageableRect.Width, printPageDescription.PageSize.Width * left * 2);
+            double marginHeight = Math.Max(printPageDescription.PageSize.Height - printPageDescription.ImageableRect.Height, printPageDescription.PageSize.Height * top * 2);
+
+            printableArea.Width = page1.Width - marginWidth;
+            printableArea.Height = page1.Height - marginHeight;
+          
+            PrintContainer.Children.Add(page);
+            PrintContainer.InvalidateMeasure();
+            PrintContainer.UpdateLayout();
+
+            // Find the last text container and see if the content is overflowing
+            link = (RichTextBlockOverflow)page.FindName("continuationPageLinkedContainer");
+
+            // Check if this is the last page
+            if (!link.HasOverflowContent && link.Visibility == Windows.UI.Xaml.Visibility.Visible)
+            {
+                StackPanel footer = (StackPanel)page.FindName("footer");
+                footer.Visibility = Windows.UI.Xaml.Visibility.Visible;
+            }
+
+            // Add the page to the page preview collection
+            pages.Add(page);
+
+            return link;
+        }
     }
 }
