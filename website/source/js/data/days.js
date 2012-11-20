@@ -141,7 +141,7 @@
             {   
                 "tileSize": "largeTile-Template",
                 "title": "20",
-				"subTitle": "XX",
+				"subTitle": "No matter how hard we try, getting rid of the fidelity of paper seems to be impossible.",
                 "image": "/images/days/20/logo.png",
                 "live": "false"
             },         
