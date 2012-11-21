@@ -61,6 +61,7 @@
     <Content Include="images\WideLogo.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <Content Include="js\scratch.js" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
