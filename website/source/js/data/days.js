@@ -141,7 +141,7 @@
             {   
                 "tileSize": "largeTile-Template",
                 "title": "21",
-				"subTitle": "Because YouTube is waiting!",
+				"subTitle": "because taking a picture is WAY easier than writing 1,000 words",
                 "image": "/images/days/21/logo.png",
                 "live": "false"
             },         
