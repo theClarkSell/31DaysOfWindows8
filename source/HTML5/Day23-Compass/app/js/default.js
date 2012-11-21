@@ -14,12 +14,13 @@
         }
     };
 
-    var _trueNorth, _magNorth;
+    var _trueNorth, _magNorth, _timestamp;
 
     function onReadingChanged(e) {
         var newReading = e.reading;
+        _timestamp.innerText = newReading.timestamp;
         _magNorth.innerText = newReading.headingMagneticNorth.toFixed(2);
-
+        
         if (newReading.headingTrueNorth != null) {
             _trueNorth.innerText = reading.headingTrueNorth.toFixed(2);
         }
@@ -40,6 +41,7 @@
     function getDomElements() {
         _trueNorth = document.querySelector("#trueNorth");
         _magNorth = document.querySelector("#magNorth");
+        _timestamp = document.querySelector("#timestamp");
     }
 
     app.onloaded = function () {
