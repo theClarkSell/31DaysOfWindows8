@@ -14,18 +14,31 @@
         }
     };
 
+    var _light;
 
-    function getDomElements() {
-
+    function onReadingChanged(e) {
+        _light.innerText = e.reading.illuminanceInLux.toFixed(2);
     }
 
-    function wireEventHandlers() {
+    function startLightSensor() {
+        var lightSensor = Windows.Devices.Sensors.LightSensor.getDefault();
 
+        if (lightSensor) {
+            var minimumReportInterval = lightSensor.minimumReportInterval;
+            var reportInterval = minimumReportInterval > 16 ? minimumReportInterval : 16;
+            lightSensor.reportInterval = reportInterval;
+
+            lightSensor.addEventListener("readingchanged", onReadingChanged);
+        }
+    }
+
+    function getDomElements() {
+        _light = document.querySelector("#light");
     }
 
     app.onready = function () {
         getDomElements();
-        wireEventHandlers();
+        startLightSensor();
     }
 
     app.start();
