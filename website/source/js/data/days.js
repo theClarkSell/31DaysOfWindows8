@@ -141,8 +141,8 @@
             {   
                 "tileSize": "largeTile-Template",
                 "title": "22",
-				"subTitle": "because taking a picture is WAY easier than writing 1,000 words",
-                "image": "/images/days/21/logo.png",
+				"subTitle": "Play To just works.  It's amazing.  Adding it to media apps should be a no-brainer.",
+                "image": "/images/days/22/logo.png",
                 "live": "false"
             },         
             {
@@ -152,7 +152,7 @@
                 "subtitle": "@csell5",
 				"tileBack": "Read The Article",
                 "tileImage": "images/html_csell_2.png",
-                "webSite": "http://csell.net/2012/11/21/31-days-of-windows-8-day-21-camera-capture",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day22-PlayTo",
                 "delay": "4000"
             },            
             {
@@ -162,7 +162,7 @@
                 "subtitle": "@jeffblankenburg",
 				"tileBack": "Read The Article",
                 "tileImage": "images/xaml_jb_2.png",
-                "webSite": "http://www.jeffblankenburg.com/2012/11/21/31-days-of-windows-8-day-21-camera-capture",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/22/31-days-of-windows-8-day-22-using-playto",
                 "delay": "3000"
             },
             {   
@@ -171,7 +171,7 @@
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubhtml.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day21-CameraCapture"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day22-PlayTo"
             },
 			{   
                 "tileSize": "smallTile-Template",
@@ -179,87 +179,87 @@
                 "live": "false",
                 "delay": "0",
                 "tileImage": "/images/githubxaml.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day21-CameraCapture"
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day22-PlayTo"
             },
             {   
                 "tileSize": "smallTile-Template",
-                "title": "Video Element",
+                "title": "Compatibility Center",
                 "live": "false",
                 "delay": "0",
-                "tileImage": "/images/linkhtml.png",
-                "webSite": "http://dev.w3.org/html5/spec/the-video-element.html#the-video-element"
-            },
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "Media Capture and Streams",
-                "live": "true",
-                "delay": "4500",
-                "tileImage": "/images/linkhtml.png",
-                "webSite": "http://dev.w3.org/2011/webrtc/editor/getusermedia.html"
-            },
-			{   
-                "tileSize": "smallTile-Template",
-                "title": "Jeff's Video",
-                "live": "true",
-                "delay": "4500",
-                "tileImage": "/images/linkxaml.png",
-                "webSite": "http://www.youtube.com/watch?v=N9NfqI_5H2s"
-            },
-			{   
-                "tileSize": "smallTile-Template",
-                "title": "Adding multimedia in html",
-                "live": "true",
-                "delay": "3500",
-                "tileImage": "/images/articlehtml.png",
-                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/Hh465132(v=win.10)"
-            },
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "Adding multimedia in xaml",
-                "live": "true",
-                "delay": "3500",
-                "tileImage": "/images/articlexaml.png",
-                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/xaml/Hh465134(v=win.10)"
-            },
-            {   
-                "tileSize": "smallTile-Template",
-                "title": "HTML5 Audio and Video",
-                "live": "true",
-                "delay": "4500",
-                "tileImage": "/images/articlehtml.png",
-                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh767372"
-            },
-			{   
-                "tileSize": "smallTile-Template",
-                "title": "Quickstart: capturing video using the MediaCapture API",
-                "live": "true",
-                "delay": "3500",
                 "tileImage": "/images/msdn.png",
-                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh452791"
+                "webSite": "http://www.microsoft.com/en-us/windows/compatibility/winrt/CompatCenter/Home"
             },
-			{   
+            {   
                 "tileSize": "smallTile-Template",
-                "title": "Quickstart: capturing a photo or video using the camera dialog ",
+                "title": "Streaming media to devices using Play To in HTML",
                 "live": "true",
                 "delay": "4500",
                 "tileImage": "/images/articlehtml.png",
-                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh465152"
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465176"
             },
 			{   
                 "tileSize": "smallTile-Template",
-                "title": "Capturing or rendering audio, video, and images in HTML",
-                "live": "true",
-                "delay": "4500",
-                "tileImage": "/images/articlehtml.png",
-                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465156.aspx"
-            },
-			{   
-                "tileSize": "smallTile-Template",
-                "title": "Capturing or rendering audio, video, and images in XAML",
+                "title": "Streaming media to devices using Play To in XAML",
                 "live": "true",
                 "delay": "4500",
                 "tileImage": "/images/articlexaml.png",
-                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465144(v=win.10).aspx"
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465183(v=win.10)"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows Media PlayTo Namespace",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/BR207025"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Playing and previewing audio and video in HTML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh452787.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Playing and previewing audio and video in XAML",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465154(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Creating a Play To Receiver in HTML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articleHTML.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh967763(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Creating a Play To Receiver in XAML",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articleXAML.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh967764.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Media Play To Sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Media-PlayTo-Sample-fedcb0f9"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Play To Reciever Sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/PlayToReceiver-sample-607f00ed"
             },
             {   
                 "tileSize": "smallTile-Template",
