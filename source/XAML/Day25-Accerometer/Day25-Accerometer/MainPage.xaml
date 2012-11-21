@@ -1,0 +1,38 @@
+﻿<Page
+    x:Class="Day25_Accerometer.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Day25_Accerometer"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <StackPanel x:Name="NoSensorMessage" Orientation="Horizontal" Canvas.Left="10" Canvas.Top="10" Visibility="Collapsed">
+            <Image Source="Assets/no.png" Width="75" Height="75"/>
+            <TextBlock Text="No Accerometer Available on This Device" Style="{StaticResource HeaderTextStyle}" Height="46" Width="1015" Margin="20,0,0,0"/>
+        </StackPanel>
+        <StackPanel x:Name="Data" Canvas.Left="10" Canvas.Top="10">
+            <StackPanel Orientation="Horizontal">
+                <TextBlock Text="Acceleration X: " Style="{StaticResource HeaderTextStyle}" Width="500" />
+                <TextBlock x:Name="XValue" Style="{StaticResource HeaderTextStyle}" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                <TextBlock Text="Acceleration Y: " Style="{StaticResource HeaderTextStyle}" Width="500" />
+                <TextBlock x:Name="YValue" Style="{StaticResource HeaderTextStyle}" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                <TextBlock Text="Acceleration Z: " Style="{StaticResource HeaderTextStyle}" Width="500" />
+                <TextBlock x:Name="ZValue" Style="{StaticResource HeaderTextStyle}" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                <TextBlock Text="Shake Counter: " Style="{StaticResource HeaderTextStyle}" Width="500" />
+                <TextBlock x:Name="ShakeCount" Style="{StaticResource HeaderTextStyle}" FontWeight="Bold"/>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="0,50,0,0">
+                <TextBlock Text="Time Stamp:" Style="{StaticResource HeaderTextStyle}" Width="500"/>
+                <TextBlock x:Name="TimeStamp" Style="{StaticResource HeaderTextStyle}" FontWeight="Bold"/>
+            </StackPanel>
+        </StackPanel>
+    </Canvas>
+</Page>
