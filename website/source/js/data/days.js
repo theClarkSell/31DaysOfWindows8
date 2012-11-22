@@ -132,9 +132,118 @@
     },
 	
 	{
+        "day": "24",
+        "sectionLink": "#24",
+        "title": "The Light Sensor",
+        "publishTime": "11/24/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "24",
+				"subTitle": "we found the light sensor to be a very illuminating topic.",
+                "image": "/images/days/24/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/24/31-days-of-windows-8-day-24-light-sensor",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/24/31-days-of-windows-8-day-24-light-sensor",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day24-LightSensor"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day24-LightSensor"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "What is Lux",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://en.wikipedia.org/wiki/Lux"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Jeff's video on using the light sensor",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://www.youtube.com/watch?v=fbuOeibcT98&list=UUqU3asqRVJxLJoRemk_6FJQ&index=1&feature=plcp"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Responding to changes in lighting in C#",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465268(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Responding to changes in lighting in HTML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "xx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Light Sensor Class",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.lightsensor.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "LightSensor sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/LightSensor-Sample-4477824c"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "23",
         "sectionLink": "#23",
-        "title": "Play To",
+        "title": "The Compass Sensor",
         "publishTime": "11/23/2012 2:08",
 
         "tiles": [
