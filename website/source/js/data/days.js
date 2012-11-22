@@ -152,7 +152,7 @@
                 "subtitle": "@csell5",
 				"tileBack": "Read The Article",
                 "tileImage": "images/html_csell_2.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day22-PlayTo",
+                "webSite": "http://csell.net/2012/11/22/31-days-of-windows-8-day-22-play-to",
                 "delay": "4000"
             },            
             {
