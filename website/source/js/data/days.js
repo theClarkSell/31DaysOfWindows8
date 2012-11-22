@@ -132,6 +132,123 @@
     },
 	
 	{
+        "day": "23",
+        "sectionLink": "#23",
+        "title": "Play To",
+        "publishTime": "11/23/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "23",
+				"subTitle": "let us help you find your way with the compass sensor.",
+                "image": "/images/days/23/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/23/31-days-of-windows-8-day-23-the-compass",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/23/31-days-of-windows-8-day-23-the-compass",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day23-Compass"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day23-Compass"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Jeff's Video on Compass",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://www.youtube.com/watch?v=AYXBQ15OIjg&list=UUqU3asqRVJxLJoRemk_6FJQ&index=2&feature=plcp"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Compass sensor sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Compass-Sensor-Sample-0ed09c55"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Orientation Sensor Class",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.orientationsensor.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Determining current heading with the compass in HTML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "xx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Determining current heading with the compass in C#",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465252(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Retrieving the Quaternion and rotation matrix in HTML with the Orientation sensor",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465270.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Retrieving the Quaternion and rotation matrix with the Orientation sensor",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465280(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "22",
         "sectionLink": "#22",
         "title": "Play To",
