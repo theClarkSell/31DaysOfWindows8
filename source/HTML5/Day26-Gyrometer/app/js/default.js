@@ -14,12 +14,12 @@
         }
     };
 
-    var _x, _y, _z, _wasShaken;
+    var _x, _y, _z;
 
     function onReadingChanged(e) {
-        _x.innerText = e.reading.accelerationX.toFixed(2);
-        _y.innerText = e.reading.accelerationY.toFixed(2);
-        _z.innerText = e.reading.accelerationZ.toFixed(2);
+        _x.innerText = e.reading.angularVelocityX.toFixed(2);
+        _y.innerText = e.reading.angularVelocityY.toFixed(2);
+        _z.innerText = e.reading.angularVelocityZ.toFixed(2);
     }
 
     function onShaken(e) {
@@ -30,20 +30,19 @@
         _x = document.querySelector("#x");
         _y = document.querySelector("#y");
         _z = document.querySelector("#z");
-        _wasShaken = document.querySelector("#shaken");
     }
 
     function startAccelerometer() {
-        var acc = Windows.Devices.Sensors.Accelerometer.getDefault()
+        var gyro = Windows.Devices.Sensors.Gyrometer.getDefault()
 
-        if (acc) {
-            var minimumReportInterval = acc.minimumReportInterval;
+        if (gyro) {
+            var minimumReportInterval = gyro.minimumReportInterval;
             var reportInterval = minimumReportInterval > 16 ? minimumReportInterval : 25;
-            acc.reportInterval = reportInterval;
+            gyro.reportInterval = reportInterval;
 
-            acc.addEventListener("readingchanged", onReadingChanged);
-            acc.addEventListener("shaken", onShaken)
+            gyro.addEventListener("readingchanged", onReadingChanged);
         }
+
     }
 
     app.onloaded = function () {
