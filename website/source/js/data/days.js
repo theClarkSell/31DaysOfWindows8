@@ -132,6 +132,107 @@
     },
 	
 	{
+        "day": "25",
+        "sectionLink": "#25",
+        "title": "The Accelerometer Sensor",
+        "publishTime": "11/25/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "25",
+				"subTitle": "channel your inner isaac newton.  measure the gravitational force exerted on a device.",
+                "image": "/images/days/25/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/25/31-days-of-windows-8-day-25-accelerometer",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/25/31-days-of-windows-8-day-25-accelerometer",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day25-Accelerometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day25-Accerometer"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "What is an Accelerometer",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://en.wikipedia.org/wiki/Accelerometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Responding to user movement with the accelerometer in C#",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465272"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Accelerometer class",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.accelerometer"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Responding to user movement with the accelerometer in JS",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh465265"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Accelerometer sensor sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Accelerometer-Sensor-Sample-22982671"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "24",
         "sectionLink": "#24",
         "title": "The Light Sensor",
@@ -211,7 +312,7 @@
                 "live": "true",
                 "delay": "3500",
                 "tileImage": "/images/linkhtml.png",
-                "webSite": "xx"
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465260.aspx"
             },
             {   
                 "tileSize": "smallTile-Template",
