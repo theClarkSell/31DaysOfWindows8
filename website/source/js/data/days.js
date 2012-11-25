@@ -132,6 +132,115 @@
     },
 	
 	{
+        "day": "26",
+        "sectionLink": "#26",
+        "title": "The Gyrometer Sensor",
+        "publishTime": "11/26/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "26",
+				"subTitle": "rotational velocity can tell you a great deal about a user's device.  Just don't encourage them to throw it.",
+                "image": "/images/days/26/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/26/31-days-of-windows-8-day-26-gyrometer",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/26/31-days-of-windows-8-day-26-gyrometer",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day26-Gyrometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day26-Gyrometer"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Gyrometer sensor sample",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Gyrometer-Sensor-Sample-4fe891d9"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Gyrometer Class",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.gyrometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Measuring angular velocity with the gyrometer in C#",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465246.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Determining angular velocity with the gyrometer in JS",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh465239(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Rotation around a fixed axis",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://en.wikipedia.org/wiki/Rotation_around_a_fixed_axis"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Rotational Motion",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://www.real-world-physics-problems.com/rotational-motion.html"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "25",
         "sectionLink": "#25",
         "title": "The Accelerometer Sensor",
