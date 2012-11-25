@@ -25,8 +25,6 @@ _Resharper.*
 *.user
 
 # odd ball
-thumbs.db
-
 errors.sdf
 
 reset_webconfig.bat
