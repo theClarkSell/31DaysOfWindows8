@@ -4,15 +4,15 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{286FC602-17D3-4439-A9AB-7BBE7C5F066A}</ProjectGuid>
+    <ProjectGuid>{E54E1D0E-C530-49D4-819F-910CAC4EE5A7}</ProjectGuid>
     <OutputType>AppContainerExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>Day26_Gyrometer</RootNamespace>
-    <AssemblyName>Day26-Gyrometer</AssemblyName>
+    <RootNamespace>Day27_Inclinometer</RootNamespace>
+    <AssemblyName>Day27-Inclinometer</AssemblyName>
     <DefaultLanguage>en-US</DefaultLanguage>
     <FileAlignment>512</FileAlignment>
     <ProjectTypeGuids>{BC8A1FFA-BEE3-4634-8014-F334798102B3};{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}</ProjectTypeGuids>
-    <PackageCertificateKeyFile>Day26-Gyrometer_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>Day27-Inclinometer_TemporaryKey.pfx</PackageCertificateKeyFile>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -115,7 +115,7 @@
     <AppxManifest Include="Package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
-    <None Include="Day26-Gyrometer_TemporaryKey.pfx" />
+    <None Include="Day27-Inclinometer_TemporaryKey.pfx" />
   </ItemGroup>
   <ItemGroup>
     <Content Include="Assets\Logo.png" />
