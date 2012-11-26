@@ -132,6 +132,115 @@
     },
 	
 	{
+        "day": "27",
+        "sectionLink": "#27",
+        "title": "The Inclinometer Sensor",
+        "publishTime": "11/27/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "27",
+				"subTitle": "Ever wonder if your user is doing a barrel roll?  now you'll know.",
+                "image": "/images/days/27/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/27/31-days-of-windows-8-day-27-inclinometer",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/27/31-days-of-windows-8-day-27-inclinometer",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day27-Inclinometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day27-Inclinometer"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Inclinometer sensor sample",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Inclinometer-Sensor-Sample-0cd0bf84"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "What is Inclinometer",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://en.wikipedia.org/wiki/Inclinometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Motion and device orientation for simple apps",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/jj155767.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Inclinometer class",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.inclinometer.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Determining pitch, roll, and yaw with the inclinometer",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465257.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Determining pitch, roll, and yaw with the inclinometer in C#",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465263(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "26",
         "sectionLink": "#26",
         "title": "The Gyrometer Sensor",
