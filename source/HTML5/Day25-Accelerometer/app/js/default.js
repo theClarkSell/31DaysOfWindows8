@@ -10,25 +10,46 @@
 
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
-            if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
-                // TODO: This application has been newly launched. Initialize
-                // your application here.
-            } else {
-                // TODO: This application has been reactivated from suspension.
-                // Restore application state here.
-            }
             args.setPromise(WinJS.UI.processAll());
         }
     };
 
-    app.oncheckpoint = function (args) {
-        // TODO: This application is about to be suspended. Save any state
-        // that needs to persist across suspensions here. You might use the
-        // WinJS.Application.sessionState object, which is automatically
-        // saved and restored across suspension. If you need to complete an
-        // asynchronous operation before your application is suspended, call
-        // args.setPromise().
-    };
+    var _x, _y, _z, _wasShaken;
+
+    function onReadingChanged(e) {
+        _x.innerText = e.reading.accelerationX.toFixed(2);
+        _y.innerText = e.reading.accelerationY.toFixed(2);
+        _z.innerText = e.reading.accelerationZ.toFixed(2);
+    }
+
+    function onShaken(e) {
+        _wasShaken.innerText = e.timestamp;
+    }
+
+    function getDomElements() {
+        _x = document.querySelector("#x");
+        _y = document.querySelector("#y");
+        _z = document.querySelector("#z");
+        _wasShaken = document.querySelector("#shaken");
+    }
+
+    function startAccelerometer() {
+        var acc = Windows.Devices.Sensors.Accelerometer.getDefault()
+
+        if (acc) {
+            var minimumReportInterval = acc.minimumReportInterval;
+            var reportInterval = minimumReportInterval > 16 ? minimumReportInterval : 25;
+            acc.reportInterval = reportInterval;
+
+            acc.addEventListener("readingchanged", onReadingChanged);
+            acc.addEventListener("shaken", onShaken)
+        }
+    }
+
+    app.onloaded = function () {
+        getDomElements();
+        startAccelerometer();
+    }
 
     app.start();
 })();

@@ -132,6 +132,442 @@
     },
 	
 	{
+        "day": "26",
+        "sectionLink": "#26",
+        "title": "The Gyrometer Sensor",
+        "publishTime": "11/26/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "26",
+				"subTitle": "rotational velocity can tell you a great deal about a user's device.  Just don't encourage them to throw it.",
+                "image": "/images/days/26/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/26/31-days-of-windows-8-day-26-gyrometer",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/26/31-days-of-windows-8-day-26-gyrometer",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day26-Gyrometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day26-Gyrometer"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Gyrometer sensor sample",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Gyrometer-Sensor-Sample-4fe891d9"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Gyrometer Class",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.gyrometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Measuring angular velocity with the gyrometer in C#",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465246.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Determining angular velocity with the gyrometer in JS",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh465239(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Rotation around a fixed axis",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://en.wikipedia.org/wiki/Rotation_around_a_fixed_axis"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Rotational Motion",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://www.real-world-physics-problems.com/rotational-motion.html"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
+        "day": "25",
+        "sectionLink": "#25",
+        "title": "The Accelerometer Sensor",
+        "publishTime": "11/25/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "25",
+				"subTitle": "channel your inner isaac newton.  measure the gravitational force exerted on a device.",
+                "image": "/images/days/25/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/25/31-days-of-windows-8-day-25-accelerometer",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/25/31-days-of-windows-8-day-25-accelerometer",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day25-Accelerometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day25-Accerometer"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "What is an Accelerometer",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://en.wikipedia.org/wiki/Accelerometer"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Responding to user movement with the accelerometer in C#",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/hh465272"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Accelerometer class",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.accelerometer"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Responding to user movement with the accelerometer in JS",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/Hh465265"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Accelerometer sensor sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Accelerometer-Sensor-Sample-22982671"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
+        "day": "24",
+        "sectionLink": "#24",
+        "title": "The Light Sensor",
+        "publishTime": "11/24/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "24",
+				"subTitle": "we found the light sensor to be a very illuminating topic.",
+                "image": "/images/days/24/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/24/31-days-of-windows-8-day-24-light-sensor",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/24/31-days-of-windows-8-day-24-light-sensor",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day24-LightSensor"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day24-LightSensor"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "What is Lux",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://en.wikipedia.org/wiki/Lux"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Jeff's video on using the light sensor",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://www.youtube.com/watch?v=fbuOeibcT98&list=UUqU3asqRVJxLJoRemk_6FJQ&index=1&feature=plcp"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Responding to changes in lighting in C#",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465268(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Responding to changes in lighting in HTML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465260.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Light Sensor Class",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.lightsensor.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "LightSensor sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/LightSensor-Sample-4477824c"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
+        "day": "23",
+        "sectionLink": "#23",
+        "title": "The Compass Sensor",
+        "publishTime": "11/23/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "23",
+				"subTitle": "let us help you find your way with the compass sensor.",
+                "image": "/images/days/23/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/23/31-days-of-windows-8-day-23-the-compass",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/23/31-days-of-windows-8-day-23-the-compass",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day23-Compass"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day23-Compass"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Jeff's Video on Compass",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://www.youtube.com/watch?v=AYXBQ15OIjg&list=UUqU3asqRVJxLJoRemk_6FJQ&index=2&feature=plcp"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Compass sensor sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/Compass-Sensor-Sample-0ed09c55"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Orientation Sensor Class",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.devices.sensors.orientationsensor.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Determining current heading with the compass in HTML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "xx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Quickstart: Determining current heading with the compass in C#",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465252(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Retrieving the Quaternion and rotation matrix in HTML with the Orientation sensor",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/articlehtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465270.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Retrieving the Quaternion and rotation matrix with the Orientation sensor",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/articlexaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh465280(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "22",
         "sectionLink": "#22",
         "title": "Play To",
@@ -152,7 +588,7 @@
                 "subtitle": "@csell5",
 				"tileBack": "Read The Article",
                 "tileImage": "images/html_csell_2.png",
-                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day22-PlayTo",
+                "webSite": "http://csell.net/2012/11/22/31-days-of-windows-8-day-22-play-to",
                 "delay": "4000"
             },            
             {
