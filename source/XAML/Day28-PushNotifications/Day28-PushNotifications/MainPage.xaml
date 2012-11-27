@@ -1,0 +1,13 @@
+﻿<Page
+    x:Class="Day28_PushNotifications.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:Day28_PushNotifications"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Canvas Background="{StaticResource ApplicationPageBackgroundThemeBrush}">
+        <Button x:Name="AddElementButton" Content="Add Element To Database" Canvas.Left="10" Canvas.Top="10" Click="AddElementButton_Click" Height="150" Width="310"/>
+    </Canvas>
+</Page>

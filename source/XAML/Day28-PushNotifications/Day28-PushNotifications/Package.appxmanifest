@@ -1,0 +1,27 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
+  <Identity Name="21982JeffBlankenburg.Day28-PushNotifications" Publisher="CN=B325A2AE-FA39-4C97-8EE0-7A63DD53FD47" Version="1.0.0.0" />
+  <Properties>
+    <DisplayName>Day28-PushNotifications</DisplayName>
+    <PublisherDisplayName>Jeff Blankenburg</PublisherDisplayName>
+    <Logo>Assets\StoreLogo.png</Logo>
+  </Properties>
+  <Prerequisites>
+    <OSMinVersion>6.2.1</OSMinVersion>
+    <OSMaxVersionTested>6.2.1</OSMaxVersionTested>
+  </Prerequisites>
+  <Resources>
+    <Resource Language="x-generate" />
+  </Resources>
+  <Applications>
+    <Application Id="App" Executable="$targetnametoken$.exe" EntryPoint="Day28_PushNotifications.App">
+      <VisualElements DisplayName="Day28-PushNotifications" Logo="Assets\Logo.png" SmallLogo="Assets\SmallLogo.png" Description="Day28-PushNotifications" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" />
+        <SplashScreen Image="Assets\SplashScreen.png" />
+      </VisualElements>
+    </Application>
+  </Applications>
+  <Capabilities>
+    <Capability Name="internetClient" />
+  </Capabilities>
+</Package>
