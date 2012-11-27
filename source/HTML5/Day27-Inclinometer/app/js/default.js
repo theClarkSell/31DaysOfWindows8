@@ -23,10 +23,6 @@
         _timestamp.innerText = e.reading.timestamp;
     }
 
-    function onShaken(e) {
-        _wasShaken.innerText = e.timestamp;
-    }
-
     function getDomElements() {
         _pitch = document.querySelector("#pitch");
         _yaw = document.querySelector("#yaw");
@@ -34,7 +30,7 @@
         _timestamp = document.querySelector("#timestamp");
     }
 
-    function startAccelerometer() {
+    function startInclinometer() {
         var inclinometer = Windows.Devices.Sensors.Inclinometer.getDefault()
 
         if (inclinometer) {
@@ -44,12 +40,11 @@
 
             inclinometer.addEventListener("readingchanged", onReadingChanged);
         }
-
     }
 
     app.onloaded = function () {
         getDomElements();
-        startAccelerometer();
+        startInclinometer();
     }
 
     app.start();

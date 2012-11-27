@@ -1,0 +1,105 @@
+﻿@using NotificationsExtensions;
+@using NotificationsExtensions.ToastContent;
+@using NotificationsExtensions.TileContent;
+
+
+@{
+    
+    if ( IsPost ) {
+        try {
+            var sid = Request["sid"];
+            var secret = Request["secret"];
+            var uri = Request["uri"];
+            var message = Request["message"];
+
+            WnsAccessTokenProvider tokenProvider = new WnsAccessTokenProvider(sid, secret);
+
+            var title = "31 Days";
+            var subText = message;
+
+            var tileNotification = TileContentFactory.CreateTileWideText01();
+
+            tileNotification.RequireSquareContent = false;
+                        
+            tileNotification.TextHeading.Text = "31 days";
+            tileNotification.TextBody1.Text = message;
+    
+            var tileResult = tileNotification.Send(new Uri(uri), tokenProvider).ErrorDescription;
+
+            if (!string.IsNullOrEmpty(tileResult) ){
+                <h1>tile result: @tileResult</h1>
+            }
+
+            var toastNotification = ToastContentFactory.CreateToastText02();
+            toastNotification.TextHeading.Text = "31 Days";
+            toastNotification.TextBodyWrap.Text = message;
+
+            var toastResult = toastNotification.Send(new Uri(uri), tokenProvider ).ErrorDescription;
+            
+            if (!string.IsNullOrEmpty(toastResult) ){
+                <h1>toast result: @toastResult</h1>
+            }
+        }
+        catch ( Exception e ) {
+            <h1>@e.Message</h1>
+        }
+    }
+
+}
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>31 Days - Push Notification Tester</title>
+
+        <style>
+
+            ul {
+                list-style: none;
+            }
+
+            label {
+                display: block;
+            }
+
+            input {
+                width: 100%;
+            }
+
+            button {
+                width: 150px;
+            }
+
+        </style>
+
+    </head>
+    <body>
+        <form method=post>
+            <fieldset>
+                <ul id="formContainer">
+
+                    <li>
+                        <label>sid:</label>
+                        <input name="sid" type="text">    
+                    </li>
+                    <li>
+                        <label>secret:</label>
+                        <input name="secret" type="text">    
+                    </li>
+                    <li>
+                        <label>uri:</label>
+                        <input name="uri" type="url">    
+                    </li>
+            
+                    <li>
+                        <label>message:</label>
+                        <input name="message" type="text">    
+                    </li>
+                </ul>
+                <button id="go" type=submit value=submit>send</button>    
+            </fieldset>
+        </form>
+    </body>
+</html>
