@@ -132,6 +132,115 @@
     },
 	
 	{
+        "day": "28",
+        "sectionLink": "#28",
+        "title": "Push Notifications",
+        "publishTime": "11/28/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "28",
+				"subTitle": "pushing data to a user's device lets them know what they need to know, when they need to know it.",
+                "image": "/images/days/28/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/28/31-days-of-windows-8-day-28-push-notifications",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/28/31-days-of-windows-8-day-28-push-notifications",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day28-PushNotifications"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day28-PushNotifications"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "How to authenticate with the Windows Push Notification Service",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465407.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Sending push notifications in HTML",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh465460.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Sending push notifications in XAML",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh868244(v=win.10).aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Push notification overview",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh913756.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "WNS Recipe",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://nuget.org/packages/WnsRecipe"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Azure Mobile Services",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "https://www.windowsazure.com/en-us/home/scenarios/mobile-services/"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "27",
         "sectionLink": "#27",
         "title": "The Inclinometer Sensor",
