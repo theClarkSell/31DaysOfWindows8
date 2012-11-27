@@ -54,6 +54,7 @@
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <Content Include="js\scratch.js" />
     <None Include="app_TemporaryKey.pfx" />
     <None Include="app_StoreKey.pfx" />
     <Content Include="default.html" />

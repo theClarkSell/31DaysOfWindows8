@@ -11,9 +11,7 @@
     var notify = Windows.UI.Notifications;
     var push = Windows.Networking.PushNotifications;
     var net = Windows.Networking.Connectivity;
-    var wsc = Windows.Security.Cryptography;
-    var popups = Windows.UI.Popups;
-
+   
     app.onactivated = function (args) {
         if (args.detail.kind === activation.ActivationKind.launch) {
             if (args.detail.previousExecutionState !== activation.ApplicationExecutionState.terminated) {
@@ -30,8 +28,13 @@
             var profile = net.NetworkInformation.getInternetConnectionProfile();
 
             if (profile.getNetworkConnectivityLevel() === net.NetworkConnectivityLevel.internetAccess) {
-                push.PushNotificationChannelManager.createPushNotificationChannelForApplicationAsync().then(function (channel) {
-                    document.querySelector("#uri").innerText = channel.uri
+                push.PushNotificationChannelManager.createPushNotificationChannelForApplicationAsync()
+                    .then(function (channel) {
+                        document.querySelector("#uri").innerText = channel.uri;
+
+                        /* 
+                        this would be the place to post your uri to your cloud service.
+                        */
                 })
             }
 
