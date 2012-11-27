@@ -1,9 +1,9 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
-  <Identity Name="53657140-d0da-4374-9606-b653e55dfd93" Version="1.0.0.0" Publisher="CN=Clark" />
+  <Identity Name="32361ClarkSell.ClarkTest" Version="1.0.0.0" Publisher="CN=E52C30A2-E897-42F9-8D37-1F9E26313F35" />
   <Properties>
-    <DisplayName>Day N</DisplayName>
-    <PublisherDisplayName>Clark</PublisherDisplayName>
+    <DisplayName>ClarkTest</DisplayName>
+    <PublisherDisplayName>Clark Sell</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
   <Prerequisites>
@@ -15,13 +15,14 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Day N" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day N - Topic" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
-        <DefaultTile ShowName="allLogos" />
+      <VisualElements DisplayName="Day 28" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day 28 - Topic" ForegroundText="light" BackgroundColor="#464646" ToastCapable="true">
+        <DefaultTile ShowName="allLogos" WideLogo="images\WideLogo.png" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="#ff0000" />
       </VisualElements>
     </Application>
   </Applications>
   <Capabilities>
-    <Capability Name="internetClient" />
+    <Capability Name="internetClientServer" />
+    <Capability Name="privateNetworkClientServer" />
   </Capabilities>
 </Package>

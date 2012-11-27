@@ -31,21 +31,8 @@
 
             if (profile.getNetworkConnectivityLevel() === net.NetworkConnectivityLevel.internetAccess) {
                 push.PushNotificationChannelManager.createPushNotificationChannelForApplicationAsync().then(function (channel) {
-
-                    var postData = { uri: channel.uri };
-
-                    WinJS.xhr({
-                        type: "POST",
-                        headers: { "Content-Type": "application/json; charset=utf-8" },
-                        url: "http://31daysofwindows8.com/api/PushNotifications",
-                        data: JSON.stringify(postData)
-                    }).then(function (xhr) {
-                        if (xhr.status < 200 || xhr.status >= 300) {
-                            var dialog = new popups.MessageDialog("Unable to open push notification channel");
-                            dialog.showAsync();
-                        }
-                    });
-                });
+                    document.querySelector("#uri").innerText = channel.uri
+                })
             }
 
             args.setPromise(WinJS.UI.processAll());

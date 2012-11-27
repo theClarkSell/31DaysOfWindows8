@@ -47,12 +47,15 @@
     <TargetPlatformIdentifier>Windows</TargetPlatformIdentifier>
     <TargetPlatformVersion>8.0</TargetPlatformVersion>
     <DefaultLanguage>en-US</DefaultLanguage>
-    <PackageCertificateKeyFile>Day6_TemporaryKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateKeyFile>app_StoreKey.pfx</PackageCertificateKeyFile>
+    <PackageCertificateThumbprint>D5C2E3F4B420B4A463AC9269F32593BD6124139B</PackageCertificateThumbprint>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
       <SubType>Designer</SubType>
     </AppxManifest>
+    <None Include="app_TemporaryKey.pfx" />
+    <None Include="app_StoreKey.pfx" />
     <Content Include="default.html" />
     <Content Include="images\logo.png" />
     <Content Include="images\smalllogo.png" />
@@ -61,6 +64,7 @@
     <Content Include="images\WideLogo.png" />
     <Content Include="js\default.js" />
     <Content Include="css\default.css" />
+    <None Include="Package.StoreAssociation.xml" />
   </ItemGroup>
   <ItemGroup>
     <SDKReference Include="Microsoft.WinJS.1.0, Version=1.0" />
