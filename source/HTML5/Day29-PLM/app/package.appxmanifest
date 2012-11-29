@@ -2,7 +2,7 @@
 <Package xmlns="http://schemas.microsoft.com/appx/2010/manifest">
   <Identity Name="53657140-d0da-4374-9606-b653e55dfd93" Version="1.0.0.0" Publisher="CN=Clark" />
   <Properties>
-    <DisplayName>Day N</DisplayName>
+    <DisplayName>Day 29</DisplayName>
     <PublisherDisplayName>Clark</PublisherDisplayName>
     <Logo>images\storelogo.png</Logo>
   </Properties>
@@ -15,7 +15,7 @@
   </Resources>
   <Applications>
     <Application Id="App" StartPage="default.html">
-      <VisualElements DisplayName="Day N" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day N - Topic" ForegroundText="light" BackgroundColor="#464646">
+      <VisualElements DisplayName="Day 29" Logo="images\logo.png" SmallLogo="images\smalllogo.png" Description="Day 29 - Process Lifecycle" ForegroundText="light" BackgroundColor="#464646">
         <DefaultTile ShowName="allLogos" />
         <SplashScreen Image="images\splashscreen.png" BackgroundColor="#ff0000" />
       </VisualElements>
