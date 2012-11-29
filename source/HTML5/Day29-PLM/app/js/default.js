@@ -49,13 +49,18 @@
     };
 
     app.oncheckpoint = function (args) {
-        WinJS.log && WinJS.log("app.oncheckpoint called.", "31 days", "status");
+        args.setPromise(finishOff());
     };
 
+    function finishOff() {
+        return new WinJS.Promise(function (complete, cancel, progress) {
+            WinJS.log && WinJS.log("app.oncheckpoint called.", "31 days", "status");
+            complete();
+        });
+    }
 
     app.onloaded = function () {
         WinJS.Utilities.startLog();
-
     }
 
     app.start();
