@@ -132,6 +132,132 @@
     },
 	
 	{
+        "day": "29",
+        "sectionLink": "#29",
+        "title": "Process Lifecycle Management",
+        "publishTime": "11/29/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "29",
+				"subTitle": "how many different ways can a user start your app?  let us count the ways…",
+                "image": "/images/days/29/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/29/31-days-of-windows-8-day-29-plm/",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/29/31-days-of-windows-8-day-29-application-lifecycle/",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "HTML5 Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubhtml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/HTML5/Day29-PLM"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "XAML Source Demo",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/githubxaml.png",
+                "webSite": "https://github.com/csell5/31DaysOfWindows8/tree/master/source/XAML/Day29-ApplicationLifecycle"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Launching, resuming, and multitasking in HTML",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh770838.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Launching, resuming, and multitasking in XAML",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/xaml/Hh770837(v=win.10).aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "WinJS Application sessionState",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh440965.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Application Lifecycle",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh464925"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Guidelines for app suspend and resume",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/guidelines.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh465088"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "App activate and suspend using WinJS sample",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://code.msdn.microsoft.com/windowsapps/App-activation-events-and-d39c53d5"
+            },
+						{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows ApplicationModel Activation",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/BR224766"
+            },
+			
+			{
+                "tileSize": "smallTile-Template",
+                "title": "ActivationKind enumeration ",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/windows.applicationmodel.activation.activationkind"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "28",
         "sectionLink": "#28",
         "title": "Push Notifications",
