@@ -132,6 +132,147 @@
     },
 	
 	{
+        "day": "30",
+        "sectionLink": "#30",
+        "title": "The Store",
+        "publishTime": "11/30/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "30",
+				"subTitle": "you did want to make a little money from your app, right?",
+                "image": "/images/days/30/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/11/30/31-days-of-windows-8-day-30-store/",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/30/31-days-of-windows-8-day-30-store/",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "App submission image photoshop templates",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/linkhtml.png",
+                "webSite": "http://pressffive.com/blog/article/17"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Choosing your app images",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/linkxaml.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh846296.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows Store Landing Page",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://www.windowsstore.com/"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Managing Client Access to the Windows Store",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-US/library/windows/apps/hh832040"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "How to support in-app purchases",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694067.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Choosing your markets",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/hh694064"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows Store agreements",
+                "live": "true",
+                "delay": "1500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/library/windows/apps/hh694082"
+            },			
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Windows 8 app certification requirements",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Avoiding common certification failures",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/jj657968.aspx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Submitting your app",
+                "live": "true",
+                "delay": "5500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230835.aspx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Naming your app",
+                "live": "true",
+                "delay": "1500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694077.aspx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Windows App Certification Kit",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://msdn.microsoft.com/en-US/windows/apps/jj572486"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "http://advertising.microsoft.com/ads-in-apps",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://advertising.microsoft.com/ads-in-apps"
+            }
+        ]
+    },
+	
+	{
         "day": "29",
         "sectionLink": "#29",
         "title": "Process Lifecycle Management",
