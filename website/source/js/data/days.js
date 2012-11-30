@@ -152,7 +152,7 @@
                 "subtitle": "@csell5",
 				"tileBack": "Read The Article",
                 "tileImage": "images/html_csell_2.png",
-                "webSite": "http://csell.net/2012/11/29/31-days-of-windows-8-day-29-plm/",
+                "webSite": "http://csell.net/2012/11/30/31-days-of-windows-8-day-30-store/",
                 "delay": "4000"
             },            
             {
@@ -162,7 +162,7 @@
                 "subtitle": "@jeffblankenburg",
 				"tileBack": "Read The Article",
                 "tileImage": "images/xaml_jb_2.png",
-                "webSite": "http://www.jeffblankenburg.com/2012/11/29/31-days-of-windows-8-day-29-application-lifecycle/",
+                "webSite": "http://www.jeffblankenburg.com/2012/11/30/31-days-of-windows-8-day-30-store/",
                 "delay": "3000"
             },
             {   
@@ -217,7 +217,7 @@
                 "tileSize": "smallTile-Template",
                 "title": "Windows Store agreements",
                 "live": "true",
-                "delay": "4500",
+                "delay": "1500",
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/library/windows/apps/hh694082"
             },			
@@ -225,33 +225,49 @@
                 "tileSize": "smallTile-Template",
                 "title": "Windows 8 app certification requirements",
                 "live": "true",
-                "delay": "3500",
+                "delay": "2500",
                 "tileImage": "/images/msdn.png",
                 "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694083.aspx"
             },
 			{
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "Avoiding common certification failures",
                 "live": "true",
                 "delay": "3500",
-                "tileImage": "/images/api.png",
-                "webSite": "xx"
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/jj657968.aspx"
             },
 			{
                 "tileSize": "smallTile-Template",
-                "title": "xx",
+                "title": "Submitting your app",
                 "live": "true",
-                "delay": "3500",
-                "tileImage": "/images/api.png",
-                "webSite": "xx"
+                "delay": "5500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/br230835.aspx"
             },
-            {   
+			{
                 "tileSize": "smallTile-Template",
-                "title": "more resources",
+                "title": "Naming your app",
+                "live": "true",
+                "delay": "1500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh694077.aspx"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "Windows App Certification Kit",
                 "live": "true",
                 "delay": "4500",
-                "tileImage": "/images/more.png",
-                "webSite": "resources"
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://msdn.microsoft.com/en-US/windows/apps/jj572486"
+            },
+			{
+                "tileSize": "smallTile-Template",
+                "title": "http://advertising.microsoft.com/ads-in-apps",
+                "live": "true",
+                "delay": "2500",
+                "tileImage": "/images/win8sdk.png",
+                "webSite": "http://advertising.microsoft.com/ads-in-apps"
             }
         ]
     },
