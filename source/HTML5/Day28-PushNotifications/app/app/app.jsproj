@@ -49,6 +49,7 @@
     <DefaultLanguage>en-US</DefaultLanguage>
     <PackageCertificateKeyFile>app_StoreKey.pfx</PackageCertificateKeyFile>
     <PackageCertificateThumbprint>D5C2E3F4B420B4A463AC9269F32593BD6124139B</PackageCertificateThumbprint>
+    <AppxAutoIncrementPackageRevision>True</AppxAutoIncrementPackageRevision>
   </PropertyGroup>
   <ItemGroup>
     <AppxManifest Include="package.appxmanifest">
