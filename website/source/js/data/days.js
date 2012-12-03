@@ -135,7 +135,7 @@
         "day": "31",
         "sectionLink": "#31",
         "title": "The Store",
-        "publishTime": "12/1/2012 2:08",
+        "publishTime": "12/01/2012 2:08",
 
         "tiles": [
             {   
