@@ -132,6 +132,107 @@
     },
 	
 	{
+        "day": "31",
+        "sectionLink": "#31",
+        "title": "The Store",
+        "publishTime": "12/01/2012 2:08",
+
+        "tiles": [
+            {   
+                "tileSize": "largeTile-Template",
+                "title": "31",
+				"subTitle": "our final chapter looks at design, and how you can have a great looking app with minimal effort.",
+                "image": "/images/days/31/logo.png",
+                "live": "false"
+            },         
+            {
+                "tileSize": "mediumTile-Template",
+                "live": "true",
+                "title": "Clark",
+                "subtitle": "@csell5",
+				"tileBack": "Read The Article",
+                "tileImage": "images/html_csell_2.png",
+                "webSite": "http://csell.net/2012/12/01/31-days-of-windows-8-day-31-design",
+                "delay": "4000"
+            },            
+            {
+                "tileSize": "mediumTile-Template",
+                "title": "Jeff",
+                "live": "true",
+                "subtitle": "@jeffblankenburg",
+				"tileBack": "Read The Article",
+                "tileImage": "images/xaml_jb_2.png",
+                "webSite": "http://www.jeffblankenburg.com/2012/12/01/31-days-of-windows-8-day-31-design",
+                "delay": "3000"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "design windows website",
+                "live": "false",
+                "delay": "0",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://design.windows.com"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Download design assets for Windows Store apps",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://bit.ly/Win8Assets"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Design case study: Website to Windows Store app",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh868264.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Design case study: iPad to Windows Store app",
+                "live": "true",
+                "delay": "3500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/hh868262.aspx"
+            },
+            {   
+                "tileSize": "smallTile-Template",
+                "title": "Design case study: Enterprise line of business Windows Store app",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/api.png",
+                "webSite": "http://msdn.microsoft.com/en-us/library/windows/apps/jj659079.aspx"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "Windows Store App Submission Graphics",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "http://pressffive.com/blog/article/17"
+            },
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "xx",
+                "live": "true",
+                "delay": "1500",
+                "tileImage": "/images/msdn.png",
+                "webSite": "xx"
+            },			
+			{   
+                "tileSize": "smallTile-Template",
+                "title": "more resources",
+                "live": "true",
+                "delay": "4500",
+                "tileImage": "/images/more.png",
+                "webSite": "resources"
+            }
+        ]
+    },
+	
+	{
         "day": "30",
         "sectionLink": "#30",
         "title": "The Store",
