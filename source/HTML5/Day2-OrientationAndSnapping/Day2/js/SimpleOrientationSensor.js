@@ -3,24 +3,10 @@
 
     var results;
 
-    var page = WinJS.UI.Pages.define("/pages/SimpleOrientationSensor.html", {
-        ready: function (element, options) {
-           
-            results = document.getElementById("resultText");
-
-            var sensor = Windows.Devices.Sensors.SimpleOrientationSensor.getDefault();
-            if ( sensor ) {
-                sensor.addEventListener("orientationchanged", sensorOrientationChanged);
-                results.innerText = "Sensor Found";
-            }
-            else {
-                results.innerText = "No Sensor Found";
-            }
-        }
-    });
-
     function sensorOrientationChanged(e) {
-        
+
+        console.log("Sensor Fired: " + Date.now());
+
         switch (e.orientation) {
             case Windows.Devices.Sensors.SimpleOrientation.notRotated:
                 results.innerText = "Not Rotated";
@@ -51,5 +37,23 @@
                 break;
         }
     }
+
+    var page = WinJS.UI.Pages.define("/pages/SimpleOrientationSensor.html", {
+        ready: function (element, options) {
+            results = document.getElementById("resultText");
+            var sensor = Windows.Devices.Sensors.SimpleOrientationSensor.getDefault();
+
+            if (sensor) {
+                sensor.addEventListener("orientationchanged", sensorOrientationChanged);
+                //sensor.onorientationchanged = sensorOrientationChanged;
+
+                results.innerText = "Sensor Found";
+            }
+            else {
+                results.innerText = "No Sensor Found";
+            }
+
+        }
+    });
 
 })();
